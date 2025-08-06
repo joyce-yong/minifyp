@@ -1,0 +1,26 @@
+Prefix     | Role / Responsibility
+g_         | Gameplay programmer
+ui_        | UI programmer or designer
+ld_        | Level designer
+art_       | 3D/2D artist
+a_         | Audio designer
+so_        | ScriptableObjects / Data
+vfx_       | Visual FX artist
+sfx_       | Sound effects
+cam_       | Camera systems
+tool_      | Tooling/dev support
+ext_       | External contributor / plugin
+
+Optional Additions:
+svc_       | Service systems (audio, save, etc.)
+net_       | Networking
+dbg_       | Debug/testing tools
+anim_      | Animator/animation files
+mdl_       | Models
+
+Naming Format Examples:
+g_PlayerMovement.cs
+ui_MainMenu.prefab
+so_EnemyStats.asset
+a_Footstep.wav
+mdl_Crate.fbx

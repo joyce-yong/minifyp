@@ -1,0 +1,41 @@
+Unity Project Folder Structure Guide
+
+This guide explains what to place in each folder for a clean and organized Unity project.
+
+Assets/
+├── Art/
+│   ├── Models/          → 3D models (.fbx, .obj) from artists
+│   ├── Textures/        → Raw texture images (e.g., .png, .jpg) for materials
+│   ├── Materials/       → Unity material (.mat) files referencing textures
+│   └── UI/              → 2D UI elements (icons, backgrounds, etc.)
+│
+├── Audio/
+│   ├── Music/           → Background music tracks
+│   └── SFX/             → Sound effects like footsteps, gunshots, UI clicks
+│
+├── Scripts/
+│   ├── Core/            → Game manager, scene loader, singleton scripts
+│   ├── Systems/         → Gameplay systems (movement, combat, inventory)
+│   └── UI/              → Scripts related to UI logic and behavior
+│
+├── Scenes/
+│   ├── Main/            → Main or persistent scenes (e.g., MainMenu, Loading)
+│   └── Levels/          → Gameplay levels, stage scenes
+│
+├── Prefabs/
+│   ├── Characters/      → Player, enemies, NPC prefabs
+│   ├── Environment/     → Trees, rocks, props, platforms
+│   └── UI/              → UI elements (buttons, panels, menus)
+│
+├── Resources/           → Assets loaded at runtime using Resources.Load (use sparingly)
+├── Shaders/             → Custom shaders (.shader) and shader graphs
+├── Plugins/             → Third-party plugins, native libraries, external tools
+
+ProjectSettings/         → Unity auto-generated settings (do not modify manually)
+Packages/                → Dependency and package manifest for Unity Package Manager
+
+Tips:
+- Stick to naming conventions for consistency.
+- Keep folders flat and avoid deeply nested subfolders.
+- Use Prefabs and ScriptableObjects to make content modular.
+- Organize by role and asset type to avoid confusion in teams.
