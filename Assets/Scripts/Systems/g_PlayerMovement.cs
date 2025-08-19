@@ -11,15 +11,23 @@ public class g_PlayerMovement : MonoBehaviour
     [SerializeField] private float sprintMultiplier = 1.5f;
     [SerializeField] private float jumpHeight = 1.2f;
     [SerializeField] private float gravity = -9.81f;
+    [SerializeField] private float crouchHeight = 1f;
+    [SerializeField] private float crouchMoveMultiplier = 0.5f;
+    [SerializeField] private float crouchSpeed = 5f;
 
     float yVelocity;
     float pitch;
     Vector2 moveInput;
+    float originalHeight;
+    float targetHeight;
+    bool isCrouching;
 
     void Start()
     {
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
+        originalHeight = controller.height;
+        targetHeight = originalHeight;
     }
 
     void Update()
@@ -34,14 +42,22 @@ public class g_PlayerMovement : MonoBehaviour
         moveInput.y = Input.GetAxisRaw("Vertical");
 
         if (controller.isGrounded && yVelocity < 0f) yVelocity = -2f;
-        if (Input.GetButtonDown("Jump") && controller.isGrounded)
+        if (!isCrouching && Input.GetButtonDown("Jump") && controller.isGrounded)
             yVelocity = Mathf.Sqrt(jumpHeight * -2f * gravity);
+
+        isCrouching = Input.GetKey(KeyCode.C);
+        targetHeight = isCrouching ? crouchHeight : originalHeight;
+        controller.height = Mathf.Lerp(controller.height, targetHeight, Time.deltaTime * crouchSpeed);
     }
 
     void FixedUpdate()
     {
         Vector3 move = (transform.right * moveInput.x + transform.forward * moveInput.y).normalized;
-        float speed = moveSpeed * (Input.GetKey(KeyCode.LeftShift) ? sprintMultiplier : 1f);
+        float speed = moveSpeed;
+
+        if (isCrouching) speed *= crouchMoveMultiplier;
+        else if (Input.GetKey(KeyCode.LeftShift)) speed *= sprintMultiplier;
+
         controller.Move(move * speed * Time.fixedDeltaTime);
 
         yVelocity += gravity * Time.fixedDeltaTime;
