@@ -1,11 +1,11 @@
 using UnityEngine;
 
-public class g_DoorInteractable : MonoBehaviour, IInteractable
+public class g_WardrobeInteractable : MonoBehaviour, IInteractable
 {
-   [SerializeField] private string interactionText = "Press E to open/close door";
-   [SerializeField] private string door_open_name = "side_door_open";
-   [SerializeField] private string door_close_name = "side_door_close";
-   [SerializeField] private string door_closed_name = "side_door_closed";
+   [SerializeField] private string interactionText = "Press E to open/close wardrobe";
+   [SerializeField] private string wardrobe_open_name = "wardrobe_door_open";
+   [SerializeField] private string wardrobe_close_name = "wardrobe_door_close";
+   [SerializeField] private string wardrobe_closed_name = "wardrobe_door_closed";
    
    private Animator animator;
    private bool isOpen = false;
@@ -14,7 +14,8 @@ public class g_DoorInteractable : MonoBehaviour, IInteractable
    private void Start()
    {
        animator = GetComponent<Animator>();
-       animator.Play(door_closed_name);
+       isOpen = false;
+       animator.Play(wardrobe_closed_name);
    }
    
    public void Interact()
@@ -25,12 +26,12 @@ public class g_DoorInteractable : MonoBehaviour, IInteractable
        
        if (isOpen)
        {
-           animator.Play(door_close_name);
+           animator.Play(wardrobe_close_name);
            isOpen = false;
        }
        else
        {
-           animator.Play(door_open_name);
+           animator.Play(wardrobe_open_name);
            isOpen = true;
        }
        
