@@ -11,10 +11,21 @@ public class ChatManager : MonoBehaviour
         public List<ChatMessage> messages;
     }
 
-    private List<ChatMessage> allMessages;
+    [System.Serializable]
+    public class ChatMessage
+    {
+        public string username;
+        public string message;
+        public string emotion;
+    }
 
-    public TextMeshProUGUI chatText; 
-    public float messageInterval = 0.5f; 
+    private List<ChatMessage> allMessages;
+    private string currentEmotion = null;
+    private List<ChatMessage> filteredMessages;
+
+    public TextMeshProUGUI chatText;
+    public ScrollRect scrollRect; 
+    public float messageInterval = 3f;
     private float timer;
 
     void Start()
@@ -31,25 +42,51 @@ public class ChatManager : MonoBehaviour
         }
 
         timer = messageInterval;
+        filteredMessages = new List<ChatMessage>();
     }
 
     void Update()
     {
         if (allMessages == null || allMessages.Count == 0) return;
 
-        timer -= Time.deltaTime;
-        if (timer <= 0f)
+        if (Input.GetKeyDown(KeyCode.E)) SetCurrentEmotion("excited");
+        if (Input.GetKeyDown(KeyCode.S)) SetCurrentEmotion("scared");
+        if (Input.GetKeyDown(KeyCode.C)) SetCurrentEmotion("challenge");
+
+        if (!string.IsNullOrEmpty(currentEmotion))
         {
-            ShowRandomMessage();
-            timer = messageInterval;
+            timer -= Time.deltaTime;
+            if (timer <= 0f)
+            {
+                ShowNextMessage();
+                timer = messageInterval;
+            }
         }
     }
 
-    void ShowRandomMessage()
+    void SetCurrentEmotion(string emotion)
     {
-        int index = Random.Range(0, allMessages.Count);
-        ChatMessage msg = allMessages[index];
+        currentEmotion = emotion;
+        ResetFilteredMessages();
+    }
+
+    void ResetFilteredMessages()
+    {
+        filteredMessages = allMessages.FindAll(m => m.emotion.ToLower() == currentEmotion.ToLower());
+    }
+
+    void ShowNextMessage()
+    {
+        if (filteredMessages.Count == 0) ResetFilteredMessages();
+
+        int index = Random.Range(0, filteredMessages.Count);
+        ChatMessage msg = filteredMessages[index];
+        filteredMessages.RemoveAt(index);
 
         chatText.text += $"\n<color=yellow>{msg.username}</color>: {msg.message}";
+
+        // Scroll to bottom smoothly
+        Canvas.ForceUpdateCanvases(); // Force layout update
+        scrollRect.verticalNormalizedPosition = 0f;
     }
 }
