@@ -105,20 +105,20 @@ public class ProximityInteractableUI : MonoBehaviour
             Vector3 targetPos = promptUtil != null ? promptUtil.GetAdjustedPosition(basePosition) : basePosition;
             transform.position = targetPos;
             
-            Vector3 directionToCamera = playerCamera.transform.position - transform.position;
+            Vector3 directionToCamera = (playerCamera.transform.position - transform.position).normalized;
             
             if (indicatorIcon != null)
             {
                 Vector3 indicatorPos = promptUtil != null ? promptUtil.GetIndicatorPosition(targetPos) : targetPos;
                 indicatorIcon.transform.position = indicatorPos;
                 
-                if (promptUtil != null && promptUtil != null)
+                if (promptUtil != null)
                 {
-                    indicatorIcon.transform.rotation = promptUtil.GetIndicatorRotation(Quaternion.LookRotation(directionToCamera));
+                    indicatorIcon.transform.rotation = promptUtil.GetIndicatorRotation(Quaternion.LookRotation(-directionToCamera));
                 }
                 else
                 {
-                    indicatorIcon.transform.LookAt(indicatorIcon.transform.position + directionToCamera);
+                    indicatorIcon.transform.rotation = Quaternion.LookRotation(-directionToCamera);
                 }
             }
             
@@ -129,11 +129,11 @@ public class ProximityInteractableUI : MonoBehaviour
                 
                 if (promptUtil != null)
                 {
-                    interactIcon.transform.rotation = promptUtil.GetInteractRotation(Quaternion.LookRotation(directionToCamera));
+                    interactIcon.transform.rotation = promptUtil.GetInteractRotation(Quaternion.LookRotation(-directionToCamera));
                 }
                 else
                 {
-                    interactIcon.transform.LookAt(interactIcon.transform.position + directionToCamera);
+                    interactIcon.transform.rotation = Quaternion.LookRotation(-directionToCamera);
                 }
             }
             

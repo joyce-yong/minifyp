@@ -198,11 +198,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &125194848 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 0b753059f21583746bf5d335e23adeb8, type: 3}
-  m_PrefabInstance: {fileID: 1051720418}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &130055650
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -217,7 +212,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1759053113187750420, guid: 79a144f915dfddb44bd28db2a8480ec7, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -18.41
+      value: -13.283
       objectReference: {fileID: 0}
     - target: {fileID: 1759053113187750420, guid: 79a144f915dfddb44bd28db2a8480ec7, type: 3}
       propertyPath: m_LocalPosition.y
@@ -312,23 +307,34 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c983f8acd625be4ab4245c68354684a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  positionOffset: {x: 0, y: 0.47, z: 0}
-  indicatorPositionOffset: {x: 0, y: 0, z: 0}
-  interactPositionOffset: {x: 0, y: 0, z: 0}
-  useCustomIndicatorRotation: 0
-  customIndicatorRotation: {x: 0, y: 0, z: 0}
-  useCustomInteractRotation: 0
-  customInteractRotation: {x: 0, y: 0, z: 0}
-  useCustomRotation: 0
-  customRotation: {x: 0, y: 0, z: 0}
-  useCustomScale: 0
-  customScale: {x: 1, y: 1, z: 1}
-  proximityDistance: 5
-  interactDistance: 2
-  indicatorMaxScale: 0.5
-  interactMaxScale: 0.6
-  normalInteractColor: {r: 1, g: 1, b: 1, a: 1}
-  lookingAtColor: {r: 1, g: 0.86, b: 0.38, a: 1}
+  defaultPositions:
+    positionOffset: {x: 0, y: 0, z: 0}
+    indicatorPositionOffset: {x: 0, y: 0, z: 0}
+    interactPositionOffset: {x: 0, y: 0, z: 0}
+  rotationSettings:
+    useCustomIndicatorRotation: 0
+    customIndicatorRotation: {x: 0, y: 0, z: 0}
+    useCustomInteractRotation: 0
+    customInteractRotation: {x: 0, y: 0, z: 0}
+    useCustomRotation: 0
+    customRotation: {x: 0, y: 0, z: 0}
+  scaleSettings:
+    useCustomScale: 0
+    customScale: {x: 1, y: 1, z: 1}
+    indicatorMaxScale: 0.5
+    interactMaxScale: 0.6
+  distanceSettings:
+    proximityDistance: 5
+    interactDistance: 2
+  colorSettings:
+    normalInteractColor: {r: 1, g: 1, b: 1, a: 1}
+    lookingAtColor: {r: 1, g: 0.86, b: 0.38, a: 1}
+  dynamicPositioning:
+    enableDynamicPositioning: 0
+    interactedPositions:
+      positionOffset: {x: 0, y: 0, z: 0}
+      indicatorPositionOffset: {x: 0, y: 0, z: 0}
+      interactPositionOffset: {x: 0, y: 0, z: 0}
 --- !u!114 &143876443
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -952,11 +958,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &383437088 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 4a1759794987cf44d90d7cd0204461bc, type: 3}
-  m_PrefabInstance: {fileID: 658612011}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &401779431
 GameObject:
   m_ObjectHideFlags: 0
@@ -994,66 +995,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!1001 &407244345
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 2099884167}
-    m_Modifications:
-    - target: {fileID: -8679921383154817045, guid: 831305e9267d1664c8d0f6fac726cbee, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 7.399172
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 831305e9267d1664c8d0f6fac726cbee, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -12.0727005
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 831305e9267d1664c8d0f6fac726cbee, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -19.590431
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 831305e9267d1664c8d0f6fac726cbee, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.6630518
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 831305e9267d1664c8d0f6fac726cbee, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0.6630518
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 831305e9267d1664c8d0f6fac726cbee, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0.2456875
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 831305e9267d1664c8d0f6fac726cbee, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0.2456875
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 831305e9267d1664c8d0f6fac726cbee, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: -90
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 831305e9267d1664c8d0f6fac726cbee, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 831305e9267d1664c8d0f6fac726cbee, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 40.663
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 831305e9267d1664c8d0f6fac726cbee, type: 3}
-      propertyPath: m_Name
-      value: Chair00
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 831305e9267d1664c8d0f6fac726cbee, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 898324533}
-  m_SourcePrefab: {fileID: 100100000, guid: 831305e9267d1664c8d0f6fac726cbee, type: 3}
 --- !u!1 &410779593 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7495917453129663408, guid: 31454ec1ce878bf4387523a520059e70, type: 3}
@@ -1071,23 +1012,34 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c983f8acd625be4ab4245c68354684a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  positionOffset: {x: 0, y: 0, z: 0.19}
-  indicatorPositionOffset: {x: 0, y: 0, z: 0}
-  interactPositionOffset: {x: 0, y: 0, z: 0}
-  useCustomIndicatorRotation: 0
-  customIndicatorRotation: {x: 0, y: 0, z: 0}
-  useCustomInteractRotation: 0
-  customInteractRotation: {x: 0, y: 0, z: 0}
-  useCustomRotation: 0
-  customRotation: {x: 0, y: 0, z: 0}
-  useCustomScale: 0
-  customScale: {x: 1, y: 1, z: 1}
-  proximityDistance: 2.24
-  interactDistance: 1.46
-  indicatorMaxScale: 0.5
-  interactMaxScale: 0.6
-  normalInteractColor: {r: 1, g: 1, b: 1, a: 1}
-  lookingAtColor: {r: 1, g: 1, b: 1, a: 1}
+  defaultPositions:
+    positionOffset: {x: 0.4, y: -0, z: 0.16}
+    indicatorPositionOffset: {x: 0, y: 0, z: 0}
+    interactPositionOffset: {x: 0, y: 0, z: 0}
+  rotationSettings:
+    useCustomIndicatorRotation: 0
+    customIndicatorRotation: {x: 0, y: 0, z: 0}
+    useCustomInteractRotation: 0
+    customInteractRotation: {x: 0, y: 0, z: 0}
+    useCustomRotation: 0
+    customRotation: {x: 0, y: 0, z: 0}
+  scaleSettings:
+    useCustomScale: 0
+    customScale: {x: 1, y: 1, z: 1}
+    indicatorMaxScale: 0.5
+    interactMaxScale: 0.6
+  distanceSettings:
+    proximityDistance: 5
+    interactDistance: 2
+  colorSettings:
+    normalInteractColor: {r: 1, g: 1, b: 1, a: 1}
+    lookingAtColor: {r: 1, g: 0.86, b: 0.38, a: 1}
+  dynamicPositioning:
+    enableDynamicPositioning: 0
+    interactedPositions:
+      positionOffset: {x: 0, y: 0, z: 0}
+      indicatorPositionOffset: {x: 0, y: 0, z: 0}
+      interactPositionOffset: {x: 0, y: 0, z: 0}
 --- !u!1 &414123132
 GameObject:
   m_ObjectHideFlags: 0
@@ -1129,11 +1081,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!4 &476504077 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 0b753059f21583746bf5d335e23adeb8, type: 3}
-  m_PrefabInstance: {fileID: 1093506916}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &544518656 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: d50f7c7fa15ea8e4f98bc09ed115f2b3, type: 3}
@@ -1484,63 +1431,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 655700819}
   m_CullTransparentMesh: 1
---- !u!1001 &658612011
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 2099884167}
-    m_Modifications:
-    - target: {fileID: -8679921383154817045, guid: 4a1759794987cf44d90d7cd0204461bc, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 6.78
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 4a1759794987cf44d90d7cd0204461bc, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -12.052138
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 4a1759794987cf44d90d7cd0204461bc, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -17.676517
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 4a1759794987cf44d90d7cd0204461bc, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.60599667
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 4a1759794987cf44d90d7cd0204461bc, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0.60599667
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 4a1759794987cf44d90d7cd0204461bc, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0.3643736
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 4a1759794987cf44d90d7cd0204461bc, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0.3643736
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 4a1759794987cf44d90d7cd0204461bc, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: -90
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 4a1759794987cf44d90d7cd0204461bc, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 4a1759794987cf44d90d7cd0204461bc, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: -62.035
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 4a1759794987cf44d90d7cd0204461bc, type: 3}
-      propertyPath: m_Name
-      value: Rug01
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 4a1759794987cf44d90d7cd0204461bc, type: 3}
 --- !u!1 &673577931
 GameObject:
   m_ObjectHideFlags: 0
@@ -1947,11 +1837,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 778592971}
   m_CullTransparentMesh: 1
---- !u!1 &812847995 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 831305e9267d1664c8d0f6fac726cbee, type: 3}
-  m_PrefabInstance: {fileID: 407244345}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &869755721
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2087,92 +1972,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 881258242}
   m_CullTransparentMesh: 1
---- !u!1001 &893701740
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 2099884167}
-    m_Modifications:
-    - target: {fileID: -8679921383154817045, guid: 579fdd507454f334ba286ac43027aa32, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 3.74
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 579fdd507454f334ba286ac43027aa32, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -12.069
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 579fdd507454f334ba286ac43027aa32, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -17.685207
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 579fdd507454f334ba286ac43027aa32, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.70216334
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 579fdd507454f334ba286ac43027aa32, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0.70216334
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 579fdd507454f334ba286ac43027aa32, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0.08346685
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 579fdd507454f334ba286ac43027aa32, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0.08346685
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 579fdd507454f334ba286ac43027aa32, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: -90
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 579fdd507454f334ba286ac43027aa32, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 579fdd507454f334ba286ac43027aa32, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: -13.558
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 579fdd507454f334ba286ac43027aa32, type: 3}
-      propertyPath: m_Name
-      value: CoffeeTable
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 579fdd507454f334ba286ac43027aa32, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1738734887}
-  m_SourcePrefab: {fileID: 100100000, guid: 579fdd507454f334ba286ac43027aa32, type: 3}
---- !u!4 &898324530 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 831305e9267d1664c8d0f6fac726cbee, type: 3}
-  m_PrefabInstance: {fileID: 407244345}
-  m_PrefabAsset: {fileID: 0}
---- !u!65 &898324533
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 812847995}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.48125222, y: 0.43456745, z: 0.9984312}
-  m_Center: {x: 0.05539193, y: 0.00019688907, z: 0.49896687}
 --- !u!1 &900055687 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1378868739103623342, guid: 79a144f915dfddb44bd28db2a8480ec7, type: 3}
@@ -2190,23 +1989,34 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c983f8acd625be4ab4245c68354684a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  positionOffset: {x: 0, y: 0, z: 0}
-  indicatorPositionOffset: {x: 0, y: 0, z: 0}
-  interactPositionOffset: {x: 0, y: 0, z: 0}
-  useCustomIndicatorRotation: 0
-  customIndicatorRotation: {x: 0, y: 0, z: 0}
-  useCustomInteractRotation: 0
-  customInteractRotation: {x: 0, y: 0, z: 0}
-  useCustomRotation: 0
-  customRotation: {x: 0, y: 0, z: 0}
-  useCustomScale: 0
-  customScale: {x: 1, y: 1, z: 1}
-  proximityDistance: 1.92
-  interactDistance: 1.13
-  indicatorMaxScale: 0.5
-  interactMaxScale: 0.6
-  normalInteractColor: {r: 1, g: 1, b: 1, a: 1}
-  lookingAtColor: {r: 1, g: 0.86, b: 0.38, a: 1}
+  defaultPositions:
+    positionOffset: {x: 0, y: 0, z: 0}
+    indicatorPositionOffset: {x: 0, y: 0, z: 0}
+    interactPositionOffset: {x: 0, y: 0, z: 0}
+  rotationSettings:
+    useCustomIndicatorRotation: 0
+    customIndicatorRotation: {x: 0, y: 0, z: 0}
+    useCustomInteractRotation: 0
+    customInteractRotation: {x: 0, y: 0, z: 0}
+    useCustomRotation: 0
+    customRotation: {x: 0, y: 0, z: 0}
+  scaleSettings:
+    useCustomScale: 0
+    customScale: {x: 1, y: 1, z: 1}
+    indicatorMaxScale: 0.5
+    interactMaxScale: 0.6
+  distanceSettings:
+    proximityDistance: 5
+    interactDistance: 2
+  colorSettings:
+    normalInteractColor: {r: 1, g: 1, b: 1, a: 1}
+    lookingAtColor: {r: 1, g: 0.86, b: 0.38, a: 1}
+  dynamicPositioning:
+    enableDynamicPositioning: 0
+    interactedPositions:
+      positionOffset: {x: 0, y: 0, z: 0}
+      indicatorPositionOffset: {x: 0, y: 0, z: 0}
+      interactPositionOffset: {x: 0, y: 0, z: 0}
 --- !u!1 &975054193
 GameObject:
   m_ObjectHideFlags: 0
@@ -2328,66 +2138,6 @@ Light:
   m_LightUnit: 1
   m_LuxAtDistance: 1
   m_EnableSpotReflector: 1
---- !u!1001 &1051720418
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 2099884167}
-    m_Modifications:
-    - target: {fileID: -8679921383154817045, guid: 0b753059f21583746bf5d335e23adeb8, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 5.08
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 0b753059f21583746bf5d335e23adeb8, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -12.07
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 0b753059f21583746bf5d335e23adeb8, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -14.53
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 0b753059f21583746bf5d335e23adeb8, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.21999809
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 0b753059f21583746bf5d335e23adeb8, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0.21999809
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 0b753059f21583746bf5d335e23adeb8, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0.67201257
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 0b753059f21583746bf5d335e23adeb8, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0.67201257
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 0b753059f21583746bf5d335e23adeb8, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: -90
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 0b753059f21583746bf5d335e23adeb8, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 0b753059f21583746bf5d335e23adeb8, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 143.746
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 0b753059f21583746bf5d335e23adeb8, type: 3}
-      propertyPath: m_Name
-      value: Bed (1)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 0b753059f21583746bf5d335e23adeb8, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1404786950}
-  m_SourcePrefab: {fileID: 100100000, guid: 0b753059f21583746bf5d335e23adeb8, type: 3}
 --- !u!1 &1087150022
 GameObject:
   m_ObjectHideFlags: 0
@@ -2446,66 +2196,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &1093506916
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 2099884167}
-    m_Modifications:
-    - target: {fileID: -8679921383154817045, guid: 0b753059f21583746bf5d335e23adeb8, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 9.41
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 0b753059f21583746bf5d335e23adeb8, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -12.0727005
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 0b753059f21583746bf5d335e23adeb8, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -16.707146
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 0b753059f21583746bf5d335e23adeb8, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.585488
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 0b753059f21583746bf5d335e23adeb8, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0.585488
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 0b753059f21583746bf5d335e23adeb8, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0.39648938
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 0b753059f21583746bf5d335e23adeb8, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0.39648938
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 0b753059f21583746bf5d335e23adeb8, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: -90
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 0b753059f21583746bf5d335e23adeb8, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 0b753059f21583746bf5d335e23adeb8, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 68.211
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 0b753059f21583746bf5d335e23adeb8, type: 3}
-      propertyPath: m_Name
-      value: Bed
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 0b753059f21583746bf5d335e23adeb8, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1930260128}
-  m_SourcePrefab: {fileID: 100100000, guid: 0b753059f21583746bf5d335e23adeb8, type: 3}
 --- !u!1 &1119365632
 GameObject:
   m_ObjectHideFlags: 0
@@ -2787,94 +2477,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!1 &1404786947 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 0b753059f21583746bf5d335e23adeb8, type: 3}
-  m_PrefabInstance: {fileID: 1051720418}
-  m_PrefabAsset: {fileID: 0}
---- !u!65 &1404786950
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1404786947}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 2.4159083, y: 2.0000002, z: 0.89754564}
-  m_Center: {x: 0.035109498, y: 0.0020860087, z: 0.44455492}
---- !u!1001 &1471465378
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 2099884167}
-    m_Modifications:
-    - target: {fileID: -8679921383154817045, guid: 4a1759794987cf44d90d7cd0204461bc, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 4.95
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 4a1759794987cf44d90d7cd0204461bc, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -12.052138
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 4a1759794987cf44d90d7cd0204461bc, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -19.25
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 4a1759794987cf44d90d7cd0204461bc, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.60599667
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 4a1759794987cf44d90d7cd0204461bc, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0.60599667
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 4a1759794987cf44d90d7cd0204461bc, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0.3643736
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 4a1759794987cf44d90d7cd0204461bc, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0.3643736
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 4a1759794987cf44d90d7cd0204461bc, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: -90
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 4a1759794987cf44d90d7cd0204461bc, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 4a1759794987cf44d90d7cd0204461bc, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: -62.035
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 4a1759794987cf44d90d7cd0204461bc, type: 3}
-      propertyPath: m_Name
-      value: Rug01 (1)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 4a1759794987cf44d90d7cd0204461bc, type: 3}
---- !u!4 &1471465379 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 4a1759794987cf44d90d7cd0204461bc, type: 3}
-  m_PrefabInstance: {fileID: 1471465378}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1515989689
 GameObject:
   m_ObjectHideFlags: 0
@@ -3043,11 +2645,6 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 4294967295
   interactionKey: 101
---- !u!1 &1640512450 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 579fdd507454f334ba286ac43027aa32, type: 3}
-  m_PrefabInstance: {fileID: 893701740}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1686668331
 GameObject:
   m_ObjectHideFlags: 0
@@ -3156,23 +2753,34 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c983f8acd625be4ab4245c68354684a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  positionOffset: {x: 0, y: 0.47, z: 0}
-  indicatorPositionOffset: {x: 0, y: 0, z: 0}
-  interactPositionOffset: {x: 0, y: 0.34, z: 0}
-  useCustomIndicatorRotation: 0
-  customIndicatorRotation: {x: 0, y: 0, z: 0}
-  useCustomInteractRotation: 1
-  customInteractRotation: {x: 0, y: 180, z: 0}
-  useCustomRotation: 0
-  customRotation: {x: 0, y: 0, z: 0}
-  useCustomScale: 0
-  customScale: {x: 1, y: 1, z: 1}
-  proximityDistance: 5
-  interactDistance: 2
-  indicatorMaxScale: 0.5
-  interactMaxScale: 0.6
-  normalInteractColor: {r: 1, g: 1, b: 1, a: 1}
-  lookingAtColor: {r: 1, g: 0.86, b: 0.38, a: 1}
+  defaultPositions:
+    positionOffset: {x: 0, y: 0, z: 0}
+    indicatorPositionOffset: {x: 0, y: 0, z: 0}
+    interactPositionOffset: {x: 0, y: 0, z: 0}
+  rotationSettings:
+    useCustomIndicatorRotation: 0
+    customIndicatorRotation: {x: 0, y: 0, z: 0}
+    useCustomInteractRotation: 0
+    customInteractRotation: {x: 0, y: 0, z: 0}
+    useCustomRotation: 0
+    customRotation: {x: 0, y: 0, z: 0}
+  scaleSettings:
+    useCustomScale: 0
+    customScale: {x: 1, y: 1, z: 1}
+    indicatorMaxScale: 0.5
+    interactMaxScale: 0.6
+  distanceSettings:
+    proximityDistance: 5
+    interactDistance: 2
+  colorSettings:
+    normalInteractColor: {r: 1, g: 1, b: 1, a: 1}
+    lookingAtColor: {r: 1, g: 0.86, b: 0.38, a: 1}
+  dynamicPositioning:
+    enableDynamicPositioning: 0
+    interactedPositions:
+      positionOffset: {x: 0, y: 0, z: 0}
+      indicatorPositionOffset: {x: 0, y: 0, z: 0}
+      interactPositionOffset: {x: 0, y: 0, z: 0}
 --- !u!114 &1714737450
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3276,32 +2884,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &1738734884 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 579fdd507454f334ba286ac43027aa32, type: 3}
-  m_PrefabInstance: {fileID: 893701740}
-  m_PrefabAsset: {fileID: 0}
---- !u!65 &1738734887
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1640512450}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.56660926, y: 0.92881775, z: 0.4747674}
-  m_Center: {x: 0.022297675, y: -0.023124, z: 0.23380013}
 --- !u!1 &1771627545
 GameObject:
   m_ObjectHideFlags: 0
@@ -3892,49 +3474,34 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c983f8acd625be4ab4245c68354684a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  positionOffset: {x: 0, y: 0.47, z: 0}
-  indicatorPositionOffset: {x: 0, y: 0, z: 0}
-  interactPositionOffset: {x: 0, y: 0, z: 0}
-  useCustomIndicatorRotation: 0
-  customIndicatorRotation: {x: 0, y: 0, z: 0}
-  useCustomInteractRotation: 0
-  customInteractRotation: {x: 0, y: 0, z: 0}
-  useCustomRotation: 0
-  customRotation: {x: 0, y: 0, z: 0}
-  useCustomScale: 0
-  customScale: {x: 1, y: 1, z: 1}
-  proximityDistance: 5
-  interactDistance: 2
-  indicatorMaxScale: 0.5
-  interactMaxScale: 0.6
-  normalInteractColor: {r: 1, g: 1, b: 1, a: 1}
-  lookingAtColor: {r: 1, g: 0.86, b: 0.38, a: 1}
---- !u!1 &1930260125 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 0b753059f21583746bf5d335e23adeb8, type: 3}
-  m_PrefabInstance: {fileID: 1093506916}
-  m_PrefabAsset: {fileID: 0}
---- !u!65 &1930260128
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1930260125}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 2.4159083, y: 2.0000002, z: 0.89754546}
-  m_Center: {x: 0.035109513, y: 0.0020860732, z: 0.44455513}
+  defaultPositions:
+    positionOffset: {x: 0, y: 0, z: 0}
+    indicatorPositionOffset: {x: 0, y: 0, z: 0}
+    interactPositionOffset: {x: 0, y: 0, z: 0}
+  rotationSettings:
+    useCustomIndicatorRotation: 0
+    customIndicatorRotation: {x: 0, y: 0, z: 0}
+    useCustomInteractRotation: 0
+    customInteractRotation: {x: 0, y: 0, z: 0}
+    useCustomRotation: 0
+    customRotation: {x: 0, y: 0, z: 0}
+  scaleSettings:
+    useCustomScale: 0
+    customScale: {x: 1, y: 1, z: 1}
+    indicatorMaxScale: 0.5
+    interactMaxScale: 0.6
+  distanceSettings:
+    proximityDistance: 5
+    interactDistance: 2
+  colorSettings:
+    normalInteractColor: {r: 1, g: 1, b: 1, a: 1}
+    lookingAtColor: {r: 1, g: 0.86, b: 0.38, a: 1}
+  dynamicPositioning:
+    enableDynamicPositioning: 0
+    interactedPositions:
+      positionOffset: {x: 0, y: 0, z: 0}
+      indicatorPositionOffset: {x: 0, y: 0, z: 0}
+      interactPositionOffset: {x: 0, y: 0, z: 0}
 --- !u!1 &1961572012
 GameObject:
   m_ObjectHideFlags: 0
@@ -4179,23 +3746,34 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c983f8acd625be4ab4245c68354684a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  positionOffset: {x: 0, y: 0.47, z: 0}
-  indicatorPositionOffset: {x: 0, y: 0, z: 0}
-  interactPositionOffset: {x: 0, y: 0, z: 0}
-  useCustomIndicatorRotation: 0
-  customIndicatorRotation: {x: 0, y: 0, z: 0}
-  useCustomInteractRotation: 0
-  customInteractRotation: {x: 0, y: 0, z: 0}
-  useCustomRotation: 0
-  customRotation: {x: 0, y: 0, z: 0}
-  useCustomScale: 0
-  customScale: {x: 1, y: 1, z: 1}
-  proximityDistance: 5
-  interactDistance: 2
-  indicatorMaxScale: 0.5
-  interactMaxScale: 0.6
-  normalInteractColor: {r: 1, g: 1, b: 1, a: 1}
-  lookingAtColor: {r: 1, g: 0.86, b: 0.38, a: 1}
+  defaultPositions:
+    positionOffset: {x: 0, y: 0, z: 0}
+    indicatorPositionOffset: {x: 0, y: 0, z: 0}
+    interactPositionOffset: {x: 0, y: 0, z: 0}
+  rotationSettings:
+    useCustomIndicatorRotation: 0
+    customIndicatorRotation: {x: 0, y: 0, z: 0}
+    useCustomInteractRotation: 0
+    customInteractRotation: {x: 0, y: 0, z: 0}
+    useCustomRotation: 0
+    customRotation: {x: 0, y: 0, z: 0}
+  scaleSettings:
+    useCustomScale: 0
+    customScale: {x: 1, y: 1, z: 1}
+    indicatorMaxScale: 0.5
+    interactMaxScale: 0.6
+  distanceSettings:
+    proximityDistance: 5
+    interactDistance: 2
+  colorSettings:
+    normalInteractColor: {r: 1, g: 1, b: 1, a: 1}
+    lookingAtColor: {r: 1, g: 0.86, b: 0.38, a: 1}
+  dynamicPositioning:
+    enableDynamicPositioning: 0
+    interactedPositions:
+      positionOffset: {x: 0, y: 0, z: 0}
+      indicatorPositionOffset: {x: 0, y: 0, z: 0}
+      interactPositionOffset: {x: 0, y: 0, z: 0}
 --- !u!114 &1978241438
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4603,12 +4181,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 551438335}
-  - {fileID: 476504077}
-  - {fileID: 125194848}
-  - {fileID: 383437088}
-  - {fileID: 1471465379}
-  - {fileID: 898324530}
-  - {fileID: 1738734884}
   - {fileID: 1797010774}
   - {fileID: 544518656}
   m_Father: {fileID: 0}
@@ -4629,7 +4201,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &2107169969
 MonoBehaviour:
   m_ObjectHideFlags: 0

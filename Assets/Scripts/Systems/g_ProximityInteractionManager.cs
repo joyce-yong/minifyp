@@ -168,13 +168,38 @@ public class g_ProximityInteractionManager : MonoBehaviour
     
     public void OnObjectInteracted(IInteractable interactable)
     {
+        MonoBehaviour interactableObj = interactable as MonoBehaviour;
+        g_ProximityPromptUtil promptUtil = null;
+        
+        if (interactableObj != null)
+        {
+            promptUtil = interactableObj.GetComponent<g_ProximityPromptUtil>();
+        }
+        
         if (activeUIs.TryGetValue(interactable, out ProximityInteractableUI ui))
         {
             ui.HideWithInteraction();
             activeUIs.Remove(interactable);
         }
         
-        interactionCooldowns[interactable] = cooldownDuration;
+        if (promptUtil != null && promptUtil.IsDynamicPositioningEnabled())
+        {
+            float delay = promptUtil.GetTransitionDelay();
+            interactionCooldowns[interactable] = delay;
+            
+            StartCoroutine(HandleDynamicPositionTransition(interactable, promptUtil, delay));
+        }
+        else
+        {
+            interactionCooldowns[interactable] = cooldownDuration;
+        }
+    }
+    
+    private System.Collections.IEnumerator HandleDynamicPositionTransition(IInteractable interactable, g_ProximityPromptUtil promptUtil, float delay)
+    {
+        yield return new WaitForSeconds(delay);
+        
+        promptUtil.OnObjectInteracted();
     }
 }
 
