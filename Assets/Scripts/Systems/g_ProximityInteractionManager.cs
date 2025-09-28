@@ -21,6 +21,8 @@ public class g_ProximityInteractionManager : MonoBehaviour
     private g_interaction_system interactionSystem;
     private List<ProximityInteractable> allInteractables = new List<ProximityInteractable>();
     private Dictionary<IInteractable, ProximityInteractableUI> activeUIs = new Dictionary<IInteractable, ProximityInteractableUI>();
+    private Dictionary<IInteractable, float> interactionCooldowns = new Dictionary<IInteractable, float>();
+    private float cooldownDuration = 1f;
     
     void Start()
     {
@@ -33,7 +35,24 @@ public class g_ProximityInteractionManager : MonoBehaviour
     
     void Update()
     {
+        UpdateCooldowns();
         UpdateProximityInteractions();
+    }
+    
+    void UpdateCooldowns()
+    {
+        List<IInteractable> toRemove = new List<IInteractable>();
+        List<IInteractable> keys = new List<IInteractable>(interactionCooldowns.Keys);
+        
+        foreach (var key in keys)
+        {
+            interactionCooldowns[key] = interactionCooldowns[key] - Time.deltaTime;
+            if (interactionCooldowns[key] <= 0f)
+                toRemove.Add(key);
+        }
+        
+        foreach (var key in toRemove)
+            interactionCooldowns.Remove(key);
     }
     
     void FindAllInteractables()
@@ -82,12 +101,13 @@ public class g_ProximityInteractionManager : MonoBehaviour
             bool inProximity = distance <= proximityDist;
             bool hasUI = activeUIs.ContainsKey(proximityData.interactable);
             bool isLookingAt = IsLookingAtObject(proximityData);
+            bool isOnCooldown = interactionCooldowns.ContainsKey(proximityData.interactable);
             
-            if (inProximity && !hasUI)
+            if (inProximity && !hasUI && !isOnCooldown)
             {
                 CreateProximityUI(proximityData);
             }
-            else if (!inProximity && hasUI)
+            else if ((!inProximity || isOnCooldown) && hasUI)
             {
                 RemoveProximityUI(proximityData.interactable);
             }
@@ -153,6 +173,8 @@ public class g_ProximityInteractionManager : MonoBehaviour
             ui.HideWithInteraction();
             activeUIs.Remove(interactable);
         }
+        
+        interactionCooldowns[interactable] = cooldownDuration;
     }
 }
 

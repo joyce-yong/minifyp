@@ -5,6 +5,16 @@ public class g_ProximityPromptUtil : MonoBehaviour
     [Header("Position Offset")]
     [SerializeField] private Vector3 positionOffset = Vector3.zero;
     
+    [Header("Icon Positions")]
+    [SerializeField] private Vector3 indicatorPositionOffset = Vector3.zero;
+    [SerializeField] private Vector3 interactPositionOffset = Vector3.zero;
+    
+    [Header("Icon Rotations")]
+    [SerializeField] private bool useCustomIndicatorRotation = false;
+    [SerializeField] private Vector3 customIndicatorRotation = Vector3.zero;
+    [SerializeField] private bool useCustomInteractRotation = false;
+    [SerializeField] private Vector3 customInteractRotation = Vector3.zero;
+    
     [Header("Rotation Override")]
     [SerializeField] private bool useCustomRotation = false;
     [SerializeField] private Vector3 customRotation = Vector3.zero;
@@ -32,10 +42,27 @@ public class g_ProximityPromptUtil : MonoBehaviour
         return originalPosition + positionOffset;
     }
     
-    public Quaternion GetAdjustedRotation(Quaternion originalRotation)
+    public Vector3 GetIndicatorPosition(Vector3 basePosition)
     {
-        if (useCustomRotation)
-            return Quaternion.Euler(customRotation);
+        return basePosition + indicatorPositionOffset;
+    }
+    
+    public Vector3 GetInteractPosition(Vector3 basePosition)
+    {
+        return basePosition + interactPositionOffset;
+    }
+    
+    public Quaternion GetIndicatorRotation(Quaternion originalRotation)
+    {
+        if (useCustomIndicatorRotation)
+            return Quaternion.Euler(customIndicatorRotation);
+        return originalRotation;
+    }
+    
+    public Quaternion GetInteractRotation(Quaternion originalRotation)
+    {
+        if (useCustomInteractRotation)
+            return Quaternion.Euler(customInteractRotation);
         return originalRotation;
     }
     
@@ -88,10 +115,22 @@ public class g_ProximityPromptUtil : MonoBehaviour
     
     void OnDrawGizmosSelected()
     {
+        Vector3 basePos = transform.position;
+        Vector3 adjustedPos = GetAdjustedPosition(basePos);
+        Vector3 indicatorPos = GetIndicatorPosition(adjustedPos);
+        Vector3 interactPos = GetInteractPosition(adjustedPos);
+        
         Gizmos.color = Color.yellow;
-        Vector3 adjustedPos = GetAdjustedPosition(transform.position);
         Gizmos.DrawWireSphere(adjustedPos, 0.2f);
-        Gizmos.DrawLine(transform.position, adjustedPos);
+        Gizmos.DrawLine(basePos, adjustedPos);
+        
+        Gizmos.color = Color.blue;
+        Gizmos.DrawWireSphere(indicatorPos, 0.15f);
+        Gizmos.DrawLine(adjustedPos, indicatorPos);
+        
+        Gizmos.color = Color.green;
+        Gizmos.DrawWireSphere(interactPos, 0.15f);
+        Gizmos.DrawLine(adjustedPos, interactPos);
         
         if (useCustomRotation)
         {
@@ -103,9 +142,9 @@ public class g_ProximityPromptUtil : MonoBehaviour
         }
         
         Gizmos.color = Color.cyan;
-        Gizmos.DrawWireSphere(transform.position, proximityDistance);
+        Gizmos.DrawWireSphere(basePos, proximityDistance);
         
-        Gizmos.color = Color.green;
-        Gizmos.DrawWireSphere(transform.position, interactDistance);
+        Gizmos.color = Color.magenta;
+        Gizmos.DrawWireSphere(basePos, interactDistance);
     }
 }

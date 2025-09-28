@@ -81,12 +81,6 @@ public class ProximityInteractableUI : MonoBehaviour
         if (interactIcon != null)
         {
             interactIcon.gameObject.SetActive(false);
-            
-            RectTransform interactRect = interactIcon.GetComponent<RectTransform>();
-            if (interactRect != null)
-            {
-                interactRect.rotation = Quaternion.Euler(0, 0, 180);
-            }
         }
         
         if (canvasGroup != null)
@@ -115,12 +109,32 @@ public class ProximityInteractableUI : MonoBehaviour
             
             if (indicatorIcon != null)
             {
-                indicatorIcon.transform.LookAt(indicatorIcon.transform.position + directionToCamera);
+                Vector3 indicatorPos = promptUtil != null ? promptUtil.GetIndicatorPosition(targetPos) : targetPos;
+                indicatorIcon.transform.position = indicatorPos;
+                
+                if (promptUtil != null && promptUtil != null)
+                {
+                    indicatorIcon.transform.rotation = promptUtil.GetIndicatorRotation(Quaternion.LookRotation(directionToCamera));
+                }
+                else
+                {
+                    indicatorIcon.transform.LookAt(indicatorIcon.transform.position + directionToCamera);
+                }
             }
             
             if (interactIcon != null)
             {
-                interactIcon.transform.LookAt(interactIcon.transform.position + directionToCamera);
+                Vector3 interactPos = promptUtil != null ? promptUtil.GetInteractPosition(targetPos) : targetPos;
+                interactIcon.transform.position = interactPos;
+                
+                if (promptUtil != null)
+                {
+                    interactIcon.transform.rotation = promptUtil.GetInteractRotation(Quaternion.LookRotation(directionToCamera));
+                }
+                else
+                {
+                    interactIcon.transform.LookAt(interactIcon.transform.position + directionToCamera);
+                }
             }
             
             CheckDistanceForInteract();
