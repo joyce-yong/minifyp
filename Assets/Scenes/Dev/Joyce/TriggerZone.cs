@@ -2,21 +2,21 @@ using UnityEngine;
 
 public class TriggerZone : MonoBehaviour
 {
-    public string emotion; // e.g. "excited", "scared"
+    public string emotion; 
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
         {
-            FindObjectOfType<ChatManager>().StartChat(emotion);
+            Object.FindAnyObjectByType<ChatManager>().StartChat(emotion);
         }
     }
-
+    
     private void OnTriggerExit(Collider other)
     {
         if (other.CompareTag("Player"))
         {
-            FindObjectOfType<ChatManager>().StopChat();
+            Object.FindAnyObjectByType<ChatManager>().StopChat();
         }
     }
 }

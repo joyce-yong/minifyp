@@ -15,7 +15,7 @@ public class ChatManager : MonoBehaviour
 
     public TextMeshProUGUI chatText;
     public float messageInterval = 0.5f;
-    public float stopDelay = 10f; // how long chat continues after exit
+    public float stopDelay = 10f; 
 
     private string currentEmotion = null;
     private float timer = 0f;
@@ -24,39 +24,32 @@ public class ChatManager : MonoBehaviour
     void Start()
     {
         TextAsset jsonFile = Resources.Load<TextAsset>("chatMessages");
-        if (jsonFile != null)
+        string wrappedJson = "{\"messages\":" + jsonFile.text + "}";
+        List<ChatMessage> allMessages = JsonUtility.FromJson<ChatWrapper>(wrappedJson).messages;
+
+        // Group by emotion
+        emotionMessages = new Dictionary<string, List<ChatMessage>>();
+        foreach (var msg in allMessages)
         {
-            string wrappedJson = "{\"messages\":" + jsonFile.text + "}";
-            List<ChatMessage> allMessages = JsonUtility.FromJson<ChatWrapper>(wrappedJson).messages;
+            if (!emotionMessages.ContainsKey(msg.emotion))
+                emotionMessages[msg.emotion] = new List<ChatMessage>();
 
-            // Group by emotion
-            emotionMessages = new Dictionary<string, List<ChatMessage>>();
-            foreach (var msg in allMessages)
-            {
-                if (!emotionMessages.ContainsKey(msg.emotion))
-                    emotionMessages[msg.emotion] = new List<ChatMessage>();
-
-                emotionMessages[msg.emotion].Add(msg);
-            }
-
-            // Initialize shuffled queues
-            shuffledQueues = new Dictionary<string, Queue<ChatMessage>>();
-            foreach (var kvp in emotionMessages)
-            {
-                shuffledQueues[kvp.Key] = CreateShuffledQueue(kvp.Value);
-            }
+            emotionMessages[msg.emotion].Add(msg);
         }
-        else
+
+        // Initialize shuffled queues
+        shuffledQueues = new Dictionary<string, Queue<ChatMessage>>();
+        foreach (var kvp in emotionMessages)
         {
-            Debug.LogError("chatMessages.json not found in Resources/");
+            shuffledQueues[kvp.Key] = CreateShuffledQueue(kvp.Value);
         }
+
     }
 
     void Update()
     {
         if (currentEmotion == null) return;
 
-        // if we are counting down after exit
         if (stopTimer > 0f)
         {
             stopTimer -= Time.deltaTime;
@@ -78,13 +71,13 @@ public class ChatManager : MonoBehaviour
     public void StartChat(string emotion)
     {
         currentEmotion = emotion;
-        stopTimer = 0f; // reset any stop countdown
-        timer = 0f; // fire immediately
+        stopTimer = 0f; 
+        timer = 0f; 
     }
 
     public void StopChat()
     {
-        stopTimer = stopDelay; // keep going for X seconds
+        stopTimer = stopDelay; 
     }
 
     private void ShowNextMessage(string emotion)

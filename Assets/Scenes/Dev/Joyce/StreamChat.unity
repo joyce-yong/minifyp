@@ -3947,7 +3947,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: chat text
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -4128,8 +4128,8 @@ SceneRoots:
   - {fileID: 1119117295}
   - {fileID: 978789586}
   - {fileID: 1877411103}
-  - {fileID: 567234758}
-  - {fileID: 25100378}
   - {fileID: 982232970}
   - {fileID: 338728347}
   - {fileID: 1350761094}
+  - {fileID: 567234758}
+  - {fileID: 25100378}
