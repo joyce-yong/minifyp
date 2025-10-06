@@ -1,0 +1,132 @@
+{
+	"assetNamespace": "fab",
+	"listing":
+	{
+		"averageRating": 0,
+		"createdAt": "",
+		"description": "<p>Low-poly 3D model of a crowbar. In addition to its main purpose, this tool can also be used as a melee weapon. Gordon Freeman used a similar weapon in Half Life. The model is optimized for use with game engines. Contains 4k textures in png format.</p>",
+		"isAiForbidden": true,
+		"isAiGenerated": false,
+		"lastUpdatedAt": "2025-02-24T12:20:21.114518Z",
+		"listingType": "3d-model",
+		"media": "https://media.fab.com/image_previews/gallery_images/f7177fc1-f52d-44f4-95c9-2811c11e9fe5/8d6f45e2-53b8-43e8-b920-b5d5e05a8fac.jpeg",
+		"publishedAt": "2024-10-12T18:51:31.405851Z",
+		"reviewCount": 0,
+		"thumbnail": "https://media.fab.com/image_previews/gallery_images/26cad1d2-5a0a-40a2-b6c2-9288781c6670/b89027c6-4c85-43d9-a9bf-620aba5980c7.jpeg",
+		"title": "Crowbar (Low Poly)",
+		"uid": "421cc613-0801-4059-8095-7ed5a42565b3",
+		"updatedAt": "",
+		"user":
+		{
+			"coverImageUrl": "https://cdn1.epicgames.com/fab/seller/o-9zqgryqb5jvva4zy7ystjhw27ytdhu/cover/6fac3fb6.jpg",
+			"profileImageUrl": "https://cdn1.epicgames.com/fab/seller/o-9zqgryqb5jvva4zy7ystjhw27ytdhu/profile/7eafa222.jpg",
+			"sellerName": "Undertaker3DArt",
+			"uid": "c74ab25a-be1b-45d2-9122-023c0354cd3e"
+		},
+		"tags": [
+			{
+				"name": "Lowpoly",
+				"slug": "lowpoly",
+				"uid": "451806dc-649e-43b7-9c2e-a54485de14b6"
+			},
+			{
+				"name": "Gameready",
+				"slug": "gameready",
+				"uid": "6a250196-0821-43cb-b9cd-3975f235b88d"
+			},
+			{
+				"name": "Half",
+				"slug": "half",
+				"uid": "8dd6f110-a280-48e6-bec5-8803849ac189"
+			},
+			{
+				"name": "Optimized",
+				"slug": "optimized",
+				"uid": "b80236ef-8966-43ab-b564-cfa99bf22b10"
+			},
+			{
+				"name": "Crowbar",
+				"slug": "crowbar",
+				"uid": "bebc0938-c1eb-4cb0-a9bb-7e140ec34758"
+			},
+			{
+				"name": "Tool",
+				"slug": "tool",
+				"uid": "c3c9ca07-c2ba-4363-ba48-1eaa61347b1e"
+			},
+			{
+				"name": "Life",
+				"slug": "life",
+				"uid": "c3c9d76e-dca9-40c1-a16c-cc83ff718480"
+			},
+			{
+				"name": "Weapon",
+				"slug": "weapon",
+				"uid": "cb5288be-1972-4807-9f2a-5f33ddffd407"
+			},
+			{
+				"name": "Melee",
+				"slug": "melee",
+				"uid": "d499cfb1-84fc-416b-8fbb-e760c86f295a"
+			},
+			{
+				"name": "Toolbox",
+				"slug": "toolbox",
+				"uid": "e9a36b70-b4de-4635-b1d3-736175f12759"
+			}
+		],
+		"category":
+		{
+			"name": "Buildings & Architecture",
+			"path": "buildings-architecture",
+			"slug": "buildings-architecture",
+			"uid": "eec3bdd5-ba7a-45a8-b15d-67462b9630f6"
+		},
+		"assetFormats": [
+			{
+				"assetFormatType":
+				{
+					"name": "FBX",
+					"groupName": "3D Exchange Formats",
+					"code": "fbx",
+					"icon": "cube",
+					"extensions": [
+						"fbx"
+					]
+				}
+			},
+			{
+				"assetFormatType":
+				{
+					"name": "Converted Files",
+					"groupName": "",
+					"code": "converted-files",
+					"icon": "cube",
+					"extensions": [
+						"gltf",
+						"glb",
+						"usdz"
+					]
+				}
+			}
+		],
+		"_PluginMetas":
+		{
+			"apiDataVersion": "0.0.1",
+			"entitlementUid": "c1b039d9-5b81-4e8c-9839-9f91ffa41acb",
+			"cacheSize": 0,
+			"downloaded": []
+		}
+	},
+	"target": "",
+	"quality": "",
+	"format": "fbx",
+	"fileId": "8fc68905-1622-40a5-84b9-4840913fd9cc",
+	"platformIncluded": "",
+	"distributionPointBaseUrls": [],
+	"distributionMethod": "",
+	"entitlementUid": "c1b039d9-5b81-4e8c-9839-9f91ffa41acb",
+	"invertedNormal": false,
+	"isConverted": false,
+	"isQuixel": false
+}

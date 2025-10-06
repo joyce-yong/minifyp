@@ -1,0 +1,97 @@
+{
+	"assetNamespace": "fab",
+	"listing":
+	{
+		"averageRating": 5,
+		"createdAt": "",
+		"description": "<p>Game-ready scarecrow asset, made with Zbrushcore, Maya and Substance Painter.</p>",
+		"isAiForbidden": false,
+		"isAiGenerated": false,
+		"lastUpdatedAt": "2025-02-24T11:56:12.518146Z",
+		"listingType": "3d-model",
+		"media": "https://media.fab.com/image_previews/gallery_images/2d8bce26-7e6c-48c2-a71f-1e7a0b72e043/95a0f2e0-9fdf-4d71-943a-d03fc0248d3d.jpeg",
+		"publishedAt": "2024-10-07T18:10:46.859276Z",
+		"reviewCount": 1,
+		"thumbnail": "https://media.fab.com/image_previews/gallery_images/bf1ac652-9f6c-443d-93a8-948ac06ce32b/9cd2178a-cde3-4763-afc2-c64ee46623d2.jpeg",
+		"title": "Scarecrow",
+		"uid": "3a1b4b01-e243-4831-a23d-58c245e52b05",
+		"updatedAt": "",
+		"user":
+		{
+			"coverImageUrl": "",
+			"profileImageUrl": "",
+			"sellerName": "angemturc",
+			"uid": "e8ef9a97-bbf3-48b8-9e49-8a104fb0eb33"
+		},
+		"tags": [
+			{
+				"name": "Scarecrow",
+				"slug": "scarecrow",
+				"uid": "1f039f3d-fafc-4911-939d-e1aba4418e3b"
+			},
+			{
+				"name": "Spooky",
+				"slug": "spooky",
+				"uid": "3ea21af9-ded0-4e63-bf8c-432432951123"
+			},
+			{
+				"name": "Halloween",
+				"slug": "halloween",
+				"uid": "6336c3a7-4460-4ee8-9b64-f55407388901"
+			}
+		],
+		"category":
+		{
+			"name": "Characters & Creatures",
+			"path": "characters-creatures",
+			"slug": "characters-creatures",
+			"uid": "358f4f32-1ca9-42ec-9be6-24303e41b412"
+		},
+		"assetFormats": [
+			{
+				"assetFormatType":
+				{
+					"name": "FBX",
+					"groupName": "3D Exchange Formats",
+					"code": "fbx",
+					"icon": "cube",
+					"extensions": [
+						"fbx"
+					]
+				}
+			},
+			{
+				"assetFormatType":
+				{
+					"name": "Converted Files",
+					"groupName": "",
+					"code": "converted-files",
+					"icon": "cube",
+					"extensions": [
+						"gltf",
+						"glb",
+						"usdz"
+					]
+				}
+			}
+		],
+		"_PluginMetas":
+		{
+			"apiDataVersion": "0.0.1",
+			"entitlementUid": "62a33749-2f5f-45c1-94ad-234e1e49fffb",
+			"cacheSize": 0,
+			"downloaded": []
+		}
+	},
+	"target": "",
+	"quality": "",
+	"format": "fbx",
+	"fileId": "365aba04-19f7-472d-ba40-0262b14f69d7",
+	"platformIncluded": "",
+	"distributionPointBaseUrls": [],
+	"distributionMethod": "",
+	"entitlementUid": "62a33749-2f5f-45c1-94ad-234e1e49fffb",
+	"invertedNormal": false,
+	"isConverted": false,
+	"isQuixel": false
+}

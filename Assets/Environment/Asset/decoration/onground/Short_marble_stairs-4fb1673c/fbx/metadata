@@ -1,0 +1,157 @@
+{
+	"assetNamespace": "fab",
+	"listing":
+	{
+		"averageRating": 4.5,
+		"createdAt": "",
+		"description": "<p>Short marble stairs stairway of hosue building park - free model\nphotogrammetry scan (36MPx 550 photos, 8K texture + nromals)</p>",
+		"isAiForbidden": false,
+		"isAiGenerated": false,
+		"lastUpdatedAt": "2025-02-24T12:42:27.508699Z",
+		"listingType": "3d-model",
+		"media": "https://media.fab.com/image_previews/gallery_images/95aeb179-9db5-45c4-bab2-c03351af310f/7570d1ee-e9de-4806-a2a6-442230fbe2d2.jpeg",
+		"publishedAt": "2024-10-23T01:53:28.572398Z",
+		"reviewCount": 2,
+		"thumbnail": "https://media.fab.com/image_previews/gallery_images/9806d6ec-6e45-4ec7-8fa6-dbf711f2b155/9a6b0333-4337-4513-ba8f-5a98fece5593.jpeg",
+		"title": "Short marble stairs",
+		"uid": "4fb1673c-3288-4de8-8541-a547c6eae6a7",
+		"updatedAt": "",
+		"user":
+		{
+			"coverImageUrl": "https://cdn1.epicgames.com/fab/seller/o-qk6q8x5xrzvmed4jk2zg2qb9pvnray/cover/820a4f3f.jpg",
+			"profileImageUrl": "https://cdn1.epicgames.com/fab/seller/o-qk6q8x5xrzvmed4jk2zg2qb9pvnray/profileImage/blob-500x500-f65270a676c5f200cf02bdf312715fbe.jpg",
+			"sellerName": "Axonite",
+			"uid": "663dc8c8-f7c8-4880-b3dc-9b30716108d8"
+		},
+		"tags": [
+			{
+				"name": "Retro",
+				"slug": "retro",
+				"uid": "01b64ec5-7261-4c99-a280-a34680f1af03"
+			},
+			{
+				"name": "Antique",
+				"slug": "antique",
+				"uid": "05c128da-c923-4f5d-b84b-fde612ae6bd4"
+			},
+			{
+				"name": "Marble",
+				"slug": "marble",
+				"uid": "16a71781-c4b3-4053-a34d-daa11289fe1c"
+			},
+			{
+				"name": "Avenue",
+				"slug": "avenue",
+				"uid": "49d7daa8-06ff-4e12-a192-7e05cd89d855"
+			},
+			{
+				"name": "Palace",
+				"slug": "palace",
+				"uid": "4f649187-b315-4fcb-97a9-219b8c788dda"
+			},
+			{
+				"name": "Fantasy",
+				"slug": "fantasy",
+				"uid": "5c48e966-39f9-4b98-9803-78335e942570"
+			},
+			{
+				"name": "Stair",
+				"slug": "stair",
+				"uid": "60ea01c9-da40-4645-80b3-b87934903ee3"
+			},
+			{
+				"name": "Library",
+				"slug": "library",
+				"uid": "8631dc93-4cf5-48da-997b-7ac3fc57fcdf"
+			},
+			{
+				"name": "Medieval",
+				"slug": "medieval",
+				"uid": "8869d28f-20ec-4f2e-9e92-d505e24c701d"
+			},
+			{
+				"name": "Vintage",
+				"slug": "vintage",
+				"uid": "8a4d973f-aaa6-411d-b342-e09e1f212f63"
+			},
+			{
+				"name": "Concrete",
+				"slug": "concrete",
+				"uid": "9626f858-b7f1-4677-bd48-369c43eebbd1"
+			},
+			{
+				"name": "Step",
+				"slug": "step",
+				"uid": "b47f18ae-9efe-44fd-9777-32fcb0336a8e"
+			},
+			{
+				"name": "Greek",
+				"slug": "greek",
+				"uid": "c25529a0-b8de-40ec-ab88-3900b10fa5b0"
+			},
+			{
+				"name": "Architecture",
+				"slug": "architecture",
+				"uid": "cfb43d77-a91f-42ad-bd9d-b472c97d3f06"
+			},
+			{
+				"name": "Ancient",
+				"slug": "ancient",
+				"uid": "f0419e2c-b888-4e2d-8713-61c203152231"
+			}
+		],
+		"category":
+		{
+			"name": "Stairs",
+			"path": "buildings-architecture/components/stairs",
+			"slug": "buildings-architecture--components--stairs",
+			"uid": "004fd653-06dc-4368-862c-3239c2395d2a"
+		},
+		"assetFormats": [
+			{
+				"assetFormatType":
+				{
+					"name": "FBX",
+					"groupName": "3D Exchange Formats",
+					"code": "fbx",
+					"icon": "cube",
+					"extensions": [
+						"fbx"
+					]
+				}
+			},
+			{
+				"assetFormatType":
+				{
+					"name": "Converted Files",
+					"groupName": "",
+					"code": "converted-files",
+					"icon": "cube",
+					"extensions": [
+						"gltf",
+						"glb",
+						"usdz"
+					]
+				}
+			}
+		],
+		"_PluginMetas":
+		{
+			"apiDataVersion": "0.0.1",
+			"entitlementUid": "baf5596a-3fd9-4e9a-8e81-0ee9e42e862b",
+			"cacheSize": 0,
+			"downloaded": []
+		}
+	},
+	"target": "",
+	"quality": "",
+	"format": "fbx",
+	"fileId": "40b5bd6e-6395-43b1-8403-1f372886fab5",
+	"platformIncluded": "",
+	"distributionPointBaseUrls": [],
+	"distributionMethod": "",
+	"entitlementUid": "baf5596a-3fd9-4e9a-8e81-0ee9e42e862b",
+	"invertedNormal": false,
+	"isConverted": false,
+	"isQuixel": false
+}

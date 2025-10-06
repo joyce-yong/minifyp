@@ -1,0 +1,110 @@
+{
+	"assetNamespace": "fab",
+	"listing":
+	{
+		"averageRating": 5,
+		"createdAt": "",
+		"description": "<p><strong>Greenhouse Park FBX Free</strong></p><p></p><p><span>This asset is created for students and individuals looking to incorporate a greenhouse into their projects. This model includes optimized plants and pots, all using a single texture set for ease of use, with textures embedded in the FBX file for seamless integration. </span></p><p></p><p><span>Blend File is also included to export individual assets according to the requirements.</span></p><p></p><p><span><strong>Thank You!</strong></span></p>",
+		"isAiForbidden": true,
+		"isAiGenerated": false,
+		"lastUpdatedAt": "2025-02-24T11:29:22.604028Z",
+		"listingType": "3d-model",
+		"media": "",
+		"publishedAt": "2024-09-19T18:02:52.258417Z",
+		"reviewCount": 2,
+		"thumbnail": "https://media.fab.com/image_previews/gallery_images/8d6a2764-36a4-4088-87c6-122a17f7e383/16969a74-014b-4bc8-8605-b7f26c016321.jpg",
+		"title": "Greenhouse Park FBX Free",
+		"uid": "ad6edf06-d05c-41bf-aab5-1922a51e1934",
+		"updatedAt": "",
+		"user":
+		{
+			"coverImageUrl": "https://cdn1.epicgames.com/fab/seller/o-8vl9lrpvhjp8228jp4qyz9dm9klsnv/cover/4c8fd76f.png",
+			"profileImageUrl": "https://cdn1.epicgames.com/fab/seller/o-8vl9lrpvhjp8228jp4qyz9dm9klsnv/profile/288f960e.jpg",
+			"sellerName": "Nicholas 3D",
+			"uid": "973a36c0-df6f-48d5-a929-d5441a4a470b"
+		},
+		"tags": [
+			{
+				"name": "Pottedplant",
+				"slug": "pottedplant",
+				"uid": "05d2819e-6e35-45eb-9217-8d1b29424c3a"
+			},
+			{
+				"name": "Green",
+				"slug": "green",
+				"uid": "38657bda-cbb3-496e-a759-63d621634c91"
+			},
+			{
+				"name": "Plant",
+				"slug": "plant",
+				"uid": "39825278-7eee-4f2e-aa9e-fa21a6f08c4f"
+			},
+			{
+				"name": "Greenery",
+				"slug": "greenery",
+				"uid": "4d24a07f-f0e0-42b8-88e3-e765350fb694"
+			},
+			{
+				"name": "Nature",
+				"slug": "nature",
+				"uid": "8d858676-26d9-4329-b3f7-0b3a4107b7f9"
+			},
+			{
+				"name": "Greenhouse",
+				"slug": "greenhouse",
+				"uid": "e379419a-9857-4c8d-b6a5-5f277fd5e8c9"
+			}
+		],
+		"category":
+		{
+			"name": "Nature & Plants",
+			"path": "nature-plants",
+			"slug": "nature-plants",
+			"uid": "57243087-7d23-45a2-b08d-cf12cc77efed"
+		},
+		"assetFormats": [
+			{
+				"assetFormatType":
+				{
+					"name": "Blender",
+					"groupName": "3D DCC Formats",
+					"code": "blender",
+					"icon": "blender",
+					"extensions": [
+						"blend"
+					]
+				}
+			},
+			{
+				"assetFormatType":
+				{
+					"name": "FBX",
+					"groupName": "3D Exchange Formats",
+					"code": "fbx",
+					"icon": "cube",
+					"extensions": [
+						"fbx"
+					]
+				}
+			}
+		],
+		"_PluginMetas":
+		{
+			"apiDataVersion": "0.0.1",
+			"entitlementUid": "c82ab980-be54-4d60-9ea3-ae9542014e37",
+			"cacheSize": 0,
+			"downloaded": []
+		}
+	},
+	"target": "",
+	"quality": "",
+	"format": "fbx",
+	"fileId": "4e1deda4-903e-4cc5-a2fa-55578f43ae5c",
+	"platformIncluded": "",
+	"distributionPointBaseUrls": [],
+	"distributionMethod": "",
+	"entitlementUid": "c82ab980-be54-4d60-9ea3-ae9542014e37",
+	"invertedNormal": false,
+	"isConverted": false,
+	"isQuixel": false
+}

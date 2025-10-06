@@ -1,0 +1,152 @@
+{
+	"assetNamespace": "fab",
+	"listing":
+	{
+		"averageRating": 0,
+		"createdAt": "",
+		"description": "<p>Simple low-poly wardrobe I made during my free time.</p>",
+		"isAiForbidden": false,
+		"isAiGenerated": false,
+		"lastUpdatedAt": "2025-02-24T12:05:35.811029Z",
+		"listingType": "3d-model",
+		"media": "https://media.fab.com/image_previews/gallery_images/789bbf52-703c-4efd-9c5e-68176af4c561/452028f0-09dd-4334-a32a-15e3089327e2.jpeg",
+		"publishedAt": "2024-10-09T17:07:31.936234Z",
+		"reviewCount": 0,
+		"thumbnail": "https://media.fab.com/image_previews/gallery_images/4c3b6dfe-9b5e-4393-ab2d-1479cd2a6380/3edd63aa-8e2b-439f-af55-c9d20ed58732.jpeg",
+		"title": "Wardrobe",
+		"uid": "83022928-4fc8-4294-bc07-4de3f6c4a900",
+		"updatedAt": "",
+		"user":
+		{
+			"coverImageUrl": "",
+			"profileImageUrl": "",
+			"sellerName": "DylanHayes",
+			"uid": "01663c5c-3bc3-41f7-a983-70d01dfaadf8"
+		},
+		"tags": [
+			{
+				"name": "Design",
+				"slug": "design",
+				"uid": "08fa1bc1-2eb0-4438-9a93-9c2cdd4608cd"
+			},
+			{
+				"name": "Furniture",
+				"slug": "furniture",
+				"uid": "0f6b3b40-8715-4963-b755-0160e80cf12c"
+			},
+			{
+				"name": "Bedroom",
+				"slug": "bedroom",
+				"uid": "265cf2af-2ca9-409d-99b1-bbab3e7fa99e"
+			},
+			{
+				"name": "Decorative",
+				"slug": "decorative",
+				"uid": "3ce6efbc-ecc3-4668-948f-777d34adb3fa"
+			},
+			{
+				"name": "Cupboard",
+				"slug": "cupboard",
+				"uid": "41b44d9d-0b5d-4ceb-8381-ce2bd4b52a02"
+			},
+			{
+				"name": "Lowpoly",
+				"slug": "lowpoly",
+				"uid": "451806dc-649e-43b7-9c2e-a54485de14b6"
+			},
+			{
+				"name": "Decoration",
+				"slug": "decoration",
+				"uid": "5824ee7b-342c-4305-a2e8-f9a8a7f41c99"
+			},
+			{
+				"name": "Decor",
+				"slug": "decor",
+				"uid": "5df3e9da-682e-4d94-82ec-759f07c197dd"
+			},
+			{
+				"name": "House",
+				"slug": "house",
+				"uid": "6596d504-e433-42e9-a760-b829827af869"
+			},
+			{
+				"name": "Wardrobe",
+				"slug": "wardrobe",
+				"uid": "7a7a9c1c-6421-495e-9db6-0d120bb0406e"
+			},
+			{
+				"name": "Home",
+				"slug": "home",
+				"uid": "901cd72d-3193-480e-84f3-be1106297178"
+			},
+			{
+				"name": "Interior",
+				"slug": "interior",
+				"uid": "9c40f9f3-f44a-4fba-8221-80d7ef90592a"
+			},
+			{
+				"name": "Wood",
+				"slug": "wood",
+				"uid": "bcd38165-4b32-484d-bce7-c6cdaf827f77"
+			},
+			{
+				"name": "Simple",
+				"slug": "simple",
+				"uid": "cbf23df6-c55a-49e8-b070-65fa6be73d4c"
+			}
+		],
+		"category":
+		{
+			"name": "Furniture & Fixtures",
+			"path": "furniture-fixtures",
+			"slug": "furniture-fixtures",
+			"uid": "3da1d2bd-49b4-4bc5-90e5-d31dadec3bd0"
+		},
+		"assetFormats": [
+			{
+				"assetFormatType":
+				{
+					"name": "FBX",
+					"groupName": "3D Exchange Formats",
+					"code": "fbx",
+					"icon": "cube",
+					"extensions": [
+						"fbx"
+					]
+				}
+			},
+			{
+				"assetFormatType":
+				{
+					"name": "Converted Files",
+					"groupName": "",
+					"code": "converted-files",
+					"icon": "cube",
+					"extensions": [
+						"gltf",
+						"glb",
+						"usdz"
+					]
+				}
+			}
+		],
+		"_PluginMetas":
+		{
+			"apiDataVersion": "0.0.1",
+			"entitlementUid": "af50a090-20aa-4369-9bca-a76c7e97ca80",
+			"cacheSize": 0,
+			"downloaded": []
+		}
+	},
+	"target": "",
+	"quality": "",
+	"format": "fbx",
+	"fileId": "263f8a75-cc52-4bf3-bd12-9e613b3ba2d8",
+	"platformIncluded": "",
+	"distributionPointBaseUrls": [],
+	"distributionMethod": "",
+	"entitlementUid": "af50a090-20aa-4369-9bca-a76c7e97ca80",
+	"invertedNormal": false,
+	"isConverted": false,
+	"isQuixel": false
+}

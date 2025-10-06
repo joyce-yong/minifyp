@@ -1,0 +1,78 @@
+{
+	"assetNamespace": "fab",
+	"listing":
+	{
+		"averageRating": 0,
+		"createdAt": "",
+		"description": "<p><span>I saw my old Demo Reel and had the idea to change it a little bit. For this I designed a nostalgic environment from scratch and this is the final result.</span></p>",
+		"isAiForbidden": false,
+		"isAiGenerated": false,
+		"lastUpdatedAt": "2025-02-24T11:44:31.099160Z",
+		"listingType": "3d-model",
+		"media": "",
+		"publishedAt": "2024-10-04T15:02:04.889635Z",
+		"reviewCount": 0,
+		"thumbnail": "https://media.fab.com/image_previews/gallery_images/a9a1849a-c3e7-45dc-ac97-d3bab21305f8/4e2f9792-6ca4-47dd-a8f9-64ff441983d9.jpg",
+		"title": "Nostalgic Place",
+		"uid": "e8ebf782-b7c7-4845-bb44-fc4f29dd4c05",
+		"updatedAt": "",
+		"user":
+		{
+			"coverImageUrl": "https://cdn1.epicgames.com/fab/seller/o-d8s3fec5jl4lay9dpdddez3pz6lwv3/backgroundImage/blob-1920x540-f4caef5bdb25b57ac90c07ffb5ea98a6.jpg",
+			"profileImageUrl": "https://cdn1.epicgames.com/fab/seller/o-d8s3fec5jl4lay9dpdddez3pz6lwv3/profile/0717799f.png",
+			"sellerName": "Ivannia Saz",
+			"uid": "c4f08927-07ab-421c-95dc-59e25c4bba70"
+		},
+		"tags": [
+			{
+				"name": "Stylized",
+				"slug": "stylized",
+				"uid": "b584e222-c5bf-43b3-b9ed-f937eaf169c1"
+			},
+			{
+				"name": "Room",
+				"slug": "room",
+				"uid": "eb8d1a47-05e1-4746-9da4-3f71da863dcb"
+			}
+		],
+		"category":
+		{
+			"name": "Buildings & Architecture",
+			"path": "buildings-architecture",
+			"slug": "buildings-architecture",
+			"uid": "eec3bdd5-ba7a-45a8-b15d-67462b9630f6"
+		},
+		"assetFormats": [
+			{
+				"assetFormatType":
+				{
+					"name": "FBX",
+					"groupName": "3D Exchange Formats",
+					"code": "fbx",
+					"icon": "cube",
+					"extensions": [
+						"fbx"
+					]
+				}
+			}
+		],
+		"_PluginMetas":
+		{
+			"apiDataVersion": "0.0.1",
+			"entitlementUid": "086cf2c9-2a96-4168-b41b-cf7167cc1274",
+			"cacheSize": 0,
+			"downloaded": []
+		}
+	},
+	"target": "",
+	"quality": "",
+	"format": "fbx",
+	"fileId": "a0b27cd5-e5ac-4f88-8c56-63fae41ff0a0",
+	"platformIncluded": "",
+	"distributionPointBaseUrls": [],
+	"distributionMethod": "",
+	"entitlementUid": "086cf2c9-2a96-4168-b41b-cf7167cc1274",
+	"invertedNormal": false,
+	"isConverted": false,
+	"isQuixel": false
+}

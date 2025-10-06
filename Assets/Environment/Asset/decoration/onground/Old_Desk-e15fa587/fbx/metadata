@@ -1,0 +1,88 @@
+{
+	"assetNamespace": "fab",
+	"listing":
+	{
+		"averageRating": 5,
+		"createdAt": "",
+		"description": "<p>low poly PBR texture feel free to use it.</p><p>support me on my patreon :D<a target=\"_blank\" href=\"https://www.patreon.com/c/kloworks\" rel=\"noopener noreferrer nofollow\">https://www.patreon.com/c/kloworks</a></p>",
+		"isAiForbidden": false,
+		"isAiGenerated": false,
+		"lastUpdatedAt": "2025-05-16T14:32:47.591446Z",
+		"listingType": "3d-model",
+		"media": "",
+		"publishedAt": "2025-05-16T14:32:43.911625Z",
+		"reviewCount": 1,
+		"thumbnail": "https://media.fab.com/image_previews/gallery_images/2bbcef9b-e119-48c5-91b7-e76b5d9124fe/e4a84746-4031-479d-8989-a6d4471ad51b.jpg",
+		"title": "Old Desk",
+		"uid": "e15fa587-6802-47ef-86bc-e3b45e0c7bef",
+		"updatedAt": "",
+		"user":
+		{
+			"coverImageUrl": "",
+			"profileImageUrl": "https://cdn1.epicgames.com/fab/seller/o-5tuuy2aqr5hcamedge2jyp2bsc48gc/profile/edd2cba7.png",
+			"sellerName": "KloWorks",
+			"uid": "0407e442-dd83-451d-ad81-6513e305217e"
+		},
+		"tags": [
+			{
+				"name": "Pbr",
+				"slug": "pbr",
+				"uid": "080edd3b-d10a-4f32-ace2-30f5baa480dc"
+			},
+			{
+				"name": "Lowpoly",
+				"slug": "lowpoly",
+				"uid": "451806dc-649e-43b7-9c2e-a54485de14b6"
+			},
+			{
+				"name": "Office",
+				"slug": "office",
+				"uid": "97e8ad1e-f7c1-4bc3-9293-bb9f268d5d60"
+			},
+			{
+				"name": "Desk",
+				"slug": "desk",
+				"uid": "e3fb83c1-bd6c-4f09-a01a-5fb4359dbe21"
+			}
+		],
+		"category":
+		{
+			"name": "Furniture & Fixtures",
+			"path": "furniture-fixtures",
+			"slug": "furniture-fixtures",
+			"uid": "3da1d2bd-49b4-4bc5-90e5-d31dadec3bd0"
+		},
+		"assetFormats": [
+			{
+				"assetFormatType":
+				{
+					"name": "FBX",
+					"groupName": "3D Exchange Formats",
+					"code": "fbx",
+					"icon": "cube",
+					"extensions": [
+						"fbx"
+					]
+				}
+			}
+		],
+		"_PluginMetas":
+		{
+			"apiDataVersion": "0.0.1",
+			"entitlementUid": "797dc4ce-0260-4a54-8492-b6abff45dfd6",
+			"cacheSize": 0,
+			"downloaded": []
+		}
+	},
+	"target": "",
+	"quality": "",
+	"format": "fbx",
+	"fileId": "01bafbf0-4877-4221-8b9d-4d8a3a222afe",
+	"platformIncluded": "",
+	"distributionPointBaseUrls": [],
+	"distributionMethod": "",
+	"entitlementUid": "797dc4ce-0260-4a54-8492-b6abff45dfd6",
+	"invertedNormal": false,
+	"isConverted": false,
+	"isQuixel": false
+}

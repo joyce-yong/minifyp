@@ -1,0 +1,169 @@
+{
+	"assetNamespace": "fab",
+	"listing":
+	{
+		"averageRating": 5,
+		"createdAt": "",
+		"description": "<p>A triple decker Bunk Bed with spring mattresses for Kids and Adults alike.</p><p>Made from environment friendly bamboo rods and sufficient side protection against mid-sleep rollover falls</p><p></p><p><strong>Get your bunk bed today!</strong></p>",
+		"isAiForbidden": true,
+		"isAiGenerated": false,
+		"lastUpdatedAt": "2025-02-24T12:23:06.040085Z",
+		"listingType": "3d-model",
+		"media": "https://media.fab.com/image_previews/gallery_images/00b6e3cb-e166-48b8-ab8c-7cf9e63851b2/8042ca14-5ee5-4420-a117-0a46189ea685.png",
+		"publishedAt": "2024-12-07T14:06:21.297414Z",
+		"reviewCount": 1,
+		"thumbnail": "https://media.fab.com/image_previews/gallery_images/8db66410-3fba-4a87-92ab-b1196673801a/db3e7d24-29b7-4e24-a6e5-d63b1367b88a.png",
+		"title": "Tripple Deck Bunk Bed | Bamboo Frame | Loft | Sleeper | Ladder Bed",
+		"uid": "6e39fe31-28ab-42b1-8421-95cc22bc5b52",
+		"updatedAt": "",
+		"user":
+		{
+			"coverImageUrl": "https://cdn1.epicgames.com/fab/seller/o-9qed5zb9rjn5722kpqsb96hz3vcdvb/cover/66de8d5b.png",
+			"profileImageUrl": "https://cdn1.epicgames.com/fab/seller/o-9qed5zb9rjn5722kpqsb96hz3vcdvb/profileImage/blob-500x500-57d6a000f8c26429c0886d0a2cd313a4.jpg",
+			"sellerName": "Mohit Akundi",
+			"uid": "820c4b1b-da3c-4d53-b0da-3472ae6a7887"
+		},
+		"tags": [
+			{
+				"name": "Pbr",
+				"slug": "pbr",
+				"uid": "080edd3b-d10a-4f32-ace2-30f5baa480dc"
+			},
+			{
+				"name": "Deck",
+				"slug": "deck",
+				"uid": "0a58e18c-8065-47a4-b39f-d51764546adc"
+			},
+			{
+				"name": "Army",
+				"slug": "army",
+				"uid": "145920d1-f66b-46e1-894b-ca6c9f62b704"
+			},
+			{
+				"name": "Bamboo",
+				"slug": "bamboo",
+				"uid": "1631b1e8-f9b0-46c7-bd30-77ace82059a9"
+			},
+			{
+				"name": "Bedroom",
+				"slug": "bedroom",
+				"uid": "265cf2af-2ca9-409d-99b1-bbab3e7fa99e"
+			},
+			{
+				"name": "Playroom",
+				"slug": "playroom",
+				"uid": "39a4eac4-88be-4a4f-b435-2944a1f7926c"
+			},
+			{
+				"name": "Loft",
+				"slug": "loft",
+				"uid": "4f9fd555-3b2d-485c-8b2f-b73ca85ad8b1"
+			},
+			{
+				"name": "Sleep",
+				"slug": "sleep",
+				"uid": "699f3c5f-9b08-4a93-b121-65f1d1f411a7"
+			},
+			{
+				"name": "Nature",
+				"slug": "nature",
+				"uid": "8d858676-26d9-4329-b3f7-0b3a4107b7f9"
+			},
+			{
+				"name": "Bed",
+				"slug": "bed",
+				"uid": "90095247-c0c5-495a-bc23-1eaa1b401a44"
+			},
+			{
+				"name": "Realistic",
+				"slug": "realistic",
+				"uid": "93b0d3f1-a96c-4d68-9d44-69a313519e32"
+			},
+			{
+				"name": "Waitingroom",
+				"slug": "waitingroom",
+				"uid": "98dc4199-76ea-46f6-806c-ef417036bf35"
+			},
+			{
+				"name": "Bunk",
+				"slug": "bunk",
+				"uid": "ac7d81e6-29ab-4514-8346-58cd49847d01"
+			},
+			{
+				"name": "Environmental",
+				"slug": "environmental",
+				"uid": "b7b23635-a929-4e1a-891b-7219775767ac"
+			},
+			{
+				"name": "Room",
+				"slug": "room",
+				"uid": "eb8d1a47-05e1-4746-9da4-3f71da863dcb"
+			}
+		],
+		"category":
+		{
+			"name": "Furniture & Fixtures",
+			"path": "furniture-fixtures",
+			"slug": "furniture-fixtures",
+			"uid": "3da1d2bd-49b4-4bc5-90e5-d31dadec3bd0"
+		},
+		"assetFormats": [
+			{
+				"assetFormatType":
+				{
+					"name": "Blender",
+					"groupName": "3D DCC Formats",
+					"code": "blender",
+					"icon": "blender",
+					"extensions": [
+						"blend"
+					]
+				}
+			},
+			{
+				"assetFormatType":
+				{
+					"name": "Converted Files",
+					"groupName": "",
+					"code": "converted-files",
+					"icon": "cube",
+					"extensions": [
+						"gltf",
+						"glb",
+						"usdz"
+					]
+				}
+			},
+			{
+				"assetFormatType":
+				{
+					"name": "FBX",
+					"groupName": "3D Exchange Formats",
+					"code": "fbx",
+					"icon": "cube",
+					"extensions": [
+						"fbx"
+					]
+				}
+			}
+		],
+		"_PluginMetas":
+		{
+			"apiDataVersion": "0.0.1",
+			"entitlementUid": "56330755-d9de-4c7d-be50-62b8471b34d0",
+			"cacheSize": 0,
+			"downloaded": []
+		}
+	},
+	"target": "",
+	"quality": "",
+	"format": "fbx",
+	"fileId": "8cdc9125-ce26-40be-a446-f806046a6a1d",
+	"platformIncluded": "",
+	"distributionPointBaseUrls": [],
+	"distributionMethod": "",
+	"entitlementUid": "56330755-d9de-4c7d-be50-62b8471b34d0",
+	"invertedNormal": false,
+	"isConverted": false,
+	"isQuixel": false
+}

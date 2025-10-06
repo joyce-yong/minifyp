@@ -1,0 +1,102 @@
+{
+	"assetNamespace": "fab",
+	"listing":
+	{
+		"averageRating": 5,
+		"createdAt": "",
+		"description": "<p>Simple Kitchen Dresser asset created with the use of a trimsheet.</p>",
+		"isAiForbidden": false,
+		"isAiGenerated": false,
+		"lastUpdatedAt": "2025-09-13T10:19:08.433772Z",
+		"listingType": "3d-model",
+		"media": "https://media.fab.com/image_previews/gallery_images/92ad5870-fc98-4fdf-aca8-98d3032bc9ea/b2adde64-cdd2-4af1-8eff-c25706d1cc75.jpeg",
+		"publishedAt": "2025-09-13T10:19:00.828257Z",
+		"reviewCount": 1,
+		"thumbnail": "https://media.fab.com/image_previews/gallery_images/a3fc78a2-d68c-4697-9401-797d0d81a578/42266a4e-45cc-4678-837c-cec84d6b31b6.jpeg",
+		"title": "Kitchen Dresser",
+		"uid": "452d31b0-6580-4cf1-a968-ddba96eecf71",
+		"updatedAt": "",
+		"user":
+		{
+			"coverImageUrl": "",
+			"profileImageUrl": "https://cdn1.epicgames.com/fab/seller/o-jampr48g53ws2tvg39jknn3kshsvuw/profileImage/blob-500x500-9748340019de238558f34c8e8f16f614.jpg",
+			"sellerName": "RJDucats",
+			"uid": "b0886e91-fd1e-45f7-9844-6dd5af0ef215"
+		},
+		"tags": [
+			{
+				"name": "Furniture",
+				"slug": "furniture",
+				"uid": "0f6b3b40-8715-4963-b755-0160e80cf12c"
+			},
+			{
+				"name": "Wooden",
+				"slug": "wooden",
+				"uid": "9f55f27e-d3d7-4892-abbd-0a73b7ff3663"
+			},
+			{
+				"name": "Kitchen",
+				"slug": "kitchen",
+				"uid": "cb9f1bee-d953-4e6f-9c1d-f47418c1e5a2"
+			},
+			{
+				"name": "Dresser",
+				"slug": "dresser",
+				"uid": "dbd84a51-7312-4273-8ad1-fe56b57f5c61"
+			}
+		],
+		"category":
+		{
+			"name": "Furniture & Fixtures",
+			"path": "furniture-fixtures",
+			"slug": "furniture-fixtures",
+			"uid": "3da1d2bd-49b4-4bc5-90e5-d31dadec3bd0"
+		},
+		"assetFormats": [
+			{
+				"assetFormatType":
+				{
+					"name": "FBX",
+					"groupName": "3D Exchange Formats",
+					"code": "fbx",
+					"icon": "cube",
+					"extensions": [
+						"fbx"
+					]
+				}
+			},
+			{
+				"assetFormatType":
+				{
+					"name": "Converted Files",
+					"groupName": "",
+					"code": "converted-files",
+					"icon": "cube",
+					"extensions": [
+						"gltf",
+						"glb",
+						"usdz"
+					]
+				}
+			}
+		],
+		"_PluginMetas":
+		{
+			"apiDataVersion": "0.0.1",
+			"entitlementUid": "8b123199-df1d-40ae-a95e-ffeac023d22c",
+			"cacheSize": 0,
+			"downloaded": []
+		}
+	},
+	"target": "",
+	"quality": "",
+	"format": "fbx",
+	"fileId": "6684c46c-05fd-4e2e-9b99-7635c053eb49",
+	"platformIncluded": "",
+	"distributionPointBaseUrls": [],
+	"distributionMethod": "",
+	"entitlementUid": "8b123199-df1d-40ae-a95e-ffeac023d22c",
+	"invertedNormal": false,
+	"isConverted": false,
+	"isQuixel": false
+}

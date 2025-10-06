@@ -1,0 +1,164 @@
+{
+	"assetNamespace": "fab",
+	"listing":
+	{
+		"averageRating": 0,
+		"createdAt": "",
+		"description": "<p><strong>Texel density:</strong> 5214 px/m</p><p><strong>Physical size:</strong> 0.61m x 0.59m x 0.59m</p><p><strong>Mesh type:</strong> Closed mesh</p><p><strong>Maps:</strong> Basecolor Displacement<em>(high tier only)</em> Gloss Normal Cavity AO Specular Roughness Bump</p> <p><span>Create high-quality 3D experiences and worlds with Quixel Megascans. Browse thousands of photorealistic assets and environments, including materials, 3D assets, plants, decals, and more available </span><a target=\"_blank\" href=\"https://www.fab.com/sellers/Quixel\" rel=\"noopener noreferrer nofollow\"><span><u>here</u></span></a><span> on Fab.</span></p><p></p><p><span>For any questions or support regarding Quixel content, please get in touch </span><a target=\"_blank\" href=\"https://support.fab.com/s/?ProductOrigin=1PC\" rel=\"noopener noreferrer nofollow\"><span><u>here</u></span></a><span>.</span></p>",
+		"isAiForbidden": true,
+		"isAiGenerated": false,
+		"lastUpdatedAt": "2025-02-24T12:18:19.493999Z",
+		"listingType": "3d-model",
+		"media": "https://media.fab.com/image_previews/gallery_images/1be17cd6-3e27-41db-9ac9-7baf75b717e6/d6ebc0f9-d0f5-4597-b0fe-8b54352997a6.jpeg",
+		"publishedAt": "2024-10-12T07:45:13.621204Z",
+		"reviewCount": 0,
+		"thumbnail": "https://media.fab.com/image_previews/gallery_images/0df0b83b-6cf0-4796-a60c-03bdb9653d74/5702cb3b-1f34-415d-9742-d13d9dc58e54.jpeg",
+		"title": "Sandbag Pile",
+		"uid": "5bb343d3-f805-4a3b-bced-d3cb7e5692e2",
+		"updatedAt": "",
+		"user":
+		{
+			"coverImageUrl": "https://cdn1.epicgames.com/fab/seller/o-cbf5bbfdb340d6a839b5520cb31328/cover/0edd3540.png",
+			"profileImageUrl": "https://cdn1.epicgames.com/fab/seller/o-cbf5bbfdb340d6a839b5520cb31328/profile/39e5dabd.png",
+			"sellerName": "Quixel",
+			"uid": "45ea3429-f62c-4f17-aa15-5bb9dfcd0079"
+		},
+		"tags": [
+			{
+				"name": "Street",
+				"slug": "street",
+				"uid": "1714b21a-573d-4d0e-aa60-faa1144f56e0"
+			},
+			{
+				"name": "Dusty",
+				"slug": "dusty",
+				"uid": "388f0e97-4571-44c2-bad6-59f46cde5a9d"
+			},
+			{
+				"name": "Dirty",
+				"slug": "dirty",
+				"uid": "54b617d2-d7e9-439d-9bd8-2787675a47e3"
+			},
+			{
+				"name": "Sandbag",
+				"slug": "sandbag",
+				"uid": "5d1bab9f-a7ba-4a5f-b9a1-96d0b1b30a5e"
+			},
+			{
+				"name": "Barrier",
+				"slug": "barrier",
+				"uid": "62e7d8f1-4c12-4980-81bb-5f2426692688"
+			},
+			{
+				"name": "Bag",
+				"slug": "bag",
+				"uid": "a9c57d11-656d-4b02-af61-7b14c7f199d3"
+			},
+			{
+				"name": "Wall",
+				"slug": "wall",
+				"uid": "b138d7ed-637e-4c63-b1dd-2295e069f06f"
+			},
+			{
+				"name": "Military",
+				"slug": "military",
+				"uid": "d72bfec9-cfd7-44c0-85d9-eac5049405aa"
+			},
+			{
+				"name": "Sand",
+				"slug": "sand",
+				"uid": "e3a49f8e-3390-4d47-a4cf-0bb3b117b7b9"
+			}
+		],
+		"category":
+		{
+			"name": "Military",
+			"path": "objects-decor/military",
+			"slug": "objects-decor--military",
+			"uid": "8b1d803e-f51b-40ac-8872-75d0c33a1584"
+		},
+		"assetFormats": [
+			{
+				"assetFormatType":
+				{
+					"name": "FBX",
+					"groupName": "3D Exchange Formats",
+					"code": "fbx",
+					"icon": "cube",
+					"extensions": [
+						"fbx"
+					]
+				}
+			},
+			{
+				"assetFormatType":
+				{
+					"name": "Converted Files",
+					"groupName": "",
+					"code": "converted-files",
+					"icon": "cube",
+					"extensions": [
+						"gltf",
+						"glb",
+						"usdz"
+					]
+				}
+			},
+			{
+				"assetFormatType":
+				{
+					"name": "ZBrush",
+					"groupName": "3D DCC Formats",
+					"code": "z-brush",
+					"icon": "zbrush",
+					"extensions": [
+						"zbp",
+						"ztl"
+					]
+				}
+			},
+			{
+				"assetFormatType":
+				{
+					"name": "Additional files",
+					"groupName": "Other Formats",
+					"code": "additional-files",
+					"icon": "file",
+					"extensions": [
+						"zip"
+					]
+				}
+			},
+			{
+				"assetFormatType":
+				{
+					"name": "GLTF",
+					"groupName": "3D Exchange Formats",
+					"code": "gltf",
+					"icon": "cube",
+					"extensions": [
+						"gltf"
+					]
+				}
+			}
+		],
+		"_PluginMetas":
+		{
+			"apiDataVersion": "0.0.1",
+			"entitlementUid": "f7f4e708-8cf0-4cfc-91e6-28ffa02ed187",
+			"cacheSize": 0,
+			"downloaded": []
+		}
+	},
+	"target": "",
+	"quality": "mid",
+	"format": "fbx",
+	"fileId": "0bd38632-6098-49f6-9a7d-a087aea6a128",
+	"platformIncluded": "",
+	"distributionPointBaseUrls": [],
+	"distributionMethod": "",
+	"entitlementUid": "f7f4e708-8cf0-4cfc-91e6-28ffa02ed187",
+	"invertedNormal": false,
+	"isConverted": false,
+	"isQuixel": true
+}

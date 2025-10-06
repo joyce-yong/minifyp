@@ -1,0 +1,97 @@
+{
+	"assetNamespace": "fab",
+	"listing":
+	{
+		"averageRating": 0,
+		"createdAt": "",
+		"description": "<ul><li><p>Candle</p></li><li><p>In Holder</p></li><li><p>Low Memory</p></li></ul>",
+		"isAiForbidden": false,
+		"isAiGenerated": false,
+		"lastUpdatedAt": "2025-02-24T12:20:43.186240Z",
+		"listingType": "3d-model",
+		"media": "https://media.fab.com/image_previews/gallery_images/479352f1-d48d-4656-b2eb-81754bd78c18/f20ad99b-1615-46e7-8157-a5a67fd9eed2.png",
+		"publishedAt": "2024-12-04T07:46:10.203151Z",
+		"reviewCount": 0,
+		"thumbnail": "https://media.fab.com/image_previews/gallery_images/bfa12077-8c05-4680-a4a8-58f378ca51c3/ae86c736-0e79-45d6-ad13-1a62bbc57d75.png",
+		"title": "Candle",
+		"uid": "1d0639c6-a50c-452b-85ca-7a934f865113",
+		"updatedAt": "",
+		"user":
+		{
+			"coverImageUrl": "https://cdn1.epicgames.com/fab/seller/o-f45yclwtupzdhrbk6wmda52mvcn5b2/backgroundImage/blob-1920x540-97c93434848c2ef77322c44cd75329d7.jpg",
+			"profileImageUrl": "https://cdn1.epicgames.com/fab/seller/o-f45yclwtupzdhrbk6wmda52mvcn5b2/profileImage/blob-500x500-8e644fc371d8978ad3d4c8af7554629a.jpg",
+			"sellerName": "D Rock Games LLC",
+			"uid": "29f1c079-690d-4ad8-a3c6-5112de0fe444"
+		},
+		"tags": [
+			{
+				"name": "Candleholder",
+				"slug": "candleholder",
+				"uid": "4b4f4e51-654c-4e2f-8e3d-b9dac172e3c2"
+			},
+			{
+				"name": "Candlestick",
+				"slug": "candlestick",
+				"uid": "990b1d83-0e05-4fca-be65-231de576ff3a"
+			},
+			{
+				"name": "Candle",
+				"slug": "candle",
+				"uid": "e2522564-bec3-47bc-aef9-a42fa2a33008"
+			}
+		],
+		"category":
+		{
+			"name": "Furniture & Fixtures",
+			"path": "furniture-fixtures",
+			"slug": "furniture-fixtures",
+			"uid": "3da1d2bd-49b4-4bc5-90e5-d31dadec3bd0"
+		},
+		"assetFormats": [
+			{
+				"assetFormatType":
+				{
+					"name": "FBX",
+					"groupName": "3D Exchange Formats",
+					"code": "fbx",
+					"icon": "cube",
+					"extensions": [
+						"fbx"
+					]
+				}
+			},
+			{
+				"assetFormatType":
+				{
+					"name": "Converted Files",
+					"groupName": "",
+					"code": "converted-files",
+					"icon": "cube",
+					"extensions": [
+						"gltf",
+						"glb",
+						"usdz"
+					]
+				}
+			}
+		],
+		"_PluginMetas":
+		{
+			"apiDataVersion": "0.0.1",
+			"entitlementUid": "e11db2ca-70b0-4ac3-ab19-08a4a9d64c97",
+			"cacheSize": 0,
+			"downloaded": []
+		}
+	},
+	"target": "",
+	"quality": "",
+	"format": "fbx",
+	"fileId": "54dccfcd-cb7c-49f6-bf3a-dd887e880ac3",
+	"platformIncluded": "",
+	"distributionPointBaseUrls": [],
+	"distributionMethod": "",
+	"entitlementUid": "e11db2ca-70b0-4ac3-ab19-08a4a9d64c97",
+	"invertedNormal": false,
+	"isConverted": false,
+	"isQuixel": false
+}

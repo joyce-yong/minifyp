@@ -1,0 +1,184 @@
+{
+	"assetNamespace": "fab",
+	"listing":
+	{
+		"averageRating": 0,
+		"createdAt": "",
+		"description": "<p><strong>Texel density:</strong> 5940 px/m</p><p><strong>Physical size:</strong> 0.26m x 0.46m x 0.18m</p><p><strong>Mesh type:</strong> Closed mesh</p><p><strong>Maps:</strong> Bump Displacement<em>(high tier only)</em> Normal Roughness Basecolor Gloss AO Cavity Specular</p> <p><span>Create high-quality 3D experiences and worlds with Quixel Megascans. Browse thousands of photorealistic assets and environments, including materials, 3D assets, plants, decals, and more available </span><a target=\"_blank\" href=\"https://www.fab.com/sellers/Quixel\" rel=\"noopener noreferrer nofollow\"><span><u>here</u></span></a><span> on Fab.</span></p><p></p><p><span>For any questions or support regarding Quixel content, please get in touch </span><a target=\"_blank\" href=\"https://support.fab.com/s/?ProductOrigin=1PC\" rel=\"noopener noreferrer nofollow\"><span><u>here</u></span></a><span>.</span></p>",
+		"isAiForbidden": true,
+		"isAiGenerated": false,
+		"lastUpdatedAt": "2025-02-24T12:15:50.510268Z",
+		"listingType": "3d-model",
+		"media": "https://media.fab.com/image_previews/gallery_images/3e4f73ae-dde3-4da7-a63f-11cdb47c9183/6a6259ab-0df4-46d9-92b5-3123cd26c0e3.jpeg",
+		"publishedAt": "2024-10-11T20:05:01.597832Z",
+		"reviewCount": 0,
+		"thumbnail": "https://media.fab.com/image_previews/gallery_images/2e6338cc-24b3-40f0-99bd-e498fe6df212/5615009c-ff39-4d95-823c-c65735dbedc9.jpeg",
+		"title": "Old Metal Pot",
+		"uid": "57d3deea-f02b-4959-bd65-ceeda7ed189b",
+		"updatedAt": "",
+		"user":
+		{
+			"coverImageUrl": "https://cdn1.epicgames.com/fab/seller/o-cbf5bbfdb340d6a839b5520cb31328/cover/0edd3540.png",
+			"profileImageUrl": "https://cdn1.epicgames.com/fab/seller/o-cbf5bbfdb340d6a839b5520cb31328/profile/39e5dabd.png",
+			"sellerName": "Quixel",
+			"uid": "45ea3429-f62c-4f17-aa15-5bb9dfcd0079"
+		},
+		"tags": [
+			{
+				"name": "Partner",
+				"slug": "partner",
+				"uid": "13353aed-c0bc-469e-819c-4f251ec60a15"
+			},
+			{
+				"name": "Village",
+				"slug": "village",
+				"uid": "1a7e8ad9-5f17-4b0e-abf7-335cec8942d8"
+			},
+			{
+				"name": "Weathered",
+				"slug": "weathered",
+				"uid": "1b898690-ea9c-4c08-9dcf-4f1c7582d1b5"
+			},
+			{
+				"name": "Rural",
+				"slug": "rural",
+				"uid": "38048c85-e4e5-4e3d-a0c6-ec8dff3e5e00"
+			},
+			{
+				"name": "Dusty",
+				"slug": "dusty",
+				"uid": "388f0e97-4571-44c2-bad6-59f46cde5a9d"
+			},
+			{
+				"name": "Metal",
+				"slug": "metal",
+				"uid": "55165238-19a2-4184-85f1-e8650bd2a38d"
+			},
+			{
+				"name": "House",
+				"slug": "house",
+				"uid": "6596d504-e433-42e9-a760-b829827af869"
+			},
+			{
+				"name": "Content",
+				"slug": "content",
+				"uid": "81f7e023-0418-4373-99c5-c1bbebcde551"
+			},
+			{
+				"name": "Old",
+				"slug": "old",
+				"uid": "975b1521-db01-43ed-a939-c2c2da5027b1"
+			},
+			{
+				"name": "Kitchen",
+				"slug": "kitchen",
+				"uid": "cb9f1bee-d953-4e6f-9c1d-f47418c1e5a2"
+			},
+			{
+				"name": "Farm",
+				"slug": "farm",
+				"uid": "d24304ec-e02e-44c8-a23d-126b9cd3c715"
+			},
+			{
+				"name": "Metallic",
+				"slug": "metallic",
+				"uid": "d5b82134-c49f-443e-8b37-7847c2bd3605"
+			},
+			{
+				"name": "Iron",
+				"slug": "iron",
+				"uid": "e9a104b1-11d4-4f6f-b459-652f4692414e"
+			}
+		],
+		"category":
+		{
+			"name": "Tools, Objects & Decor",
+			"path": "objects-decor",
+			"slug": "objects-decor",
+			"uid": "d22d8b61-3aa8-4558-a6d1-c2a18543e0fd"
+		},
+		"assetFormats": [
+			{
+				"assetFormatType":
+				{
+					"name": "FBX",
+					"groupName": "3D Exchange Formats",
+					"code": "fbx",
+					"icon": "cube",
+					"extensions": [
+						"fbx"
+					]
+				}
+			},
+			{
+				"assetFormatType":
+				{
+					"name": "Converted Files",
+					"groupName": "",
+					"code": "converted-files",
+					"icon": "cube",
+					"extensions": [
+						"gltf",
+						"glb",
+						"usdz"
+					]
+				}
+			},
+			{
+				"assetFormatType":
+				{
+					"name": "ZBrush",
+					"groupName": "3D DCC Formats",
+					"code": "z-brush",
+					"icon": "zbrush",
+					"extensions": [
+						"zbp",
+						"ztl"
+					]
+				}
+			},
+			{
+				"assetFormatType":
+				{
+					"name": "Additional files",
+					"groupName": "Other Formats",
+					"code": "additional-files",
+					"icon": "file",
+					"extensions": [
+						"zip"
+					]
+				}
+			},
+			{
+				"assetFormatType":
+				{
+					"name": "GLTF",
+					"groupName": "3D Exchange Formats",
+					"code": "gltf",
+					"icon": "cube",
+					"extensions": [
+						"gltf"
+					]
+				}
+			}
+		],
+		"_PluginMetas":
+		{
+			"apiDataVersion": "0.0.1",
+			"entitlementUid": "0b75eac4-feb5-4d9a-9ba5-b0d91d723971",
+			"cacheSize": 0,
+			"downloaded": []
+		}
+	},
+	"target": "",
+	"quality": "mid",
+	"format": "fbx",
+	"fileId": "965b8497-2660-4922-a5d6-cdc8fa67d65d",
+	"platformIncluded": "",
+	"distributionPointBaseUrls": [],
+	"distributionMethod": "",
+	"entitlementUid": "0b75eac4-feb5-4d9a-9ba5-b0d91d723971",
+	"invertedNormal": false,
+	"isConverted": false,
+	"isQuixel": true
+}

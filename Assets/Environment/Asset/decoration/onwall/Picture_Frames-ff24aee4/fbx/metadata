@@ -1,0 +1,169 @@
+{
+	"assetNamespace": "fab",
+	"listing":
+	{
+		"averageRating": 0,
+		"createdAt": "",
+		"description": "<p>Part of the <a target=\"_blank\" href=\"https://www.fab.com/listings/d82e5797-0655-425f-b7ae-3f9e9c4d3b3f\" rel=\"noopener noreferrer nofollow\"><strong>Bedroom Furniture Props</strong></a></p><p></p><p><strong>Picture Frames </strong>includes 2 different meshes.</p><p></p><p><strong>Formats</strong>: FBX, Obj, Unitypackage 2021.3.15 or higher (Universal Render Pipeline), Marmoset Toolbag scene 3.08 (.tbscene), Textures set</p><p><strong>Textures resolution</strong>: 2048x2048px. <strong>Textures format</strong>: TGA.</p><p></p><p><strong>Textures set includes</strong>:</p><p></p><ul><li><p>Metal Roughness: BaseColor, Roughness, Metallic, Normal, Height, AO.</p></li><li><p>Unity (Standart Metallic): AlbedoTransparency, AO, Normal, MetallicSmoothness.</p></li><li><p>Unity HDRP: BaseColor, MaskMap, Normal.</p></li><li><p>Unreal Engine: BaseColor, OcclusionRoughnessMetallic, Normal.</p></li></ul><p></p><p><strong>Polycount</strong>:</p><p></p><p>Frame_01 mesh - 178 tris</p><p>Frame_02 mesh - 1120 tris</p><p></p><p><strong>UVs</strong>: channel 1: overlapping; channel 2: non-overlapping (for baking lightmaps).</p>",
+		"isAiForbidden": true,
+		"isAiGenerated": false,
+		"lastUpdatedAt": "2025-02-24T12:00:22.178565Z",
+		"listingType": "3d-model",
+		"media": "https://media.fab.com/image_previews/gallery_images/23a3cd55-7c96-4246-bf57-698b8a69a522/52cfd320-abf5-4f55-8267-cca5b7e10717.png",
+		"publishedAt": "2024-11-09T06:08:31.622209Z",
+		"reviewCount": 0,
+		"thumbnail": "https://media.fab.com/image_previews/gallery_images/f074fdb6-160d-4dff-8c96-49daab6449d7/228420e7-8b63-4d78-9a0e-fb8cf4ef58b3.png",
+		"title": "Picture Frames",
+		"uid": "ff24aee4-2ae2-4995-a411-ab0e2d3b1068",
+		"updatedAt": "",
+		"user":
+		{
+			"coverImageUrl": "https://cdn1.epicgames.com/fab/seller/o-k9spfukj8c687nf96qbfayrajdsgk2/cover/040c30b5.jpg",
+			"profileImageUrl": "https://cdn1.epicgames.com/fab/seller/o-k9spfukj8c687nf96qbfayrajdsgk2/profile/7221c90f.jpg",
+			"sellerName": "Tatiana Gladkaya",
+			"uid": "f9299212-ebf6-4879-9987-6708893da0bc"
+		},
+		"tags": [
+			{
+				"name": "Art",
+				"slug": "art",
+				"uid": "05552731-239b-4285-8713-d7051835f39e"
+			},
+			{
+				"name": "Antique",
+				"slug": "antique",
+				"uid": "05c128da-c923-4f5d-b84b-fde612ae6bd4"
+			},
+			{
+				"name": "Canvas",
+				"slug": "canvas",
+				"uid": "186495ea-a023-4f33-b566-697a486544e6"
+			},
+			{
+				"name": "Decoration",
+				"slug": "decoration",
+				"uid": "5824ee7b-342c-4305-a2e8-f9a8a7f41c99"
+			},
+			{
+				"name": "Realistic",
+				"slug": "realistic",
+				"uid": "93b0d3f1-a96c-4d68-9d44-69a313519e32"
+			},
+			{
+				"name": "Old",
+				"slug": "old",
+				"uid": "975b1521-db01-43ed-a939-c2c2da5027b1"
+			},
+			{
+				"name": "Gold",
+				"slug": "gold",
+				"uid": "9971e7e0-9f10-4129-b20f-8723ce6e6f56"
+			},
+			{
+				"name": "Picture",
+				"slug": "picture",
+				"uid": "ae8622ae-f464-4b6d-b43b-ad358dc6fcb5"
+			},
+			{
+				"name": "Wall",
+				"slug": "wall",
+				"uid": "b138d7ed-637e-4c63-b1dd-2295e069f06f"
+			},
+			{
+				"name": "Brass",
+				"slug": "brass",
+				"uid": "e48221d1-6741-49db-abcb-d1e3e6300a72"
+			},
+			{
+				"name": "Frame",
+				"slug": "frame",
+				"uid": "e5fc5baa-283f-4092-9e8f-34bc253afe0c"
+			},
+			{
+				"name": "Painting",
+				"slug": "painting",
+				"uid": "ea78a41c-e81e-4400-9c25-56ae61042076"
+			},
+			{
+				"name": "Victorian",
+				"slug": "victorian",
+				"uid": "f5815f31-6e69-45cf-9e3e-292686e0045d"
+			}
+		],
+		"category":
+		{
+			"name": "Tools, Objects & Decor",
+			"path": "objects-decor",
+			"slug": "objects-decor",
+			"uid": "d22d8b61-3aa8-4558-a6d1-c2a18543e0fd"
+		},
+		"assetFormats": [
+			{
+				"assetFormatType":
+				{
+					"name": "FBX",
+					"groupName": "3D Exchange Formats",
+					"code": "fbx",
+					"icon": "cube",
+					"extensions": [
+						"fbx"
+					]
+				}
+			},
+			{
+				"assetFormatType":
+				{
+					"name": "OBJ",
+					"groupName": "3D Exchange Formats",
+					"code": "obj",
+					"icon": "cube",
+					"extensions": [
+						"obj"
+					]
+				}
+			},
+			{
+				"assetFormatType":
+				{
+					"name": "Additional files",
+					"groupName": "Other Formats",
+					"code": "additional-files",
+					"icon": "file",
+					"extensions": [
+						"zip"
+					]
+				}
+			},
+			{
+				"assetFormatType":
+				{
+					"name": "Unity",
+					"groupName": "Game Engine Formats",
+					"code": "unity",
+					"icon": "unity",
+					"extensions": [
+						"unitypackage"
+					]
+				}
+			}
+		],
+		"_PluginMetas":
+		{
+			"apiDataVersion": "0.0.1",
+			"entitlementUid": "248eea28-0d8d-4dc9-bda0-469522be93c9",
+			"cacheSize": 0,
+			"downloaded": []
+		}
+	},
+	"target": "",
+	"quality": "",
+	"format": "fbx",
+	"fileId": "9408cc4d-ec36-4d85-bdf5-f07f14ab3a16",
+	"platformIncluded": "",
+	"distributionPointBaseUrls": [],
+	"distributionMethod": "",
+	"entitlementUid": "248eea28-0d8d-4dc9-bda0-469522be93c9",
+	"invertedNormal": false,
+	"isConverted": false,
+	"isQuixel": false
+}
