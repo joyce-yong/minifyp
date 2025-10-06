@@ -1,0 +1,112 @@
+{
+	"assetNamespace": "fab",
+	"listing":
+	{
+		"averageRating": 3,
+		"createdAt": "",
+		"description": "<p>Wood box storage, on low poly</p>\n<ul>\n<li>\n<p>If you have any questions, please let me know in order to correct them. </p>\n</li>\n<li>\n<p>Best regards Koceila</p>\n</li>\n</ul>",
+		"isAiForbidden": false,
+		"isAiGenerated": false,
+		"lastUpdatedAt": "2025-02-24T11:57:25.375609Z",
+		"listingType": "3d-model",
+		"media": "https://media.fab.com/image_previews/gallery_images/7af488bb-253c-4983-a7f0-660fea4705e3/b7c44d45-6d81-41ec-842b-28830f9d294e.jpeg",
+		"publishedAt": "2024-11-06T22:05:39.879047Z",
+		"reviewCount": 2,
+		"thumbnail": "https://media.fab.com/image_previews/gallery_images/9a295478-362d-4edc-936a-093b88aad7b0/1fe406e4-e4ed-4206-800f-bd028b390721.jpeg",
+		"title": "wood box",
+		"uid": "71397838-bbd2-4de3-b38c-9114565d0d79",
+		"updatedAt": "",
+		"user":
+		{
+			"coverImageUrl": "https://cdn1.epicgames.com/fab/seller/o-zpc5ecbyx47jajk9m66ustg3952ysk/backgroundImage/blob-1920x540-be4ca606248d850162b28c54c63982f1.jpg",
+			"profileImageUrl": "https://cdn1.epicgames.com/fab/seller/o-zpc5ecbyx47jajk9m66ustg3952ysk/profileImage/blob-500x500-fb707f5e191951569c855dc4c2632d1a.jpg",
+			"sellerName": "Koceila HAID",
+			"uid": "d12f3c61-235a-4176-aafe-1869613cfeef"
+		},
+		"tags": [
+			{
+				"name": "Box",
+				"slug": "box",
+				"uid": "3aee29bc-58db-41cc-ac48-4cfc238ae87e"
+			},
+			{
+				"name": "Lowpoly",
+				"slug": "lowpoly",
+				"uid": "451806dc-649e-43b7-9c2e-a54485de14b6"
+			},
+			{
+				"name": "Medieval",
+				"slug": "medieval",
+				"uid": "8869d28f-20ec-4f2e-9e92-d505e24c701d"
+			},
+			{
+				"name": "Cargo",
+				"slug": "cargo",
+				"uid": "aff072c4-ba26-4ea7-bf3d-8cf120afae96"
+			},
+			{
+				"name": "Wood",
+				"slug": "wood",
+				"uid": "bcd38165-4b32-484d-bce7-c6cdaf827f77"
+			},
+			{
+				"name": "Storage",
+				"slug": "storage",
+				"uid": "c0632f76-6e8f-4c3e-98f6-8e2d88a0700f"
+			}
+		],
+		"category":
+		{
+			"name": "Buildings & Architecture",
+			"path": "buildings-architecture",
+			"slug": "buildings-architecture",
+			"uid": "eec3bdd5-ba7a-45a8-b15d-67462b9630f6"
+		},
+		"assetFormats": [
+			{
+				"assetFormatType":
+				{
+					"name": "FBX",
+					"groupName": "3D Exchange Formats",
+					"code": "fbx",
+					"icon": "cube",
+					"extensions": [
+						"fbx"
+					]
+				}
+			},
+			{
+				"assetFormatType":
+				{
+					"name": "Converted Files",
+					"groupName": "",
+					"code": "converted-files",
+					"icon": "cube",
+					"extensions": [
+						"gltf",
+						"glb",
+						"usdz"
+					]
+				}
+			}
+		],
+		"_PluginMetas":
+		{
+			"apiDataVersion": "0.0.1",
+			"entitlementUid": "addfa6d9-7e7c-41a4-abc2-dab9134b7354",
+			"cacheSize": 0,
+			"downloaded": []
+		}
+	},
+	"target": "",
+	"quality": "",
+	"format": "fbx",
+	"fileId": "777a646d-4af5-4ae9-a464-460aa0063643",
+	"platformIncluded": "",
+	"distributionPointBaseUrls": [],
+	"distributionMethod": "",
+	"entitlementUid": "addfa6d9-7e7c-41a4-abc2-dab9134b7354",
+	"invertedNormal": false,
+	"isConverted": false,
+	"isQuixel": false
+}

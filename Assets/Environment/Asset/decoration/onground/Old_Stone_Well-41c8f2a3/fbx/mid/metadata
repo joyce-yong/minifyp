@@ -1,0 +1,174 @@
+{
+	"assetNamespace": "fab",
+	"listing":
+	{
+		"averageRating": 0,
+		"createdAt": "",
+		"description": "<p><strong>Texel density:</strong> 5596 px/m</p><p><strong>Physical size:</strong> 2.69m x 2.76m x 0.91m</p><p><strong>Mesh type:</strong> Open mesh</p><p><strong>Maps:</strong> AO Gloss Cavity Roughness Displacement<em>(high tier only)</em> Normal Specular Basecolor Bump</p> <p><span>Create high-quality 3D experiences and worlds with Quixel Megascans. Browse thousands of photorealistic assets and environments, including materials, 3D assets, plants, decals, and more available </span><a target=\"_blank\" href=\"https://www.fab.com/sellers/Quixel\" rel=\"noopener noreferrer nofollow\"><span><u>here</u></span></a><span> on Fab.</span></p><p></p><p><span>For any questions or support regarding Quixel content, please get in touch </span><a target=\"_blank\" href=\"https://support.fab.com/s/?ProductOrigin=1PC\" rel=\"noopener noreferrer nofollow\"><span><u>here</u></span></a><span>.</span></p>",
+		"isAiForbidden": true,
+		"isAiGenerated": false,
+		"lastUpdatedAt": "2025-02-24T12:17:38.594966Z",
+		"listingType": "3d-model",
+		"media": "https://media.fab.com/image_previews/gallery_images/eb0c9b48-b645-40fc-b942-c7bc19065030/1ccd3750-f859-44ff-b70f-437ceaddd1f2.jpeg",
+		"publishedAt": "2024-10-12T07:38:21.417529Z",
+		"reviewCount": 0,
+		"thumbnail": "https://media.fab.com/image_previews/gallery_images/3e02b660-f47a-4d8a-b8fc-707a0beaa8bd/567e521b-077b-4533-be54-ea811b48877b.jpeg",
+		"title": "Old Stone Well",
+		"uid": "41c8f2a3-71c0-4a42-922c-db4ec1c429a1",
+		"updatedAt": "",
+		"user":
+		{
+			"coverImageUrl": "https://cdn1.epicgames.com/fab/seller/o-cbf5bbfdb340d6a839b5520cb31328/cover/0edd3540.png",
+			"profileImageUrl": "https://cdn1.epicgames.com/fab/seller/o-cbf5bbfdb340d6a839b5520cb31328/profile/39e5dabd.png",
+			"sellerName": "Quixel",
+			"uid": "45ea3429-f62c-4f17-aa15-5bb9dfcd0079"
+		},
+		"tags": [
+			{
+				"name": "Well",
+				"slug": "well",
+				"uid": "184a671a-b0c6-450d-a726-d6dce3d779ab"
+			},
+			{
+				"name": "Weathered",
+				"slug": "weathered",
+				"uid": "1b898690-ea9c-4c08-9dcf-4f1c7582d1b5"
+			},
+			{
+				"name": "Rural",
+				"slug": "rural",
+				"uid": "38048c85-e4e5-4e3d-a0c6-ec8dff3e5e00"
+			},
+			{
+				"name": "Stone",
+				"slug": "stone",
+				"uid": "3b7b9846-a26c-48e0-99e0-866350f162aa"
+			},
+			{
+				"name": "Town",
+				"slug": "town",
+				"uid": "5ca41a7e-3b26-4bed-8a1b-9b57d9bc1456"
+			},
+			{
+				"name": "Wildwest",
+				"slug": "wildwest",
+				"uid": "669b8385-d8a5-4cd4-83f9-cf83aebabc43"
+			},
+			{
+				"name": "Countryside",
+				"slug": "countryside",
+				"uid": "92bf4863-a803-42cd-adb1-32d3ae67c6bf"
+			},
+			{
+				"name": "Old",
+				"slug": "old",
+				"uid": "975b1521-db01-43ed-a939-c2c2da5027b1"
+			},
+			{
+				"name": "Worn",
+				"slug": "worn",
+				"uid": "98cd7d65-d9bb-4efc-9f13-2d3d6f29629d"
+			},
+			{
+				"name": "Rough",
+				"slug": "rough",
+				"uid": "abd824a5-384f-43b7-8e90-b4a5207bb0b3"
+			},
+			{
+				"name": "Western",
+				"slug": "western",
+				"uid": "bf5b0f2d-b358-46ab-bc00-7623366647b9"
+			}
+		],
+		"category":
+		{
+			"name": "Farm",
+			"path": "objects-decor/farm",
+			"slug": "objects-decor--farm",
+			"uid": "74ff37f0-b5c4-4d70-8f1f-f4374db1db46"
+		},
+		"assetFormats": [
+			{
+				"assetFormatType":
+				{
+					"name": "FBX",
+					"groupName": "3D Exchange Formats",
+					"code": "fbx",
+					"icon": "cube",
+					"extensions": [
+						"fbx"
+					]
+				}
+			},
+			{
+				"assetFormatType":
+				{
+					"name": "Converted Files",
+					"groupName": "",
+					"code": "converted-files",
+					"icon": "cube",
+					"extensions": [
+						"gltf",
+						"glb",
+						"usdz"
+					]
+				}
+			},
+			{
+				"assetFormatType":
+				{
+					"name": "ZBrush",
+					"groupName": "3D DCC Formats",
+					"code": "z-brush",
+					"icon": "zbrush",
+					"extensions": [
+						"zbp",
+						"ztl"
+					]
+				}
+			},
+			{
+				"assetFormatType":
+				{
+					"name": "Additional files",
+					"groupName": "Other Formats",
+					"code": "additional-files",
+					"icon": "file",
+					"extensions": [
+						"zip"
+					]
+				}
+			},
+			{
+				"assetFormatType":
+				{
+					"name": "GLTF",
+					"groupName": "3D Exchange Formats",
+					"code": "gltf",
+					"icon": "cube",
+					"extensions": [
+						"gltf"
+					]
+				}
+			}
+		],
+		"_PluginMetas":
+		{
+			"apiDataVersion": "0.0.1",
+			"entitlementUid": "a2422072-1df2-4772-a193-884ee74854a6",
+			"cacheSize": 0,
+			"downloaded": []
+		}
+	},
+	"target": "",
+	"quality": "mid",
+	"format": "fbx",
+	"fileId": "778b7a12-b6c8-4ec2-a745-126eccb51f49",
+	"platformIncluded": "",
+	"distributionPointBaseUrls": [],
+	"distributionMethod": "",
+	"entitlementUid": "a2422072-1df2-4772-a193-884ee74854a6",
+	"invertedNormal": false,
+	"isConverted": false,
+	"isQuixel": true
+}

@@ -1,0 +1,117 @@
+{
+	"assetNamespace": "fab",
+	"listing":
+	{
+		"averageRating": 3,
+		"createdAt": "",
+		"description": "<p>IF YOU DOWNLOAD PLEASE LIKE! Scanned in Polycam and repaired in Blender, 4k color, normal, rough. If you like my work please support me at <a target=\"_blank\" href=\"https://www.buymeacoffee.com/evan4129\" rel=\"noopener noreferrer nofollow\">https://www.buymeacoffee.com/evan4129</a></p>",
+		"isAiForbidden": true,
+		"isAiGenerated": false,
+		"lastUpdatedAt": "2025-02-24T11:44:04.855482Z",
+		"listingType": "3d-model",
+		"media": "https://media.fab.com/image_previews/gallery_images/1e6089b6-398c-41a7-a91f-ab387817544a/2b199f56-87b9-4950-b2d6-8c181274caa0.jpeg",
+		"publishedAt": "2024-10-04T14:50:01.620591Z",
+		"reviewCount": 1,
+		"thumbnail": "https://media.fab.com/image_previews/gallery_images/d9be6680-3bd0-4409-8031-66218209017a/91a34af5-89dc-44a5-8213-35b13c53812f.jpeg",
+		"title": "Old Stove Scan LOWPOLY",
+		"uid": "32005684-6120-466e-98bb-e70e8c39a8d8",
+		"updatedAt": "",
+		"user":
+		{
+			"coverImageUrl": "https://cdn1.epicgames.com/fab/seller/o-t8q3jvrhpdrepep7nu9gz9dsdzzhqr/backgroundImage/blob-1920x540-3eac7f9ba893f3b38d7f4ca504c18878.jpg",
+			"profileImageUrl": "https://cdn1.epicgames.com/fab/seller/o-t8q3jvrhpdrepep7nu9gz9dsdzzhqr/profileImage/blob-500x500-89b14b3afab425a346d7fd0874752544.jpg",
+			"sellerName": "EFX",
+			"uid": "90b43c35-e4b2-4ee1-b818-2394b312b5bc"
+		},
+		"tags": [
+			{
+				"name": "Stove",
+				"slug": "stove",
+				"uid": "336bd0be-2b71-4cfe-aca4-5f89cc097bb9"
+			},
+			{
+				"name": "Lowpoly",
+				"slug": "lowpoly",
+				"uid": "451806dc-649e-43b7-9c2e-a54485de14b6"
+			},
+			{
+				"name": "Photorealistic",
+				"slug": "photorealistic",
+				"uid": "7485c72b-1f18-499f-8c65-0fdf1e2a21d0"
+			},
+			{
+				"name": "Old",
+				"slug": "old",
+				"uid": "975b1521-db01-43ed-a939-c2c2da5027b1"
+			},
+			{
+				"name": "Destroyed",
+				"slug": "destroyed",
+				"uid": "9cc7eb58-8add-4d50-818e-e6c68412ecf2"
+			},
+			{
+				"name": "Optimized",
+				"slug": "optimized",
+				"uid": "b80236ef-8966-43ab-b564-cfa99bf22b10"
+			},
+			{
+				"name": "Oven",
+				"slug": "oven",
+				"uid": "c736f034-c637-4521-a0b9-cadafe393cf9"
+			}
+		],
+		"category":
+		{
+			"name": "Buildings & Architecture",
+			"path": "buildings-architecture",
+			"slug": "buildings-architecture",
+			"uid": "eec3bdd5-ba7a-45a8-b15d-67462b9630f6"
+		},
+		"assetFormats": [
+			{
+				"assetFormatType":
+				{
+					"name": "FBX",
+					"groupName": "3D Exchange Formats",
+					"code": "fbx",
+					"icon": "cube",
+					"extensions": [
+						"fbx"
+					]
+				}
+			},
+			{
+				"assetFormatType":
+				{
+					"name": "Converted Files",
+					"groupName": "",
+					"code": "converted-files",
+					"icon": "cube",
+					"extensions": [
+						"gltf",
+						"glb",
+						"usdz"
+					]
+				}
+			}
+		],
+		"_PluginMetas":
+		{
+			"apiDataVersion": "0.0.1",
+			"entitlementUid": "0354d6c1-7b52-4eac-8b6e-b89ffbf0689c",
+			"cacheSize": 0,
+			"downloaded": []
+		}
+	},
+	"target": "",
+	"quality": "",
+	"format": "fbx",
+	"fileId": "161bbf02-2111-4af5-abd1-2e5ba0444c62",
+	"platformIncluded": "",
+	"distributionPointBaseUrls": [],
+	"distributionMethod": "",
+	"entitlementUid": "0354d6c1-7b52-4eac-8b6e-b89ffbf0689c",
+	"invertedNormal": false,
+	"isConverted": false,
+	"isQuixel": false
+}

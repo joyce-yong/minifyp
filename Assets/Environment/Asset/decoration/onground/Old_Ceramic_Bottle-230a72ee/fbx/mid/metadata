@@ -1,0 +1,146 @@
+{
+	"assetNamespace": "fab",
+	"listing":
+	{
+		"averageRating": 0,
+		"createdAt": "",
+		"description": "<p><strong>Texel density:</strong> 1258 px/m</p><p><strong>Physical size:</strong> 0.08m x 0.08m x 0.26m</p><p><strong>Mesh type:</strong> Closed mesh</p><p><strong>Maps:</strong> AO Gloss Cavity Displacement<em>(high tier only)</em> Normal Specular Basecolor Roughness</p> <p><span>Create high-quality 3D experiences and worlds with Quixel Megascans. Browse thousands of photorealistic assets and environments, including materials, 3D assets, plants, decals, and more available </span><a target=\"_blank\" href=\"https://www.fab.com/sellers/Quixel\" rel=\"noopener noreferrer nofollow\"><span><u>here</u></span></a><span> on Fab.</span></p><p></p><p><span>For any questions or support regarding Quixel content, please get in touch </span><a target=\"_blank\" href=\"https://support.fab.com/s/?ProductOrigin=1PC\" rel=\"noopener noreferrer nofollow\"><span><u>here</u></span></a><span>.</span></p>",
+		"isAiForbidden": true,
+		"isAiGenerated": false,
+		"lastUpdatedAt": "2025-02-24T12:19:36.051187Z",
+		"listingType": "3d-model",
+		"media": "https://media.fab.com/image_previews/gallery_images/66210eef-861e-4e4c-9b4b-10a6c819d5ab/7c4c9990-0e0b-4cca-8cd0-d19e05a3f3e9.jpeg",
+		"publishedAt": "2024-10-12T07:56:47.836787Z",
+		"reviewCount": 0,
+		"thumbnail": "https://media.fab.com/image_previews/gallery_images/afe30924-f61e-48a4-b0c6-1d76fbe6cbeb/fde12cbd-3116-4b6f-98ae-8215d6a0efd0.jpeg",
+		"title": "Old Ceramic Bottle",
+		"uid": "230a72ee-bf66-48f9-a763-0870436c228e",
+		"updatedAt": "",
+		"user":
+		{
+			"coverImageUrl": "https://cdn1.epicgames.com/fab/seller/o-cbf5bbfdb340d6a839b5520cb31328/cover/0edd3540.png",
+			"profileImageUrl": "https://cdn1.epicgames.com/fab/seller/o-cbf5bbfdb340d6a839b5520cb31328/profile/39e5dabd.png",
+			"sellerName": "Quixel",
+			"uid": "45ea3429-f62c-4f17-aa15-5bb9dfcd0079"
+		},
+		"tags": [
+			{
+				"name": "Cork",
+				"slug": "cork",
+				"uid": "48897314-a0e2-4f92-94ca-c0c9b0ca28db"
+			},
+			{
+				"name": "Old",
+				"slug": "old",
+				"uid": "975b1521-db01-43ed-a939-c2c2da5027b1"
+			},
+			{
+				"name": "Worn",
+				"slug": "worn",
+				"uid": "98cd7d65-d9bb-4efc-9f13-2d3d6f29629d"
+			},
+			{
+				"name": "Table",
+				"slug": "table",
+				"uid": "a08c57c8-d431-4f72-84a3-a01c86b73d44"
+			},
+			{
+				"name": "Bottle",
+				"slug": "bottle",
+				"uid": "bea546f4-1796-4a98-aacb-8d5ac0909bd1"
+			},
+			{
+				"name": "Kitchen",
+				"slug": "kitchen",
+				"uid": "cb9f1bee-d953-4e6f-9c1d-f47418c1e5a2"
+			},
+			{
+				"name": "Ceramic",
+				"slug": "ceramic",
+				"uid": "f0356240-487d-4f67-a3eb-baaf82d0deab"
+			},
+			{
+				"name": "Shelf",
+				"slug": "shelf",
+				"uid": "f47a2213-07bd-4d71-93fa-b9917f474826"
+			}
+		],
+		"category":
+		{
+			"name": "Tools, Objects & Decor",
+			"path": "objects-decor",
+			"slug": "objects-decor",
+			"uid": "d22d8b61-3aa8-4558-a6d1-c2a18543e0fd"
+		},
+		"assetFormats": [
+			{
+				"assetFormatType":
+				{
+					"name": "FBX",
+					"groupName": "3D Exchange Formats",
+					"code": "fbx",
+					"icon": "cube",
+					"extensions": [
+						"fbx"
+					]
+				}
+			},
+			{
+				"assetFormatType":
+				{
+					"name": "Converted Files",
+					"groupName": "",
+					"code": "converted-files",
+					"icon": "cube",
+					"extensions": [
+						"gltf",
+						"glb",
+						"usdz"
+					]
+				}
+			},
+			{
+				"assetFormatType":
+				{
+					"name": "Additional files",
+					"groupName": "Other Formats",
+					"code": "additional-files",
+					"icon": "file",
+					"extensions": [
+						"zip"
+					]
+				}
+			},
+			{
+				"assetFormatType":
+				{
+					"name": "GLTF",
+					"groupName": "3D Exchange Formats",
+					"code": "gltf",
+					"icon": "cube",
+					"extensions": [
+						"gltf"
+					]
+				}
+			}
+		],
+		"_PluginMetas":
+		{
+			"apiDataVersion": "0.0.1",
+			"entitlementUid": "c893ac31-0393-4d75-b009-b6528bc114ae",
+			"cacheSize": 0,
+			"downloaded": []
+		}
+	},
+	"target": "",
+	"quality": "mid",
+	"format": "fbx",
+	"fileId": "c5fd4737-1099-4a84-99fc-9d4b52b8df94",
+	"platformIncluded": "",
+	"distributionPointBaseUrls": [],
+	"distributionMethod": "",
+	"entitlementUid": "c893ac31-0393-4d75-b009-b6528bc114ae",
+	"invertedNormal": false,
+	"isConverted": false,
+	"isQuixel": true
+}

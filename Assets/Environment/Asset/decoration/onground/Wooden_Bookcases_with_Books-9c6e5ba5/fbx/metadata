@@ -1,0 +1,157 @@
+{
+	"assetNamespace": "fab",
+	"listing":
+	{
+		"averageRating": 0,
+		"createdAt": "",
+		"description": "<p>Two low-poly, game ready wooden bookcases with books that will look great in any themed environment and are suitable for use in game, VR, archviz and visual production.</p><p></p><p><strong>Features</strong></p><ul><li><p>Model includes 2 wooden bookcases with books.</p></li><li><p>Model is low-poly and optimised for use in game, VR, archviz, and visual production.</p></li><li><p>Clean topology. Objects are grouped, named appropriately and unwrapped.</p></li><li><p>Modelled in Blender and textured in Substance Painter.</p></li><li><p>7,076 triangle count; 4,936 vertices.</p><p></p></li></ul><p><strong>Textures</strong></p><p>Model has 1 PBR texture set. Textures are in .png at 4096x4096 and includes: Base Colour, Roughness, Normal.</p>",
+		"isAiForbidden": false,
+		"isAiGenerated": false,
+		"lastUpdatedAt": "2025-02-24T12:27:15.879275Z",
+		"listingType": "3d-model",
+		"media": "https://media.fab.com/image_previews/gallery_images/a475f760-42fe-41c4-aeba-dcfe850db38b/838f9612-4e41-461d-8583-6804c13fe0c8.jpeg",
+		"publishedAt": "2024-10-15T17:38:44.099812Z",
+		"reviewCount": 0,
+		"thumbnail": "https://media.fab.com/image_previews/gallery_images/8bb1ea97-3de2-455a-a92f-e29f40073424/228b924f-4e59-474c-ad4d-4249909f7a59.jpeg",
+		"title": "Wooden Bookcases with Books",
+		"uid": "9c6e5ba5-adae-41b5-9635-5b15eaaf7721",
+		"updatedAt": "",
+		"user":
+		{
+			"coverImageUrl": "",
+			"profileImageUrl": "",
+			"sellerName": "mtcollings",
+			"uid": "31e6925e-eee9-4940-b386-85045d053c3c"
+		},
+		"tags": [
+			{
+				"name": "Antique",
+				"slug": "antique",
+				"uid": "05c128da-c923-4f5d-b84b-fde612ae6bd4"
+			},
+			{
+				"name": "Pbr",
+				"slug": "pbr",
+				"uid": "080edd3b-d10a-4f32-ace2-30f5baa480dc"
+			},
+			{
+				"name": "Small",
+				"slug": "small",
+				"uid": "1216efbc-030f-444f-a23a-09355000fd28"
+			},
+			{
+				"name": "Tall",
+				"slug": "tall",
+				"uid": "340e324a-b71a-4ae3-aa22-e7a4fb9bd898"
+			},
+			{
+				"name": "Lowpoly",
+				"slug": "lowpoly",
+				"uid": "451806dc-649e-43b7-9c2e-a54485de14b6"
+			},
+			{
+				"name": "Bookshelf",
+				"slug": "bookshelf",
+				"uid": "623c50a5-30a8-4cab-8b98-d8b8b4c517ed"
+			},
+			{
+				"name": "Library",
+				"slug": "library",
+				"uid": "8631dc93-4cf5-48da-997b-7ac3fc57fcdf"
+			},
+			{
+				"name": "Vintage",
+				"slug": "vintage",
+				"uid": "8a4d973f-aaa6-411d-b342-e09e1f212f63"
+			},
+			{
+				"name": "Realistic",
+				"slug": "realistic",
+				"uid": "93b0d3f1-a96c-4d68-9d44-69a313519e32"
+			},
+			{
+				"name": "Painter",
+				"slug": "painter",
+				"uid": "950b1c12-0668-4779-acad-305c85885d7d"
+			},
+			{
+				"name": "Office",
+				"slug": "office",
+				"uid": "97e8ad1e-f7c1-4bc3-9293-bb9f268d5d60"
+			},
+			{
+				"name": "Cabinet",
+				"slug": "cabinet",
+				"uid": "b4fc8722-a7c2-415b-b2ca-11fa678e6be1"
+			},
+			{
+				"name": "Study",
+				"slug": "study",
+				"uid": "bceceed8-cf42-421b-be09-75e013ba4f4c"
+			},
+			{
+				"name": "Bookcase",
+				"slug": "bookcase",
+				"uid": "de7ab7e3-65e6-4f68-96ea-250e1fc43ceb"
+			},
+			{
+				"name": "Victorian",
+				"slug": "victorian",
+				"uid": "f5815f31-6e69-45cf-9e3e-292686e0045d"
+			}
+		],
+		"category":
+		{
+			"name": "Furniture & Fixtures",
+			"path": "furniture-fixtures",
+			"slug": "furniture-fixtures",
+			"uid": "3da1d2bd-49b4-4bc5-90e5-d31dadec3bd0"
+		},
+		"assetFormats": [
+			{
+				"assetFormatType":
+				{
+					"name": "FBX",
+					"groupName": "3D Exchange Formats",
+					"code": "fbx",
+					"icon": "cube",
+					"extensions": [
+						"fbx"
+					]
+				}
+			},
+			{
+				"assetFormatType":
+				{
+					"name": "Converted Files",
+					"groupName": "",
+					"code": "converted-files",
+					"icon": "cube",
+					"extensions": [
+						"gltf",
+						"glb",
+						"usdz"
+					]
+				}
+			}
+		],
+		"_PluginMetas":
+		{
+			"apiDataVersion": "0.0.1",
+			"entitlementUid": "7cd0aa74-1b83-445c-a5b8-ba57af3a84d0",
+			"cacheSize": 0,
+			"downloaded": []
+		}
+	},
+	"target": "",
+	"quality": "",
+	"format": "fbx",
+	"fileId": "a18f6ad2-07af-4c17-8be1-90b44ef1e2dd",
+	"platformIncluded": "",
+	"distributionPointBaseUrls": [],
+	"distributionMethod": "",
+	"entitlementUid": "7cd0aa74-1b83-445c-a5b8-ba57af3a84d0",
+	"invertedNormal": false,
+	"isConverted": false,
+	"isQuixel": false
+}
