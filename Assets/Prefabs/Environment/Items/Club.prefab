@@ -149,3 +149,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 768fd487f2883e44bbc2d996ec8541b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interactionText: Press E to interact
+  itemScriptableObject: {fileID: 11400000, guid: a473760abc3fce44483ccd5dc2372c29, type: 2}

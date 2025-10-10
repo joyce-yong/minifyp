@@ -151,6 +151,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactionText: Press E to interact
+  itemScriptableObject: {fileID: 11400000, guid: 88a8b080e171a38459b2b0836bf399ff, type: 2}
 --- !u!1 &974919946286723733
 GameObject:
   m_ObjectHideFlags: 0

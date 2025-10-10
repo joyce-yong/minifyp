@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Mace
   icon: {fileID: 21300000, guid: 125726f31cf195047bd3a929a8598b0c, type: 3}
-  prefab: {fileID: 0}
-  stackMax: 0
+  prefab: {fileID: 7193966160647721485, guid: 444ec5c63d11e6d47b78e27a01ce0f09, type: 3}
+  stackMax: 1

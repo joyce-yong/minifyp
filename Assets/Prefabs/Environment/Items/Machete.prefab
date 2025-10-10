@@ -96,6 +96,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 768fd487f2883e44bbc2d996ec8541b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interactionText: Press E to interact
+  itemScriptableObject: {fileID: 11400000, guid: b6c95e98d1327b94c8aa64d5519d8e6d, type: 2}
 --- !u!1 &5246677216046169759
 GameObject:
   m_ObjectHideFlags: 0

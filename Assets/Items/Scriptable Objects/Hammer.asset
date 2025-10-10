@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Hammer
   icon: {fileID: 21300000, guid: 8e29b96e9d60f5042a4ec7b01475f28f, type: 3}
-  prefab: {fileID: 0}
-  stackMax: 0
+  prefab: {fileID: 372995560435466611, guid: 15af48027412a2542a3e91868118b9ff, type: 3}
+  stackMax: 1
