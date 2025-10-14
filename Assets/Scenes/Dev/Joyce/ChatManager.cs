@@ -15,7 +15,11 @@ public class ChatManager : MonoBehaviour
 
     public TextMeshProUGUI chatText;
     public float messageInterval = 0.5f;
-    public float stopDelay = 10f; 
+    public float stopDelay = 10f;
+
+    // Controls visible stacking
+    private Queue<string> visibleMessages = new Queue<string>();
+    public int maxVisibleMessages = 5;
 
     private string currentEmotion = null;
     private float timer = 0f;
@@ -23,7 +27,14 @@ public class ChatManager : MonoBehaviour
 
     void Start()
     {
+        // Load messages from JSON
         TextAsset jsonFile = Resources.Load<TextAsset>("chatMessages");
+        if (jsonFile == null)
+        {
+            Debug.LogError("chatMessages.json not found in Resources!");
+            return;
+        }
+
         string wrappedJson = "{\"messages\":" + jsonFile.text + "}";
         List<ChatMessage> allMessages = JsonUtility.FromJson<ChatWrapper>(wrappedJson).messages;
 
@@ -43,7 +54,6 @@ public class ChatManager : MonoBehaviour
         {
             shuffledQueues[kvp.Key] = CreateShuffledQueue(kvp.Value);
         }
-
     }
 
     void Update()
@@ -71,13 +81,13 @@ public class ChatManager : MonoBehaviour
     public void StartChat(string emotion)
     {
         currentEmotion = emotion;
-        stopTimer = 0f; 
-        timer = 0f; 
+        stopTimer = 0f;
+        timer = 0f;
     }
 
     public void StopChat()
     {
-        stopTimer = stopDelay; 
+        stopTimer = stopDelay;
     }
 
     private void ShowNextMessage(string emotion)
@@ -90,7 +100,17 @@ public class ChatManager : MonoBehaviour
         }
 
         ChatMessage msg = shuffledQueues[emotion].Dequeue();
-        chatText.text += $"\n<color=yellow>{msg.username}</color>: {msg.message}";
+        string newLine = $"<color=yellow>{msg.username}</color>: {msg.message}";
+
+        // Add message to visible queue
+        visibleMessages.Enqueue(newLine);
+
+        // Remove oldest message if over the limit
+        if (visibleMessages.Count > maxVisibleMessages)
+            visibleMessages.Dequeue();
+
+        // Rebuild text
+        chatText.text = string.Join("\n", visibleMessages);
     }
 
     private Queue<ChatMessage> CreateShuffledQueue(List<ChatMessage> list)

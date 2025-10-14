@@ -3387,7 +3387,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   chatText: {fileID: 2045410060}
   messageInterval: 0.5
-  stopDelay: 10
+  stopDelay: 5
+  maxVisibleMessages: 10
 --- !u!4 &1877411103
 Transform:
   m_ObjectHideFlags: 0
