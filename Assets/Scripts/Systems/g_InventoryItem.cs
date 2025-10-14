@@ -3,26 +3,51 @@ using UnityEngine.UI;
 
 public class g_InventoryItem : MonoBehaviour
 {
-    public g_ItemSO itemScriptableObject;
+    [Header("References")]
+    [SerializeField] private Image iconImage;
+    [SerializeField] private Text stackText;
 
-    public int stackCurrent = 1;
-    public int stackMax;
-
-    [SerializeField] Image iconImage;
-    [SerializeField] Text stackText;
-
-    private void Start()
+    [Header("Item Data")]
+    [SerializeField] private g_ItemSO _itemScriptableObject;
+    public g_ItemSO itemScriptableObject
     {
-        stackMax = itemScriptableObject.stackMax;
+        get => _itemScriptableObject;
+        set
+        {
+            _itemScriptableObject = value;
+            if (_itemScriptableObject != null)
+            {
+                stackMax = _itemScriptableObject.stackMax;
+                stackCurrent = 1;
+
+                if (iconImage != null)
+                    iconImage.sprite = _itemScriptableObject.icon;
+
+                UpdateStackText();
+            }
+        }
     }
 
-    void Update()
-    {
-        iconImage.sprite = itemScriptableObject.icon;
+    [Header("Stack Info")]
+    public int stackCurrent;
+    public int stackMax;
 
-        if (stackMax > 1)
+    public void AddToStack(int amount)
+    {
+        stackCurrent = Mathf.Min(stackCurrent + amount, stackMax);
+        UpdateStackText();
+    }
+
+    // public bool IsStackFull()
+    // {
+    //     return stackCurrent >= stackMax;
+    // }
+
+    private void UpdateStackText()
+    {
+        if (stackText != null)
         {
-            stackText.text = stackCurrent.ToString();
+            stackText.text = stackCurrent > 1 ? stackCurrent.ToString() : "";
         }
     }
 }
