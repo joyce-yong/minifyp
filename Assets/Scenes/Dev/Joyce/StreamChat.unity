@@ -3387,7 +3387,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   chatText: {fileID: 2045410060}
   messageIntervalRange: {x: 0.4, y: 1}
-  stopDelay: 5
+  stopDelay: 6
   emojiJson: {fileID: 4900000, guid: 44902a421e73cf9409bebd4d60b332ae, type: 3}
   maxVisibleMessages: 8
   viewerCountText: {fileID: 1217643321}
