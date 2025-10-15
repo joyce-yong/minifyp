@@ -15,17 +15,29 @@ public class ChatManager : MonoBehaviour
     private Dictionary<string, Color> usernameColors;
     private Dictionary<string, string[]> emojiCategories;
 
+    [Header("Chat Settings")]
     public TextMeshProUGUI chatText;
     public Vector2 messageIntervalRange = new Vector2(0.4f, 1.0f);
     public float stopDelay = 10f;
-    public TextAsset emojiJson; 
-
-    private Queue<string> visibleMessages = new Queue<string>();
+    public TextAsset emojiJson;
     public int maxVisibleMessages = 5;
 
+    private Queue<string> visibleMessages = new Queue<string>();
     private string currentEmotion = null;
     private float timer = 0f;
     private float stopTimer = 0f;
+
+    [Header("Viewer Settings")]
+    public TextMeshProUGUI viewerCountText;
+    public int startingViewers = 10;
+    public float normalIncreaseRate = 0.5f;
+    public float boostIncreaseRate = 5f;
+    public float boostDuration = 3f;
+
+    private int currentViewers;
+    private float viewerTimer = 0f;
+    private bool isBoosting = false;
+    private float boostTimer = 0f;
 
     void Start()
     {
@@ -55,32 +67,71 @@ public class ChatManager : MonoBehaviour
         }
 
         AssignUsernameColors(allMessages);
-
         LoadEmojis();
+
+        currentViewers = startingViewers;
+        UpdateViewerUI();
     }
 
     void Update()
     {
-        if (currentEmotion == null) return;
-
-        if (stopTimer > 0f)
+        if (currentEmotion != null)
         {
-            stopTimer -= Time.deltaTime;
-            if (stopTimer <= 0f)
+            if (stopTimer > 0f)
             {
-                currentEmotion = null;
-                return;
+                stopTimer -= Time.deltaTime;
+                if (stopTimer <= 0f)
+                {
+                    currentEmotion = null;
+                }
+            }
+
+            timer -= Time.deltaTime;
+            if (timer <= 0f)
+            {
+                ShowNextMessage(currentEmotion);
+                timer = Random.Range(messageIntervalRange.x, messageIntervalRange.y);
             }
         }
 
-        timer -= Time.deltaTime;
-        if (timer <= 0f)
+        viewerTimer += Time.deltaTime;
+
+        if (viewerTimer >= 1f)
         {
-            ShowNextMessage(currentEmotion);
-            timer = Random.Range(messageIntervalRange.x, messageIntervalRange.y); //randomise the interval between chat spawn
+            viewerTimer = 0f;
+
+            if (Random.value < 0.3f)
+                return;
+
+            int randomChange;
+            if (isBoosting)
+            {
+                randomChange = Random.Range(15, 30);
+            }
+            else
+            {
+                randomChange = Random.Range(-5, 2);
+            }
+
+            currentViewers = Mathf.Max(startingViewers, currentViewers + randomChange);
+            UpdateViewerUI();
+        }
+
+        if (isBoosting)
+        {
+            boostTimer -= Time.deltaTime;
+            if (boostTimer <= 0f)
+            {
+                isBoosting = false;
+            }
         }
     }
 
+    public void TriggerChatAndBoost(string emotion)
+    {
+        StartChat(emotion);
+        BoostViewers();
+    }
 
     public void StartChat(string emotion)
     {
@@ -136,13 +187,11 @@ public class ChatManager : MonoBehaviour
         {
             if (!usernameColors.ContainsKey(msg.username))
             {
-                // Generate random color but keep it bright
                 Color randomColor = Random.ColorHSV(0f, 1f, 0.6f, 1f, 0.8f, 1f);
                 usernameColors[msg.username] = randomColor;
             }
         }
     }
-
 
     private void LoadEmojis()
     {
@@ -165,6 +214,18 @@ public class ChatManager : MonoBehaviour
                 return " " + emojis[Random.Range(0, emojis.Length)];
         }
         return "";
+    }
+
+    private void UpdateViewerUI()
+    {
+        if (viewerCountText != null)
+            viewerCountText.text = currentViewers.ToString("N0");
+    }
+
+    private void BoostViewers()
+    {
+        isBoosting = true;
+        boostTimer = boostDuration;
     }
 
     [System.Serializable]
