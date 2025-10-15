@@ -4,8 +4,8 @@ using UnityEngine.EventSystems;
 
 public class g_InventoryManager : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
 {
-    [SerializeField] GameObject[] hotbarSlots = new GameObject[4];
-    [SerializeField] GameObject[] slots = new GameObject[20];
+    [SerializeField] GameObject[] hotbarSlots = new GameObject[3];
+    [SerializeField] GameObject[] slots = new GameObject[6];
     [SerializeField] GameObject inventoryParent;
     [SerializeField] Transform handParent;
     [SerializeField] GameObject itemPrefab;
@@ -68,12 +68,7 @@ public class g_InventoryManager : MonoBehaviour, IPointerDownHandler, IPointerUp
         {
             selectedHotbarSlot = 2;
             HotbarItemChanged();
-        }
-        else if (Input.GetKeyDown(KeyCode.Alpha4))
-        {
-            selectedHotbarSlot = 3;
-            HotbarItemChanged();
-        }
+        }  
     }
 
     private void HotbarItemChanged()
@@ -197,32 +192,79 @@ public class g_InventoryManager : MonoBehaviour, IPointerDownHandler, IPointerUp
         }
     }
 
+    // public void ItemPicked(GameObject pickedItem)
+    // {
+    //     GameObject emptySlot = null;
+
+    //     for (int i = 0; i < slots.Length; i++)
+    //     {
+    //         g_InventorySlot slot = slots[i].GetComponent<g_InventorySlot>();
+
+    //         if (slot.heldItem == null)
+    //         {
+    //             emptySlot = slots[i];
+    //             break;
+    //         }
+    //     }
+
+    //     if (emptySlot != null)
+    //     {
+    //         GameObject newItem = Instantiate(itemPrefab);
+    //         newItem.GetComponent<g_InventoryItem>().itemScriptableObject = pickedItem.GetComponent<g_ItemPickable>().itemScriptableObject;
+    //         newItem.transform.SetParent(emptySlot.transform.parent.parent.GetChild(2));
+    //         newItem.GetComponent<g_InventoryItem>().stackCurrent = 1;
+
+    //         emptySlot.GetComponent<g_InventorySlot>().SetHeldItem(newItem);
+    //         newItem.transform.localScale = new Vector3(1, 1, 1);
+
+    //         Destroy(pickedItem);
+    //     }
+    // }
+
     public void ItemPicked(GameObject pickedItem)
     {
-        GameObject emptySlot = null;
+        g_ItemSO pickedSO = pickedItem.GetComponent<g_ItemPickable>().itemScriptableObject;
 
-        for (int i = 0; i < slots.Length; i++)
+        // Try to find an existing stackable item of the same type
+        foreach (GameObject slotObj in slots)
         {
-            g_InventorySlot slot = slots[i].GetComponent<g_InventorySlot>();
+            g_InventorySlot slot = slotObj.GetComponent<g_InventorySlot>();
 
-            if (slot.heldItem == null)
+            if (slot.heldItem != null)
             {
-                emptySlot = slots[i];
-                break;
+                g_InventoryItem heldItem = slot.heldItem.GetComponent<g_InventoryItem>();
+
+                // If same type and not full stack
+                if (heldItem.itemScriptableObject.name == pickedSO.name && heldItem.stackCurrent < heldItem.stackMax)
+                {
+                    heldItem.AddToStack(1);
+                    Destroy(pickedItem);
+                    return;
+                }
             }
         }
 
-        if (emptySlot != null)
+        // If no existing stack, find an empty slot
+        foreach (GameObject slotObj in slots)
         {
-            GameObject newItem = Instantiate(itemPrefab);
-            newItem.GetComponent<g_InventoryItem>().itemScriptableObject = pickedItem.GetComponent<g_ItemPickable>().itemScriptableObject;
-            newItem.transform.SetParent(emptySlot.transform.parent.parent.GetChild(2));
-            newItem.GetComponent<g_InventoryItem>().stackCurrent = 1;
+            g_InventorySlot slot = slotObj.GetComponent<g_InventorySlot>();
 
-            emptySlot.GetComponent<g_InventorySlot>().SetHeldItem(newItem);
-            newItem.transform.localScale = new Vector3(1, 1, 1);
+            if (slot.heldItem == null)
+            {
+                GameObject newItem = Instantiate(itemPrefab);
+                g_InventoryItem invItem = newItem.GetComponent<g_InventoryItem>();
+                invItem.itemScriptableObject = pickedSO;
+                invItem.stackCurrent = 1;
 
-            Destroy(pickedItem);
+                newItem.transform.SetParent(slot.transform.parent.parent.GetChild(2));
+                newItem.transform.localScale = Vector3.one;
+                slot.SetHeldItem(newItem);
+
+                Destroy(pickedItem);
+                return;
+            }
         }
+
+        Debug.Log("Inventory Full");
     }
 }
