@@ -3249,7 +3249,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   chatText: {fileID: 2045410060}
-  messageInterval: 0.5
+  messageIntervalRange: {x: 0.4, y: 1}
   stopDelay: 5
   emojiJson: {fileID: 4900000, guid: 44902a421e73cf9409bebd4d60b332ae, type: 3}
   maxVisibleMessages: 10
@@ -3851,7 +3851,7 @@ MonoBehaviour:
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
-  m_lineSpacing: 80
+  m_lineSpacing: 70
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0

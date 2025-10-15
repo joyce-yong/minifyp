@@ -16,7 +16,7 @@ public class ChatManager : MonoBehaviour
     private Dictionary<string, string[]> emojiCategories;
 
     public TextMeshProUGUI chatText;
-    public float messageInterval = 0.5f;
+    public Vector2 messageIntervalRange = new Vector2(0.4f, 1.0f);
     public float stopDelay = 10f;
     public TextAsset emojiJson; 
 
@@ -77,9 +77,10 @@ public class ChatManager : MonoBehaviour
         if (timer <= 0f)
         {
             ShowNextMessage(currentEmotion);
-            timer = messageInterval;
+            timer = Random.Range(messageIntervalRange.x, messageIntervalRange.y); //randomise the interval between chat spawn
         }
     }
+
 
     public void StartChat(string emotion)
     {
@@ -107,7 +108,7 @@ public class ChatManager : MonoBehaviour
         string colorHex = ColorUtility.ToHtmlStringRGB(usernameColors[msg.username]);
         string emoji = GetRandomEmoji(msg.emotion);
 
-        string newLine = $"<color=#{colorHex}>{msg.username}</color>: {msg.message}{emoji}";
+        string newLine = $"<b><color=#{colorHex}>{msg.username}</color></b>: {msg.message}{emoji}";
 
         visibleMessages.Enqueue(newLine);
         if (visibleMessages.Count > maxVisibleMessages)
@@ -157,7 +158,7 @@ public class ChatManager : MonoBehaviour
         if (emojiCategories == null || !emojiCategories.ContainsKey(emotion))
             return "";
 
-        if (Random.value > 0.5f)
+        if (Random.value > 0.6f)
         {
             string[] emojis = emojiCategories[emotion];
             if (emojis.Length > 0)
