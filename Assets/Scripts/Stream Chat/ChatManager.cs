@@ -12,14 +12,13 @@ public class ChatManager : MonoBehaviour
 
     private Dictionary<string, List<ChatMessage>> emotionMessages;
     private Dictionary<string, Queue<ChatMessage>> shuffledQueues;
-
-    // Username color system
-    private Dictionary<string, string> usernameColors = new Dictionary<string, string>();
-    private string[] colorOptions = { "#4AA8FF", "#52E78E", "#FFB74D", "#FF6F91", "#C792EA", "#64B5F6", "#F06292", "#AED581" };
+    private Dictionary<string, Color> usernameColors;
+    private Dictionary<string, string[]> emojiCategories;
 
     public TextMeshProUGUI chatText;
     public float messageInterval = 0.5f;
     public float stopDelay = 10f;
+    public TextAsset emojiJson; 
 
     private Queue<string> visibleMessages = new Queue<string>();
     public int maxVisibleMessages = 5;
@@ -40,7 +39,6 @@ public class ChatManager : MonoBehaviour
         string wrappedJson = "{\"messages\":" + jsonFile.text + "}";
         List<ChatMessage> allMessages = JsonUtility.FromJson<ChatWrapper>(wrappedJson).messages;
 
-        // Group messages by emotion
         emotionMessages = new Dictionary<string, List<ChatMessage>>();
         foreach (var msg in allMessages)
         {
@@ -50,12 +48,15 @@ public class ChatManager : MonoBehaviour
             emotionMessages[msg.emotion].Add(msg);
         }
 
-        // Initialize shuffled queues
         shuffledQueues = new Dictionary<string, Queue<ChatMessage>>();
         foreach (var kvp in emotionMessages)
         {
             shuffledQueues[kvp.Key] = CreateShuffledQueue(kvp.Value);
         }
+
+        AssignUsernameColors(allMessages);
+
+        LoadEmojis();
     }
 
     void Update()
@@ -103,18 +104,11 @@ public class ChatManager : MonoBehaviour
         }
 
         ChatMessage msg = shuffledQueues[emotion].Dequeue();
+        string colorHex = ColorUtility.ToHtmlStringRGB(usernameColors[msg.username]);
+        string emoji = GetRandomEmoji(msg.emotion);
 
-        // Assign random color if username doesn’t have one yet
-        if (!usernameColors.ContainsKey(msg.username))
-        {
-            string randomColor = colorOptions[Random.Range(0, colorOptions.Length)];
-            usernameColors[msg.username] = randomColor;
-        }
+        string newLine = $"<color=#{colorHex}>{msg.username}</color>: {msg.message}{emoji}";
 
-        string userColor = usernameColors[msg.username];
-        string newLine = $"<color={userColor}>{msg.username}</color>: {msg.message}";
-
-        // Stack visible messages
         visibleMessages.Enqueue(newLine);
         if (visibleMessages.Count > maxVisibleMessages)
             visibleMessages.Dequeue();
@@ -125,15 +119,57 @@ public class ChatManager : MonoBehaviour
     private Queue<ChatMessage> CreateShuffledQueue(List<ChatMessage> list)
     {
         List<ChatMessage> copy = new List<ChatMessage>(list);
-
         for (int i = copy.Count - 1; i > 0; i--)
         {
             int rand = Random.Range(0, i + 1);
-            ChatMessage temp = copy[i];
-            copy[i] = copy[rand];
-            copy[rand] = temp;
+            (copy[i], copy[rand]) = (copy[rand], copy[i]);
         }
-
         return new Queue<ChatMessage>(copy);
+    }
+
+    private void AssignUsernameColors(List<ChatMessage> messages)
+    {
+        usernameColors = new Dictionary<string, Color>();
+
+        foreach (var msg in messages)
+        {
+            if (!usernameColors.ContainsKey(msg.username))
+            {
+                // Generate random color but keep it bright
+                Color randomColor = Random.ColorHSV(0f, 1f, 0.6f, 1f, 0.8f, 1f);
+                usernameColors[msg.username] = randomColor;
+            }
+        }
+    }
+
+
+    private void LoadEmojis()
+    {
+        emojiCategories = new Dictionary<string, string[]>();
+
+        EmojiCategory data = JsonUtility.FromJson<EmojiCategory>(emojiJson.text);
+        emojiCategories["excited"] = data.excited;
+        emojiCategories["scared"] = data.scared;
+    }
+
+    private string GetRandomEmoji(string emotion)
+    {
+        if (emojiCategories == null || !emojiCategories.ContainsKey(emotion))
+            return "";
+
+        if (Random.value > 0.5f)
+        {
+            string[] emojis = emojiCategories[emotion];
+            if (emojis.Length > 0)
+                return " " + emojis[Random.Range(0, emojis.Length)];
+        }
+        return "";
+    }
+
+    [System.Serializable]
+    private class EmojiCategory
+    {
+        public string[] excited;
+        public string[] scared;
     }
 }

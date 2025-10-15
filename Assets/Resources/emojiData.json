@@ -1,0 +1,4 @@
+{
+  "excited": ["<sprite name=Laugh>", "<sprite name=Laugh Dog>"],
+  "scared": ["<sprite name=Eyes>", "<sprite name=Cross Pepe>", "<sprite name=Shock Pepe>", "<sprite name=Cry Cat>"]
+}
