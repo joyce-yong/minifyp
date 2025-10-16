@@ -1,0 +1,122 @@
+{
+	"assetNamespace": "fab",
+	"listing":
+	{
+		"averageRating": 5,
+		"createdAt": "",
+		"description": "<p>Game Ready Bedroom Shelf: 1984 tris</p>\n<p>Textures format: PNG (2048x2048)</p>\n<p>3D Artist: <a target=\"_blank\" href=\"https://sketchfab.com/Den1121\" rel=\"noopener noreferrer nofollow\">Anna Denisova</a></p>",
+		"isAiForbidden": false,
+		"isAiGenerated": false,
+		"lastUpdatedAt": "2025-02-24T11:43:47.475086Z",
+		"listingType": "3d-model",
+		"media": "https://media.fab.com/image_previews/gallery_images/69d30098-94ce-44d6-a5cf-2a08ce1d421e/842ecc48-023d-4ba5-8f3f-837d66b19c4d.jpg",
+		"publishedAt": "2024-10-04T13:10:04.731290Z",
+		"reviewCount": 2,
+		"thumbnail": "https://media.fab.com/image_previews/gallery_images/884fdb7e-84c5-49c8-91d0-a64317abced0/9c013e07-1735-4ceb-8dfd-472dca9855eb.jpeg",
+		"title": "Game Ready | Free Bedroom Shelf",
+		"uid": "da44abc3-c0d1-4cb1-8062-93e1833480ac",
+		"updatedAt": "",
+		"user":
+		{
+			"coverImageUrl": "https://cdn1.epicgames.com/fab/seller/o-bgz43emwk5lp8z7jj66g2kdqmrpeb9/backgroundImage/blob-1920x540-784988da805f9c612a49d16643d89f66.jpg",
+			"profileImageUrl": "https://cdn1.epicgames.com/fab/seller/o-bgz43emwk5lp8z7jj66g2kdqmrpeb9/profileImage/blob-500x500-c262a0bbbb60b29a41733615a746587c.jpg",
+			"sellerName": "Saritasa",
+			"uid": "c7fecbec-a5c4-41b8-af9b-b2f5d3f5912d"
+		},
+		"tags": [
+			{
+				"name": "Furniture",
+				"slug": "furniture",
+				"uid": "0f6b3b40-8715-4963-b755-0160e80cf12c"
+			},
+			{
+				"name": "Bedroom",
+				"slug": "bedroom",
+				"uid": "265cf2af-2ca9-409d-99b1-bbab3e7fa99e"
+			},
+			{
+				"name": "Lowpoly",
+				"slug": "lowpoly",
+				"uid": "451806dc-649e-43b7-9c2e-a54485de14b6"
+			},
+			{
+				"name": "Animated",
+				"slug": "animated",
+				"uid": "8e61a209-4e02-4dd1-8e44-cc2bf9356e7a"
+			},
+			{
+				"name": "Home",
+				"slug": "home",
+				"uid": "901cd72d-3193-480e-84f3-be1106297178"
+			},
+			{
+				"name": "Wood",
+				"slug": "wood",
+				"uid": "bcd38165-4b32-484d-bce7-c6cdaf827f77"
+			},
+			{
+				"name": "Room",
+				"slug": "room",
+				"uid": "eb8d1a47-05e1-4746-9da4-3f71da863dcb"
+			},
+			{
+				"name": "Shelf",
+				"slug": "shelf",
+				"uid": "f47a2213-07bd-4d71-93fa-b9917f474826"
+			}
+		],
+		"category":
+		{
+			"name": "Furniture & Fixtures",
+			"path": "furniture-fixtures",
+			"slug": "furniture-fixtures",
+			"uid": "3da1d2bd-49b4-4bc5-90e5-d31dadec3bd0"
+		},
+		"assetFormats": [
+			{
+				"assetFormatType":
+				{
+					"name": "FBX",
+					"groupName": "3D Exchange Formats",
+					"code": "fbx",
+					"icon": "cube",
+					"extensions": [
+						"fbx"
+					]
+				}
+			},
+			{
+				"assetFormatType":
+				{
+					"name": "Converted Files",
+					"groupName": "",
+					"code": "converted-files",
+					"icon": "cube",
+					"extensions": [
+						"gltf",
+						"glb",
+						"usdz"
+					]
+				}
+			}
+		],
+		"_PluginMetas":
+		{
+			"apiDataVersion": "0.0.1",
+			"entitlementUid": "ae1becba-730f-49ff-a952-d7a00462400b",
+			"cacheSize": 0,
+			"downloaded": []
+		}
+	},
+	"target": "",
+	"quality": "",
+	"format": "gltf",
+	"fileId": "8f1c5996-2ebd-4e30-99c3-12454d0eaca4",
+	"platformIncluded": "",
+	"distributionPointBaseUrls": [],
+	"distributionMethod": "",
+	"entitlementUid": "ae1becba-730f-49ff-a952-d7a00462400b",
+	"invertedNormal": false,
+	"isConverted": true,
+	"isQuixel": false
+}
