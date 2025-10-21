@@ -1,0 +1,109 @@
+{
+	"assetNamespace": "fab",
+	"listing":
+	{
+		"averageRating": 5,
+		"createdAt": "",
+		"description": "<p>Here is a simple bathtub I had made some time ago, hope it might come in handy to someone else.</p>",
+		"isAiForbidden": true,
+		"isAiGenerated": false,
+		"lastUpdatedAt": "2025-08-08T00:52:00.493668Z",
+		"listingType": "3d-model",
+		"media": "https://media.fab.com/image_previews/gallery_images/e5d89246-f01b-4e93-bd1a-43f2d5da4e18/f21f8449-1a39-4432-a4ed-86f9fb4ab767.jpeg",
+		"publishedAt": "2025-08-08T00:51:54.536914Z",
+		"reviewCount": 1,
+		"thumbnail": "https://media.fab.com/image_previews/gallery_images/bcd67894-bc12-4da6-9d4b-2d2fa67bed0f/72a75ee0-76df-43c9-be01-dcbe85c18861.jpeg",
+		"title": "Simple Bathtub",
+		"uid": "76672078-d8a2-435b-a6ce-a5f133af7d90",
+		"updatedAt": "",
+		"user":
+		{
+			"coverImageUrl": "",
+			"profileImageUrl": "",
+			"sellerName": "Andrei Ghenoiu",
+			"uid": "db8c20fa-69fd-46ce-9a4d-f75e3e8fe9de"
+		},
+		"tags": [
+			{
+				"name": "Retro",
+				"slug": "retro",
+				"uid": "01b64ec5-7261-4c99-a280-a34680f1af03"
+			},
+			{
+				"name": "Bathroom",
+				"slug": "bathroom",
+				"uid": "082e6c95-30aa-48ab-b7d1-d90a9fb83ba1"
+			},
+			{
+				"name": "Bathtub",
+				"slug": "bathtub",
+				"uid": "27f14206-080d-4b8b-9650-c7a1d1e684ce"
+			}
+		],
+		"category":
+		{
+			"name": "Furniture & Fixtures",
+			"path": "furniture-fixtures",
+			"slug": "furniture-fixtures",
+			"uid": "3da1d2bd-49b4-4bc5-90e5-d31dadec3bd0"
+		},
+		"assetFormats": [
+			{
+				"assetFormatType":
+				{
+					"name": "GLTF",
+					"groupName": "3D Exchange Formats",
+					"code": "gltf",
+					"icon": "cube",
+					"extensions": [
+						"gltf"
+					]
+				}
+			},
+			{
+				"assetFormatType":
+				{
+					"name": "Additional files",
+					"groupName": "Other Formats",
+					"code": "additional-files",
+					"icon": "file",
+					"extensions": [
+						"zip"
+					]
+				}
+			},
+			{
+				"assetFormatType":
+				{
+					"name": "Converted Files",
+					"groupName": "",
+					"code": "converted-files",
+					"icon": "cube",
+					"extensions": [
+						"gltf",
+						"glb",
+						"usdz"
+					]
+				}
+			}
+		],
+		"_PluginMetas":
+		{
+			"apiDataVersion": "0.0.1",
+			"entitlementUid": "8015551f-1f26-452e-93ea-965ce5548c5f",
+			"cacheSize": 0,
+			"downloaded": []
+		}
+	},
+	"target": "unity",
+	"quality": "",
+	"format": "gltf",
+	"fileId": "e0015c43-356e-4a81-85f8-729efd848733",
+	"platformIncluded": "",
+	"distributionPointBaseUrls": [],
+	"distributionMethod": "",
+	"entitlementUid": "8015551f-1f26-452e-93ea-965ce5548c5f",
+	"invertedNormal": false,
+	"isConverted": true,
+	"isQuixel": false
+}

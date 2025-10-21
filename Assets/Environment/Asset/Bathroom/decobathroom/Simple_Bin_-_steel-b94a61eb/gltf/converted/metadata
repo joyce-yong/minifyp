@@ -1,0 +1,139 @@
+{
+	"assetNamespace": "fab",
+	"listing":
+	{
+		"averageRating": 0,
+		"createdAt": "",
+		"description": "<p>Simple steel bin. Handy prop for any environment.  lid and base seperate objects</p>\n<p>PBR textures <a target=\"_blank\" href=\"/4k\" rel=\"noopener noreferrer nofollow\"></a><a href=\"/users/4k\" rel=\"noopener noreferrer nofollow\">@4k</a></p>",
+		"isAiForbidden": true,
+		"isAiGenerated": false,
+		"lastUpdatedAt": "2025-02-24T12:06:48.556504Z",
+		"listingType": "3d-model",
+		"media": "https://media.fab.com/image_previews/gallery_images/c1dead37-27de-4a15-8f6a-dab3a5d0fb8b/7f97a341-9763-4188-8f6c-f55f885e82e2.jpeg",
+		"publishedAt": "2024-11-15T04:12:37.075484Z",
+		"reviewCount": 0,
+		"thumbnail": "https://media.fab.com/image_previews/gallery_images/83b0ba52-5d78-42fe-bd3a-6e79a86cfbdc/267c8a26-61f9-4be7-816f-6f1521fdf4a8.jpeg",
+		"title": "Simple Bin - steel",
+		"uid": "b94a61eb-86a5-4f8d-9d77-417d8c6fad59",
+		"updatedAt": "",
+		"user":
+		{
+			"coverImageUrl": "https://cdn1.epicgames.com/fab/seller/o-ynhmd9y8ef3wnpurw5n6t58medckvp/cover/15fbb6a0.jpg",
+			"profileImageUrl": "",
+			"sellerName": "Roy Sousa",
+			"uid": "ce6adde9-bde6-4467-bee7-ac3e0ab6d998"
+		},
+		"tags": [
+			{
+				"name": "Bathroom",
+				"slug": "bathroom",
+				"uid": "082e6c95-30aa-48ab-b7d1-d90a9fb83ba1"
+			},
+			{
+				"name": "Tree",
+				"slug": "tree",
+				"uid": "365e087d-8586-4b06-94e8-69c855e5f0aa"
+			},
+			{
+				"name": "Steel",
+				"slug": "steel",
+				"uid": "5bd69d4a-ba51-4523-ad8a-ec3b58a8b310"
+			},
+			{
+				"name": "Trashcan",
+				"slug": "trashcan",
+				"uid": "95891856-070b-4ef8-8942-fa5bf02fd34a"
+			},
+			{
+				"name": "Old",
+				"slug": "old",
+				"uid": "975b1521-db01-43ed-a939-c2c2da5027b1"
+			},
+			{
+				"name": "Waste",
+				"slug": "waste",
+				"uid": "9ec0b449-6912-4b30-be02-9d1e6967af19"
+			},
+			{
+				"name": "Bin",
+				"slug": "bin",
+				"uid": "a036c611-c978-4d1a-b949-23d3e59cfdca"
+			},
+			{
+				"name": "Kitchen",
+				"slug": "kitchen",
+				"uid": "cb9f1bee-d953-4e6f-9c1d-f47418c1e5a2"
+			},
+			{
+				"name": "Rubbish",
+				"slug": "rubbish",
+				"uid": "e5ff4bc2-6557-4d0f-b370-50d7bd786657"
+			}
+		],
+		"category":
+		{
+			"name": "Buildings & Architecture",
+			"path": "buildings-architecture",
+			"slug": "buildings-architecture",
+			"uid": "eec3bdd5-ba7a-45a8-b15d-67462b9630f6"
+		},
+		"assetFormats": [
+			{
+				"assetFormatType":
+				{
+					"name": "GLTF",
+					"groupName": "3D Exchange Formats",
+					"code": "gltf",
+					"icon": "cube",
+					"extensions": [
+						"gltf"
+					]
+				}
+			},
+			{
+				"assetFormatType":
+				{
+					"name": "Additional files",
+					"groupName": "Other Formats",
+					"code": "additional-files",
+					"icon": "file",
+					"extensions": [
+						"zip"
+					]
+				}
+			},
+			{
+				"assetFormatType":
+				{
+					"name": "Converted Files",
+					"groupName": "",
+					"code": "converted-files",
+					"icon": "cube",
+					"extensions": [
+						"gltf",
+						"glb",
+						"usdz"
+					]
+				}
+			}
+		],
+		"_PluginMetas":
+		{
+			"apiDataVersion": "0.0.1",
+			"entitlementUid": "5281e594-6784-47ee-93ea-6fed2223b293",
+			"cacheSize": 0,
+			"downloaded": []
+		}
+	},
+	"target": "unity",
+	"quality": "",
+	"format": "gltf",
+	"fileId": "5ecc8c37-c8a1-403b-8f9e-bd156e83edc8",
+	"platformIncluded": "",
+	"distributionPointBaseUrls": [],
+	"distributionMethod": "",
+	"entitlementUid": "5281e594-6784-47ee-93ea-6fed2223b293",
+	"invertedNormal": false,
+	"isConverted": true,
+	"isQuixel": false
+}
