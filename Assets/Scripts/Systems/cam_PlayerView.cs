@@ -22,6 +22,11 @@ public class cam_PlayerView : MonoBehaviour
     [SerializeField] float zoomSpeed = 25f;
     [SerializeField] float zoomSmoothness = 8f;
 
+    [Header("Camera Shake")]
+    [SerializeField] float shakeIntensity = 0.15f;
+    [SerializeField] float shakeDuration = 0.3f;
+    [SerializeField] AnimationCurve shakeDecay = AnimationCurve.EaseInOut(0, 1, 1, 0);
+
     g_PlayerMovement movement;
     CharacterController controller;
 
@@ -36,6 +41,11 @@ public class cam_PlayerView : MonoBehaviour
 
     float targetFOV;
     float currentFOV;
+
+    bool isShaking;
+    float shakeTimer;
+    float shakeDurationTotal;
+    Vector3 shakeOffset;
 
     void Awake()
     {
@@ -58,6 +68,7 @@ public class cam_PlayerView : MonoBehaviour
     void LateUpdate()
     {
         HandleLook();
+        HandleCameraShake();
         HandleHeadBob();
         HandleZoom();
     }
@@ -79,7 +90,7 @@ public class cam_PlayerView : MonoBehaviour
 
     void HandleHeadBob()
     {
-        if (controller == null) return;
+        if (controller == null || isShaking) return;
 
         if (!controller.isGrounded)
         {
@@ -114,6 +125,36 @@ public class cam_PlayerView : MonoBehaviour
 
         currentFOV = Mathf.Lerp(currentFOV, targetFOV, Time.deltaTime * zoomSmoothness);
         playerCamera.fieldOfView = currentFOV;
+    }
+
+    void HandleCameraShake()
+    {
+        if (isShaking)
+        {
+            shakeTimer += Time.deltaTime;
+            float progress = shakeTimer / shakeDurationTotal;
+            
+            if (progress >= 1f)
+            {
+                isShaking = false;
+                shakeOffset = Vector3.zero;
+                transform.localPosition = new Vector3(0, defaultYPos, 0);
+            }
+            else
+            {
+                float strength = shakeDecay.Evaluate(progress) * shakeIntensity;
+                shakeOffset = Vector3.Lerp(shakeOffset, Random.insideUnitSphere * strength, Time.deltaTime * 15f);
+                transform.localPosition = new Vector3(shakeOffset.x, defaultYPos + shakeOffset.y, shakeOffset.z);
+            }
+        }
+    }
+
+    public void TriggerShake()
+    {
+        isShaking = true;
+        shakeTimer = 0f;
+        shakeDurationTotal = shakeDuration;
+        shakeOffset = Vector3.zero;
     }
 
     public void SetZoom(float zoomFOV)
