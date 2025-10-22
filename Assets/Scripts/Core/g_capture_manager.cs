@@ -11,10 +11,14 @@ public class CaptureManager : MonoBehaviour
     public RawImage playerReticleImage;
     public Canvas captureOverlay;
     public cam_PlayerView cameraView;
+    
+    [Header("Capture Effects")]
+    public CaptureFrameEffects captureEffects;
 
     GhostLockOn currentTarget;
     bool captureMode;
     Color originalReticleColor;
+    bool isCapturing;
 
     void Start()
     {
@@ -24,6 +28,8 @@ public class CaptureManager : MonoBehaviour
 
     void Update()
     {
+        if (isCapturing) return;
+        
         if (Input.GetKeyDown(KeyCode.Q))
         {
             captureMode = !captureMode;
@@ -72,10 +78,7 @@ public class CaptureManager : MonoBehaviour
                     
                     if (Input.GetMouseButtonDown(0))
                     {
-                        if (cameraView != null) cameraView.TriggerShake();
-                        currentTarget.Capture();
-                        currentTarget = null;
-                        playerReticleImage.color = originalReticleColor;
+                        StartCapture();
                     }
                 }
             }
@@ -95,6 +98,34 @@ public class CaptureManager : MonoBehaviour
             currentTarget = null;
             playerReticleImage.color = originalReticleColor;
         }
+    }
+
+    void StartCapture()
+    {
+        isCapturing = true;
+        
+        if (cameraView != null) cameraView.TriggerShake();
+        
+        if (captureEffects != null)
+        {
+            captureEffects.PlayCaptureSequence(currentTarget);
+        }
+        else
+        {
+            currentTarget.Capture();
+        }
+        
+        playerReticleImage.color = originalReticleColor;
+        
+        StartCoroutine(ResetCaptureState());
+    }
+
+    System.Collections.IEnumerator ResetCaptureState()
+    {
+        yield return new WaitForSeconds(captureEffects ? captureEffects.freezeDuration + 0.5f : 0.5f);
+        
+        currentTarget = null;
+        isCapturing = false;
     }
 
     GhostLockOn FindClosestGhost()
