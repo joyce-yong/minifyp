@@ -29,13 +29,21 @@ public class g_InventoryItem : MonoBehaviour
     }
 
     [Header("Stack Info")]
-    public int stackCurrent;
-    public int stackMax;
+    private int _stackCurrent;
+    public int stackCurrent
+    {
+        get => _stackCurrent;
+        set
+        {
+            _stackCurrent = value;
+            UpdateStackText(); // Call UpdateStackText every time the value changes
+        }
+    }
 
+    public int stackMax;
     public void AddToStack(int amount)
     {
         stackCurrent = Mathf.Min(stackCurrent + amount, stackMax);
-        UpdateStackText();
     }
 
     private void UpdateStackText()

@@ -206,46 +206,29 @@ public class g_InventoryManager : MonoBehaviour, IPointerDownHandler, IPointerUp
                 Ray ray = cam.ScreenPointToRay(Input.mousePosition);
                 Vector3 position = ray.GetPoint(3);
 
-                GameObject newItem = Instantiate(draggedObject.GetComponent<g_InventoryItem>().itemScriptableObject.prefab, position, new Quaternion());
-                newItem.GetComponent<g_ItemPickable>().itemScriptableObject = draggedObject.GetComponent<g_InventoryItem>().itemScriptableObject;
+                g_InventoryItem draggedItemComponent = draggedObject.GetComponent<g_InventoryItem>();
 
-                lastItemSlot.GetComponent<g_InventorySlot>().heldItem = null;
-                Destroy(draggedObject);
+                GameObject newItem = Instantiate(draggedItemComponent.itemScriptableObject.prefab, position, new Quaternion());
+                newItem.GetComponent<g_ItemPickable>().itemScriptableObject = draggedItemComponent.itemScriptableObject;
+
+                draggedItemComponent.stackCurrent -= 1;
+
+                if (draggedItemComponent.stackCurrent <= 0)
+                {
+                    lastItemSlot.GetComponent<g_InventorySlot>().heldItem = null;
+                    Destroy(draggedObject);
+                }
+                else
+                {
+                    lastItemSlot.GetComponent<g_InventorySlot>().SetHeldItem(draggedObject);
+                    draggedObject.transform.SetParent(lastItemSlot.transform.parent.parent.GetChild(2));
+                }
             }
 
             HotbarItemChanged();
             draggedObject = null;
         }
     }
-
-    // public void ItemPicked(GameObject pickedItem)
-    // {
-    //     GameObject emptySlot = null;
-
-    //     for (int i = 0; i < slots.Length; i++)
-    //     {
-    //         g_InventorySlot slot = slots[i].GetComponent<g_InventorySlot>();
-
-    //         if (slot.heldItem == null)
-    //         {
-    //             emptySlot = slots[i];
-    //             break;
-    //         }
-    //     }
-
-    //     if (emptySlot != null)
-    //     {
-    //         GameObject newItem = Instantiate(itemPrefab);
-    //         newItem.GetComponent<g_InventoryItem>().itemScriptableObject = pickedItem.GetComponent<g_ItemPickable>().itemScriptableObject;
-    //         newItem.transform.SetParent(emptySlot.transform.parent.parent.GetChild(2));
-    //         newItem.GetComponent<g_InventoryItem>().stackCurrent = 1;
-
-    //         emptySlot.GetComponent<g_InventorySlot>().SetHeldItem(newItem);
-    //         newItem.transform.localScale = new Vector3(1, 1, 1);
-
-    //         Destroy(pickedItem);
-    //     }
-    // }
 
     public void ItemPicked(GameObject pickedItem)
     {
@@ -294,3 +277,4 @@ public class g_InventoryManager : MonoBehaviour, IPointerDownHandler, IPointerUp
         Debug.Log("Inventory Full");
     }
 }
+ 
