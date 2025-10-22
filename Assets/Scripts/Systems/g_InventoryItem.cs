@@ -38,11 +38,6 @@ public class g_InventoryItem : MonoBehaviour
         UpdateStackText();
     }
 
-    // public bool IsStackFull()
-    // {
-    //     return stackCurrent >= stackMax;
-    // }
-
     private void UpdateStackText()
     {
         if (stackText != null)

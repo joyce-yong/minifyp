@@ -16,7 +16,7 @@ public class g_InventoryManager : MonoBehaviour, IPointerDownHandler, IPointerUp
 
     bool isInventoryOpened;
 
-    int selectedHotbarSlot = 0;
+    int? selectedHotbarSlot = null;
 
     void Start()
     {
@@ -54,21 +54,35 @@ public class g_InventoryManager : MonoBehaviour, IPointerDownHandler, IPointerUp
 
     private void CheckForHotbarInput()
     {
+        int pressedSlotIndex = -1;
+
         if (Input.GetKeyDown(KeyCode.Alpha1))
         {
-            selectedHotbarSlot = 0;
-            HotbarItemChanged();
+            pressedSlotIndex = 0;
         }
         else if (Input.GetKeyDown(KeyCode.Alpha2))
         {
-            selectedHotbarSlot = 1;
-            HotbarItemChanged();
+            pressedSlotIndex = 1;
         }
         else if (Input.GetKeyDown(KeyCode.Alpha3))
         {
-            selectedHotbarSlot = 2;
+            pressedSlotIndex = 2;
+        }
+
+        if (pressedSlotIndex != -1)
+        {
+            // If the same key is pressed again, turn it off
+            if (selectedHotbarSlot.HasValue && selectedHotbarSlot.Value == pressedSlotIndex)
+            {
+                selectedHotbarSlot = null;
+            }
+            // Otherwise, switch to the new slot / activate for the first time
+            else
+            {
+                selectedHotbarSlot = pressedSlotIndex;
+            }
             HotbarItemChanged();
-        }  
+        } 
     }
 
     private void HotbarItemChanged()
@@ -82,7 +96,9 @@ public class g_InventoryManager : MonoBehaviour, IPointerDownHandler, IPointerUp
         {
             Vector3 scale;
 
-            if (slot == hotbarSlots[selectedHotbarSlot])
+            int currentSlotIndex = System.Array.IndexOf(hotbarSlots, slot);
+
+            if (selectedHotbarSlot.HasValue && currentSlotIndex == selectedHotbarSlot.Value)
             {
                 scale = new Vector3(1.1f, 1.1f, 1.1f);
 
@@ -91,7 +107,7 @@ public class g_InventoryManager : MonoBehaviour, IPointerDownHandler, IPointerUp
                     for (int i = 0; i < handParent.childCount; i++)
                     {
                         if (handParent.GetChild(i).GetComponent<g_ItemHand>().itemScriptableObject 
-                            == hotbarSlots[selectedHotbarSlot].GetComponent<g_InventorySlot>().heldItem.GetComponent<g_InventoryItem>().itemScriptableObject)
+                            == slot.GetComponent<g_InventorySlot>().heldItem.GetComponent<g_InventoryItem>().itemScriptableObject)
                         {
                             handParent.GetChild(i).gameObject.SetActive(true);
                         }

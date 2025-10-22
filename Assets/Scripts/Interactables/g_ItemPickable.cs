@@ -9,7 +9,7 @@ public class g_ItemPickable : MonoBehaviour, IInteractable
 
     void Start()
     {
-        inventoryManager = FindObjectOfType<g_InventoryManager>();
+        inventoryManager = FindAnyObjectByType<g_InventoryManager>();
     }
 
     void Update()
