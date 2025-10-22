@@ -29,7 +29,7 @@ public class g_InventoryManager : MonoBehaviour, IPointerDownHandler, IPointerUp
         CheckForHotbarInput();
         inventoryParent.SetActive(isInventoryOpened);
 
-        //Move item
+        // Move item
         if (draggedObject != null)
         {
             draggedObject.transform.position = Input.mousePosition;
@@ -130,24 +130,31 @@ public class g_InventoryManager : MonoBehaviour, IPointerDownHandler, IPointerUp
             GameObject clickedObject = eventData.pointerCurrentRaycast.gameObject;
             g_InventorySlot slot = clickedObject.GetComponent<g_InventorySlot>();
 
-            //There isnt item in the slot - place item
+            // There isnt item in the slot - place item
             if (slot != null && slot.heldItem == null)
             {
                 slot.SetHeldItem(draggedObject);
                 draggedObject.transform.SetParent(slot.transform.parent.parent.GetChild(2));
             }
-            //There is item in the slot - switch items
+            // There is item in the slot - switch items
             else if (slot != null && slot.heldItem != null && slot.heldItem.GetComponent<g_InventoryItem>().stackCurrent == slot.heldItem.GetComponent<g_InventoryItem>().stackMax
                 || slot != null && slot.heldItem != null && slot.heldItem.GetComponent<g_InventoryItem>().itemScriptableObject != draggedObject.GetComponent<g_InventoryItem>().itemScriptableObject)
             {
-                lastItemSlot.GetComponent<g_InventorySlot>().SetHeldItem(slot.heldItem);
-                slot.heldItem.transform.SetParent(slot.transform.parent.parent.GetChild(2));
+                // store the item from the target slot before overwriting it
+                GameObject itemToSwitchBack = slot.heldItem;
 
+                // place the target slot's item (itemToSwitchBack) back into the last slot
+                lastItemSlot.GetComponent<g_InventorySlot>().SetHeldItem(itemToSwitchBack);
+                // parent the returned item to the lastItemSlot's item container (Hotbar/Items or Inventory/Items)
+                itemToSwitchBack.transform.SetParent(lastItemSlot.transform.parent.parent.GetChild(2));
+
+                // place the dragged item into the target slot
                 slot.SetHeldItem(draggedObject);
+                // parent the dragged item to the target slot's item container
                 draggedObject.transform.SetParent(slot.transform.parent.parent.GetChild(2));
             }
 
-            //Fill stack
+            // Fill stack
             else if (slot != null && slot.heldItem != null && slot.heldItem.GetComponent<g_InventoryItem>().stackCurrent < slot.heldItem.GetComponent<g_InventoryItem>().stackMax
                 && slot.heldItem.GetComponent<g_InventoryItem>().itemScriptableObject == draggedObject.GetComponent<g_InventoryItem>().itemScriptableObject)
             {
@@ -166,15 +173,18 @@ public class g_InventoryManager : MonoBehaviour, IPointerDownHandler, IPointerUp
                     slotHeldItem.stackCurrent += itemsToFillStack;
                     draggedItem.stackCurrent -= itemsToFillStack;
                     lastItemSlot.GetComponent<g_InventorySlot>().SetHeldItem(draggedObject);
+                    // the item is being returned, so it must be reparented to the last slot's container
+                    draggedObject.transform.SetParent(lastItemSlot.transform.parent.parent.GetChild(2));
                 }
             }
-            //Return item to last slot
+            // Return item to last slot
             else if (clickedObject.name != "DropItem")
             {
                 lastItemSlot.GetComponent<g_InventorySlot>().SetHeldItem(draggedObject);
-                draggedObject.transform.SetParent(slot.transform.parent.parent.GetChild(2));
+                // parent the item back to its original slot's container (the lastItemSlot's container)
+                draggedObject.transform.SetParent(lastItemSlot.transform.parent.parent.GetChild(2));
             }
-            //Drop Item
+            // Drop Item
             else
             {
                 Ray ray = cam.ScreenPointToRay(Input.mousePosition);
