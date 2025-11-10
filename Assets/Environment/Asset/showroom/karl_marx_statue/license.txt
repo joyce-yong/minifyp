@@ -1,0 +1,11 @@
+Model Information:
+* title:	Karl Marx Statue
+* source:	https://sketchfab.com/3d-models/karl-marx-statue-648a0239e5ee4fa6a2859354ef511ca6
+* author:	netgis (https://sketchfab.com/netgis)
+
+Model License:
+* license type:	CC-BY-NC-4.0 (http://creativecommons.org/licenses/by-nc/4.0/)
+* requirements:	Author must be credited. No commercial use.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Karl Marx Statue" (https://sketchfab.com/3d-models/karl-marx-statue-648a0239e5ee4fa6a2859354ef511ca6) by netgis (https://sketchfab.com/netgis) licensed under CC-BY-NC-4.0 (http://creativecommons.org/licenses/by-nc/4.0/)
