@@ -1,0 +1,127 @@
+{
+	"assetNamespace": "fab",
+	"listing":
+	{
+		"averageRating": 0,
+		"createdAt": "",
+		"description": "<p>Mix of photogrammetry and modeling of an old, almost empty soap bottle. The UVs are set so the label can be easily changed.</p>",
+		"isAiForbidden": true,
+		"isAiGenerated": false,
+		"lastUpdatedAt": "2025-02-24T11:50:52.547161Z",
+		"listingType": "3d-model",
+		"media": "https://media.fab.com/image_previews/gallery_images/6b0acc6b-20ec-453f-83a5-aea39f846cf8/f1cc892e-c1cf-4d27-b06f-c33149352914.jpeg",
+		"publishedAt": "2024-10-31T13:50:17.959904Z",
+		"reviewCount": 0,
+		"thumbnail": "https://media.fab.com/image_previews/gallery_images/7d0f48a4-77d8-4b3d-a585-feb6a8475e96/55a8d03c-5edb-479f-8a24-72c4f1b70936.jpeg",
+		"title": "Old soap bottle",
+		"uid": "c0339d9c-d40a-4507-81c6-62d0fbe8e761",
+		"updatedAt": "",
+		"user":
+		{
+			"coverImageUrl": "",
+			"profileImageUrl": "https://cdn1.epicgames.com/fab/seller/o-7xj3mv53s8qbv39l4axszshz4plagr/profileImage/blob-500x500-0cc025f6e9a5e1cb9f0913eb84d47937.jpg",
+			"sellerName": "Antoine Dresen",
+			"uid": "edd28fd9-f1f6-4e54-ada3-6215a3f5e8f1"
+		},
+		"tags": [
+			{
+				"name": "Bathroom",
+				"slug": "bathroom",
+				"uid": "082e6c95-30aa-48ab-b7d1-d90a9fb83ba1"
+			},
+			{
+				"name": "Cheap",
+				"slug": "cheap",
+				"uid": "0c7fe12f-a339-4ee6-ac6f-c3f6d9b404fd"
+			},
+			{
+				"name": "Soap",
+				"slug": "soap",
+				"uid": "2bcb300b-0e1d-4f46-a333-99cee02ced67"
+			},
+			{
+				"name": "Photogrammetry",
+				"slug": "photogrammetry",
+				"uid": "39435048-f16b-4977-b62b-82ff5ca8c38e"
+			},
+			{
+				"name": "House",
+				"slug": "house",
+				"uid": "6596d504-e433-42e9-a760-b829827af869"
+			},
+			{
+				"name": "Old",
+				"slug": "old",
+				"uid": "975b1521-db01-43ed-a939-c2c2da5027b1"
+			},
+			{
+				"name": "Dispenser",
+				"slug": "dispenser",
+				"uid": "a7821e80-9001-4b91-9e07-c7d4620c0e74"
+			},
+			{
+				"name": "Bottle",
+				"slug": "bottle",
+				"uid": "bea546f4-1796-4a98-aacb-8d5ac0909bd1"
+			},
+			{
+				"name": "Kitchen",
+				"slug": "kitchen",
+				"uid": "cb9f1bee-d953-4e6f-9c1d-f47418c1e5a2"
+			}
+		],
+		"category":
+		{
+			"name": "Furniture & Fixtures",
+			"path": "furniture-fixtures",
+			"slug": "furniture-fixtures",
+			"uid": "3da1d2bd-49b4-4bc5-90e5-d31dadec3bd0"
+		},
+		"assetFormats": [
+			{
+				"assetFormatType":
+				{
+					"name": "OBJ",
+					"groupName": "3D Exchange Formats",
+					"code": "obj",
+					"icon": "cube",
+					"extensions": [
+						"obj"
+					]
+				}
+			},
+			{
+				"assetFormatType":
+				{
+					"name": "Converted Files",
+					"groupName": "",
+					"code": "converted-files",
+					"icon": "cube",
+					"extensions": [
+						"gltf",
+						"glb",
+						"usdz"
+					]
+				}
+			}
+		],
+		"_PluginMetas":
+		{
+			"apiDataVersion": "0.0.1",
+			"entitlementUid": "8ed04a86-ecda-4573-9437-ecc880acf273",
+			"cacheSize": 0,
+			"downloaded": []
+		}
+	},
+	"target": "",
+	"quality": "",
+	"format": "gltf",
+	"fileId": "1417a5f6-bd7c-480f-a07f-469ac9596afd",
+	"platformIncluded": "",
+	"distributionPointBaseUrls": [],
+	"distributionMethod": "",
+	"entitlementUid": "8ed04a86-ecda-4573-9437-ecc880acf273",
+	"invertedNormal": false,
+	"isConverted": true,
+	"isQuixel": false
+}

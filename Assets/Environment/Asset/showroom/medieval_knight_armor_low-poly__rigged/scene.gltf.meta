@@ -1,0 +1,281 @@
+fileFormatVersion: 2
+guid: 836a50a0ef9046b4ebe3222dd5e58d68
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 715df9372183c47e389bb6e19fbc3b52, type: 3}
+  editorImportSettings:
+    generateSecondaryUVSet: 0
+  importSettings:
+    nodeNameMethod: 1
+    animationMethod: 2
+    generateMipMaps: 1
+    texturesReadable: 0
+    defaultMinFilterMode: 9729
+    defaultMagFilterMode: 9729
+    anisotropicFilterLevel: 1
+  instantiationSettings:
+    mask: -1
+    layer: 0
+    skinUpdateWhenOffscreen: 1
+    lightIntensityFactor: 1
+    sceneObjectCreation: 2
+  assetDependencies:
+  - type: 0
+    originalUri: Assets\Environment\Asset\showroom\medieval_knight_armor_low-poly__rigged\scene.bin
+    assetPath: Assets\Environment\Asset\showroom\medieval_knight_armor_low-poly__rigged\scene.bin
+  - type: 1
+    originalUri: Assets\Environment\Asset\showroom\medieval_knight_armor_low-poly__rigged\textures\FeatherRed_baseColor.png
+    assetPath: Assets\Environment\Asset\showroom\medieval_knight_armor_low-poly__rigged\textures\FeatherRed_baseColor.png
+  - type: 1
+    originalUri: Assets\Environment\Asset\showroom\medieval_knight_armor_low-poly__rigged\textures\EdgeReins_baseColor.png
+    assetPath: Assets\Environment\Asset\showroom\medieval_knight_armor_low-poly__rigged\textures\EdgeReins_baseColor.png
+  - type: 1
+    originalUri: Assets\Environment\Asset\showroom\medieval_knight_armor_low-poly__rigged\textures\EdgeReins_metallicRoughness.png
+    assetPath: Assets\Environment\Asset\showroom\medieval_knight_armor_low-poly__rigged\textures\EdgeReins_metallicRoughness.png
+  - type: 1
+    originalUri: Assets\Environment\Asset\showroom\medieval_knight_armor_low-poly__rigged\textures\EdgeReins_normal.png
+    assetPath: Assets\Environment\Asset\showroom\medieval_knight_armor_low-poly__rigged\textures\EdgeReins_normal.png
+  - type: 1
+    originalUri: Assets\Environment\Asset\showroom\medieval_knight_armor_low-poly__rigged\textures\BaseMetal_baseColor.png
+    assetPath: Assets\Environment\Asset\showroom\medieval_knight_armor_low-poly__rigged\textures\BaseMetal_baseColor.png
+  - type: 1
+    originalUri: Assets\Environment\Asset\showroom\medieval_knight_armor_low-poly__rigged\textures\BaseMetal_metallicRoughness.png
+    assetPath: Assets\Environment\Asset\showroom\medieval_knight_armor_low-poly__rigged\textures\BaseMetal_metallicRoughness.png
+  - type: 1
+    originalUri: Assets\Environment\Asset\showroom\medieval_knight_armor_low-poly__rigged\textures\BaseMetal_normal.png
+    assetPath: Assets\Environment\Asset\showroom\medieval_knight_armor_low-poly__rigged\textures\BaseMetal_normal.png
+  - type: 1
+    originalUri: Assets\Environment\Asset\showroom\medieval_knight_armor_low-poly__rigged\textures\RimsMetal_baseColor.png
+    assetPath: Assets\Environment\Asset\showroom\medieval_knight_armor_low-poly__rigged\textures\RimsMetal_baseColor.png
+  - type: 1
+    originalUri: Assets\Environment\Asset\showroom\medieval_knight_armor_low-poly__rigged\textures\RimsMetal_metallicRoughness.png
+    assetPath: Assets\Environment\Asset\showroom\medieval_knight_armor_low-poly__rigged\textures\RimsMetal_metallicRoughness.png
+  - type: 1
+    originalUri: Assets\Environment\Asset\showroom\medieval_knight_armor_low-poly__rigged\textures\RimsMetal_normal.png
+    assetPath: Assets\Environment\Asset\showroom\medieval_knight_armor_low-poly__rigged\textures\RimsMetal_normal.png
+  - type: 1
+    originalUri: Assets\Environment\Asset\showroom\medieval_knight_armor_low-poly__rigged\textures\Screw_baseColor.png
+    assetPath: Assets\Environment\Asset\showroom\medieval_knight_armor_low-poly__rigged\textures\Screw_baseColor.png
+  - type: 1
+    originalUri: Assets\Environment\Asset\showroom\medieval_knight_armor_low-poly__rigged\textures\Screw_metallicRoughness.png
+    assetPath: Assets\Environment\Asset\showroom\medieval_knight_armor_low-poly__rigged\textures\Screw_metallicRoughness.png
+  - type: 1
+    originalUri: Assets\Environment\Asset\showroom\medieval_knight_armor_low-poly__rigged\textures\Screw_normal.png
+    assetPath: Assets\Environment\Asset\showroom\medieval_knight_armor_low-poly__rigged\textures\Screw_normal.png
+  - type: 1
+    originalUri: Assets\Environment\Asset\showroom\medieval_knight_armor_low-poly__rigged\textures\Padding_baseColor.png
+    assetPath: Assets\Environment\Asset\showroom\medieval_knight_armor_low-poly__rigged\textures\Padding_baseColor.png
+  - type: 1
+    originalUri: Assets\Environment\Asset\showroom\medieval_knight_armor_low-poly__rigged\textures\Padding_metallicRoughness.png
+    assetPath: Assets\Environment\Asset\showroom\medieval_knight_armor_low-poly__rigged\textures\Padding_metallicRoughness.png
+  - type: 1
+    originalUri: Assets\Environment\Asset\showroom\medieval_knight_armor_low-poly__rigged\textures\Padding_normal.png
+    assetPath: Assets\Environment\Asset\showroom\medieval_knight_armor_low-poly__rigged\textures\Padding_normal.png
+  - type: 1
+    originalUri: Assets\Environment\Asset\showroom\medieval_knight_armor_low-poly__rigged\textures\GorgetMetal_baseColor.png
+    assetPath: Assets\Environment\Asset\showroom\medieval_knight_armor_low-poly__rigged\textures\GorgetMetal_baseColor.png
+  - type: 1
+    originalUri: Assets\Environment\Asset\showroom\medieval_knight_armor_low-poly__rigged\textures\GorgetMetal_metallicRoughness.png
+    assetPath: Assets\Environment\Asset\showroom\medieval_knight_armor_low-poly__rigged\textures\GorgetMetal_metallicRoughness.png
+  - type: 1
+    originalUri: Assets\Environment\Asset\showroom\medieval_knight_armor_low-poly__rigged\textures\GorgetMetal_normal.png
+    assetPath: Assets\Environment\Asset\showroom\medieval_knight_armor_low-poly__rigged\textures\GorgetMetal_normal.png
+  - type: 1
+    originalUri: Assets\Environment\Asset\showroom\medieval_knight_armor_low-poly__rigged\textures\LeftShoulderMetal_baseColor.png
+    assetPath: Assets\Environment\Asset\showroom\medieval_knight_armor_low-poly__rigged\textures\LeftShoulderMetal_baseColor.png
+  - type: 1
+    originalUri: Assets\Environment\Asset\showroom\medieval_knight_armor_low-poly__rigged\textures\LeftShoulderMetal_metallicRoughness.png
+    assetPath: Assets\Environment\Asset\showroom\medieval_knight_armor_low-poly__rigged\textures\LeftShoulderMetal_metallicRoughness.png
+  - type: 1
+    originalUri: Assets\Environment\Asset\showroom\medieval_knight_armor_low-poly__rigged\textures\LeftShoulderMetal_normal.png
+    assetPath: Assets\Environment\Asset\showroom\medieval_knight_armor_low-poly__rigged\textures\LeftShoulderMetal_normal.png
+  - type: 1
+    originalUri: Assets\Environment\Asset\showroom\medieval_knight_armor_low-poly__rigged\textures\ArmMetal_baseColor.png
+    assetPath: Assets\Environment\Asset\showroom\medieval_knight_armor_low-poly__rigged\textures\ArmMetal_baseColor.png
+  - type: 1
+    originalUri: Assets\Environment\Asset\showroom\medieval_knight_armor_low-poly__rigged\textures\ArmMetal_metallicRoughness.png
+    assetPath: Assets\Environment\Asset\showroom\medieval_knight_armor_low-poly__rigged\textures\ArmMetal_metallicRoughness.png
+  - type: 1
+    originalUri: Assets\Environment\Asset\showroom\medieval_knight_armor_low-poly__rigged\textures\ArmMetal_normal.png
+    assetPath: Assets\Environment\Asset\showroom\medieval_knight_armor_low-poly__rigged\textures\ArmMetal_normal.png
+  - type: 1
+    originalUri: Assets\Environment\Asset\showroom\medieval_knight_armor_low-poly__rigged\textures\TorsoMetal_baseColor.png
+    assetPath: Assets\Environment\Asset\showroom\medieval_knight_armor_low-poly__rigged\textures\TorsoMetal_baseColor.png
+  - type: 1
+    originalUri: Assets\Environment\Asset\showroom\medieval_knight_armor_low-poly__rigged\textures\TorsoMetal_metallicRoughness.png
+    assetPath: Assets\Environment\Asset\showroom\medieval_knight_armor_low-poly__rigged\textures\TorsoMetal_metallicRoughness.png
+  - type: 1
+    originalUri: Assets\Environment\Asset\showroom\medieval_knight_armor_low-poly__rigged\textures\TorsoMetal_normal.png
+    assetPath: Assets\Environment\Asset\showroom\medieval_knight_armor_low-poly__rigged\textures\TorsoMetal_normal.png
+  - type: 1
+    originalUri: Assets\Environment\Asset\showroom\medieval_knight_armor_low-poly__rigged\textures\TorsoArmorHanger_baseColor.png
+    assetPath: Assets\Environment\Asset\showroom\medieval_knight_armor_low-poly__rigged\textures\TorsoArmorHanger_baseColor.png
+  - type: 1
+    originalUri: Assets\Environment\Asset\showroom\medieval_knight_armor_low-poly__rigged\textures\TorsoArmorHanger_metallicRoughness.png
+    assetPath: Assets\Environment\Asset\showroom\medieval_knight_armor_low-poly__rigged\textures\TorsoArmorHanger_metallicRoughness.png
+  - type: 1
+    originalUri: Assets\Environment\Asset\showroom\medieval_knight_armor_low-poly__rigged\textures\TorsoArmorHanger_normal.png
+    assetPath: Assets\Environment\Asset\showroom\medieval_knight_armor_low-poly__rigged\textures\TorsoArmorHanger_normal.png
+  - type: 1
+    originalUri: Assets\Environment\Asset\showroom\medieval_knight_armor_low-poly__rigged\textures\BeltsBucklesTorso_baseColor.png
+    assetPath: Assets\Environment\Asset\showroom\medieval_knight_armor_low-poly__rigged\textures\BeltsBucklesTorso_baseColor.png
+  - type: 1
+    originalUri: Assets\Environment\Asset\showroom\medieval_knight_armor_low-poly__rigged\textures\BeltsBucklesTorso_metallicRoughness.png
+    assetPath: Assets\Environment\Asset\showroom\medieval_knight_armor_low-poly__rigged\textures\BeltsBucklesTorso_metallicRoughness.png
+  - type: 1
+    originalUri: Assets\Environment\Asset\showroom\medieval_knight_armor_low-poly__rigged\textures\BeltsBucklesTorso_normal.png
+    assetPath: Assets\Environment\Asset\showroom\medieval_knight_armor_low-poly__rigged\textures\BeltsBucklesTorso_normal.png
+  - type: 1
+    originalUri: Assets\Environment\Asset\showroom\medieval_knight_armor_low-poly__rigged\textures\Ridges_baseColor.png
+    assetPath: Assets\Environment\Asset\showroom\medieval_knight_armor_low-poly__rigged\textures\Ridges_baseColor.png
+  - type: 1
+    originalUri: Assets\Environment\Asset\showroom\medieval_knight_armor_low-poly__rigged\textures\Ridges_metallicRoughness.png
+    assetPath: Assets\Environment\Asset\showroom\medieval_knight_armor_low-poly__rigged\textures\Ridges_metallicRoughness.png
+  - type: 1
+    originalUri: Assets\Environment\Asset\showroom\medieval_knight_armor_low-poly__rigged\textures\Ridges_normal.png
+    assetPath: Assets\Environment\Asset\showroom\medieval_knight_armor_low-poly__rigged\textures\Ridges_normal.png
+  - type: 1
+    originalUri: Assets\Environment\Asset\showroom\medieval_knight_armor_low-poly__rigged\textures\Belt_baseColor.png
+    assetPath: Assets\Environment\Asset\showroom\medieval_knight_armor_low-poly__rigged\textures\Belt_baseColor.png
+  - type: 1
+    originalUri: Assets\Environment\Asset\showroom\medieval_knight_armor_low-poly__rigged\textures\Belt_metallicRoughness.png
+    assetPath: Assets\Environment\Asset\showroom\medieval_knight_armor_low-poly__rigged\textures\Belt_metallicRoughness.png
+  - type: 1
+    originalUri: Assets\Environment\Asset\showroom\medieval_knight_armor_low-poly__rigged\textures\Belt_normal.png
+    assetPath: Assets\Environment\Asset\showroom\medieval_knight_armor_low-poly__rigged\textures\Belt_normal.png
+  - type: 1
+    originalUri: Assets\Environment\Asset\showroom\medieval_knight_armor_low-poly__rigged\textures\HolsterMetal_baseColor.png
+    assetPath: Assets\Environment\Asset\showroom\medieval_knight_armor_low-poly__rigged\textures\HolsterMetal_baseColor.png
+  - type: 1
+    originalUri: Assets\Environment\Asset\showroom\medieval_knight_armor_low-poly__rigged\textures\HolsterMetal_metallicRoughness.png
+    assetPath: Assets\Environment\Asset\showroom\medieval_knight_armor_low-poly__rigged\textures\HolsterMetal_metallicRoughness.png
+  - type: 1
+    originalUri: Assets\Environment\Asset\showroom\medieval_knight_armor_low-poly__rigged\textures\HolsterMetal_normal.png
+    assetPath: Assets\Environment\Asset\showroom\medieval_knight_armor_low-poly__rigged\textures\HolsterMetal_normal.png
+  - type: 1
+    originalUri: Assets\Environment\Asset\showroom\medieval_knight_armor_low-poly__rigged\textures\legArmor_baseColor.png
+    assetPath: Assets\Environment\Asset\showroom\medieval_knight_armor_low-poly__rigged\textures\legArmor_baseColor.png
+  - type: 1
+    originalUri: Assets\Environment\Asset\showroom\medieval_knight_armor_low-poly__rigged\textures\legArmor_metallicRoughness.png
+    assetPath: Assets\Environment\Asset\showroom\medieval_knight_armor_low-poly__rigged\textures\legArmor_metallicRoughness.png
+  - type: 1
+    originalUri: Assets\Environment\Asset\showroom\medieval_knight_armor_low-poly__rigged\textures\legArmor_normal.png
+    assetPath: Assets\Environment\Asset\showroom\medieval_knight_armor_low-poly__rigged\textures\legArmor_normal.png
+  - type: 1
+    originalUri: Assets\Environment\Asset\showroom\medieval_knight_armor_low-poly__rigged\textures\BeltsBucklesSmall_baseColor.png
+    assetPath: Assets\Environment\Asset\showroom\medieval_knight_armor_low-poly__rigged\textures\BeltsBucklesSmall_baseColor.png
+  - type: 1
+    originalUri: Assets\Environment\Asset\showroom\medieval_knight_armor_low-poly__rigged\textures\BeltsBucklesSmall_metallicRoughness.png
+    assetPath: Assets\Environment\Asset\showroom\medieval_knight_armor_low-poly__rigged\textures\BeltsBucklesSmall_metallicRoughness.png
+  - type: 1
+    originalUri: Assets\Environment\Asset\showroom\medieval_knight_armor_low-poly__rigged\textures\BeltsBucklesSmall_normal.png
+    assetPath: Assets\Environment\Asset\showroom\medieval_knight_armor_low-poly__rigged\textures\BeltsBucklesSmall_normal.png
+  - type: 1
+    originalUri: Assets\Environment\Asset\showroom\medieval_knight_armor_low-poly__rigged\textures\HingeMetal_baseColor.png
+    assetPath: Assets\Environment\Asset\showroom\medieval_knight_armor_low-poly__rigged\textures\HingeMetal_baseColor.png
+  - type: 1
+    originalUri: Assets\Environment\Asset\showroom\medieval_knight_armor_low-poly__rigged\textures\HingeMetal_metallicRoughness.png
+    assetPath: Assets\Environment\Asset\showroom\medieval_knight_armor_low-poly__rigged\textures\HingeMetal_metallicRoughness.png
+  - type: 1
+    originalUri: Assets\Environment\Asset\showroom\medieval_knight_armor_low-poly__rigged\textures\HingeMetal_normal.png
+    assetPath: Assets\Environment\Asset\showroom\medieval_knight_armor_low-poly__rigged\textures\HingeMetal_normal.png
+  - type: 1
+    originalUri: Assets\Environment\Asset\showroom\medieval_knight_armor_low-poly__rigged\textures\GauntletMetal_baseColor.png
+    assetPath: Assets\Environment\Asset\showroom\medieval_knight_armor_low-poly__rigged\textures\GauntletMetal_baseColor.png
+  - type: 1
+    originalUri: Assets\Environment\Asset\showroom\medieval_knight_armor_low-poly__rigged\textures\GauntletMetal_metallicRoughness.png
+    assetPath: Assets\Environment\Asset\showroom\medieval_knight_armor_low-poly__rigged\textures\GauntletMetal_metallicRoughness.png
+  - type: 1
+    originalUri: Assets\Environment\Asset\showroom\medieval_knight_armor_low-poly__rigged\textures\GauntletMetal_normal.png
+    assetPath: Assets\Environment\Asset\showroom\medieval_knight_armor_low-poly__rigged\textures\GauntletMetal_normal.png
+  - type: 1
+    originalUri: Assets\Environment\Asset\showroom\medieval_knight_armor_low-poly__rigged\textures\GauntletLeather_baseColor.png
+    assetPath: Assets\Environment\Asset\showroom\medieval_knight_armor_low-poly__rigged\textures\GauntletLeather_baseColor.png
+  - type: 1
+    originalUri: Assets\Environment\Asset\showroom\medieval_knight_armor_low-poly__rigged\textures\GauntletLeather_metallicRoughness.png
+    assetPath: Assets\Environment\Asset\showroom\medieval_knight_armor_low-poly__rigged\textures\GauntletLeather_metallicRoughness.png
+  - type: 1
+    originalUri: Assets\Environment\Asset\showroom\medieval_knight_armor_low-poly__rigged\textures\GauntletLeather_normal.png
+    assetPath: Assets\Environment\Asset\showroom\medieval_knight_armor_low-poly__rigged\textures\GauntletLeather_normal.png
+  - type: 1
+    originalUri: Assets\Environment\Asset\showroom\medieval_knight_armor_low-poly__rigged\textures\Type_Xiiia_Texture_baseColor.png
+    assetPath: Assets\Environment\Asset\showroom\medieval_knight_armor_low-poly__rigged\textures\Type_Xiiia_Texture_baseColor.png
+  - type: 1
+    originalUri: Assets\Environment\Asset\showroom\medieval_knight_armor_low-poly__rigged\textures\Type_Xiiia_Texture_metallicRoughness.png
+    assetPath: Assets\Environment\Asset\showroom\medieval_knight_armor_low-poly__rigged\textures\Type_Xiiia_Texture_metallicRoughness.png
+  - type: 1
+    originalUri: Assets\Environment\Asset\showroom\medieval_knight_armor_low-poly__rigged\textures\Type_Xiiia_Texture_normal.png
+    assetPath: Assets\Environment\Asset\showroom\medieval_knight_armor_low-poly__rigged\textures\Type_Xiiia_Texture_normal.png
+  - type: 1
+    originalUri: Assets\Environment\Asset\showroom\medieval_knight_armor_low-poly__rigged\textures\ScabbardLeather_baseColor.png
+    assetPath: Assets\Environment\Asset\showroom\medieval_knight_armor_low-poly__rigged\textures\ScabbardLeather_baseColor.png
+  - type: 1
+    originalUri: Assets\Environment\Asset\showroom\medieval_knight_armor_low-poly__rigged\textures\ScabbardLeather_metallicRoughness.png
+    assetPath: Assets\Environment\Asset\showroom\medieval_knight_armor_low-poly__rigged\textures\ScabbardLeather_metallicRoughness.png
+  - type: 1
+    originalUri: Assets\Environment\Asset\showroom\medieval_knight_armor_low-poly__rigged\textures\ScabbardLeather_normal.png
+    assetPath: Assets\Environment\Asset\showroom\medieval_knight_armor_low-poly__rigged\textures\ScabbardLeather_normal.png
+  - type: 1
+    originalUri: Assets\Environment\Asset\showroom\medieval_knight_armor_low-poly__rigged\textures\ScabbardCopper_baseColor.png
+    assetPath: Assets\Environment\Asset\showroom\medieval_knight_armor_low-poly__rigged\textures\ScabbardCopper_baseColor.png
+  - type: 1
+    originalUri: Assets\Environment\Asset\showroom\medieval_knight_armor_low-poly__rigged\textures\ScabbardCopper_metallicRoughness.png
+    assetPath: Assets\Environment\Asset\showroom\medieval_knight_armor_low-poly__rigged\textures\ScabbardCopper_metallicRoughness.png
+  - type: 1
+    originalUri: Assets\Environment\Asset\showroom\medieval_knight_armor_low-poly__rigged\textures\ScabbardCopper_normal.png
+    assetPath: Assets\Environment\Asset\showroom\medieval_knight_armor_low-poly__rigged\textures\ScabbardCopper_normal.png
+  - type: 1
+    originalUri: Assets\Environment\Asset\showroom\medieval_knight_armor_low-poly__rigged\textures\ScabbardRing_baseColor.png
+    assetPath: Assets\Environment\Asset\showroom\medieval_knight_armor_low-poly__rigged\textures\ScabbardRing_baseColor.png
+  - type: 1
+    originalUri: Assets\Environment\Asset\showroom\medieval_knight_armor_low-poly__rigged\textures\ScabbardRing_metallicRoughness.png
+    assetPath: Assets\Environment\Asset\showroom\medieval_knight_armor_low-poly__rigged\textures\ScabbardRing_metallicRoughness.png
+  - type: 1
+    originalUri: Assets\Environment\Asset\showroom\medieval_knight_armor_low-poly__rigged\textures\ScabbardRing_normal.png
+    assetPath: Assets\Environment\Asset\showroom\medieval_knight_armor_low-poly__rigged\textures\ScabbardRing_normal.png
+  - type: 1
+    originalUri: Assets\Environment\Asset\showroom\medieval_knight_armor_low-poly__rigged\textures\ChainMail_baseColor.png
+    assetPath: Assets\Environment\Asset\showroom\medieval_knight_armor_low-poly__rigged\textures\ChainMail_baseColor.png
+  - type: 1
+    originalUri: Assets\Environment\Asset\showroom\medieval_knight_armor_low-poly__rigged\textures\ChainMail_metallicRoughness.png
+    assetPath: Assets\Environment\Asset\showroom\medieval_knight_armor_low-poly__rigged\textures\ChainMail_metallicRoughness.png
+  - type: 1
+    originalUri: Assets\Environment\Asset\showroom\medieval_knight_armor_low-poly__rigged\textures\ChainMail_normal.png
+    assetPath: Assets\Environment\Asset\showroom\medieval_knight_armor_low-poly__rigged\textures\ChainMail_normal.png
+  - type: 1
+    originalUri: Assets\Environment\Asset\showroom\medieval_knight_armor_low-poly__rigged\textures\ChainMail.001_baseColor.png
+    assetPath: Assets\Environment\Asset\showroom\medieval_knight_armor_low-poly__rigged\textures\ChainMail.001_baseColor.png
+  - type: 1
+    originalUri: Assets\Environment\Asset\showroom\medieval_knight_armor_low-poly__rigged\textures\ChainMail.001_metallicRoughness.png
+    assetPath: Assets\Environment\Asset\showroom\medieval_knight_armor_low-poly__rigged\textures\ChainMail.001_metallicRoughness.png
+  - type: 1
+    originalUri: Assets\Environment\Asset\showroom\medieval_knight_armor_low-poly__rigged\textures\ChainMail.001_normal.png
+    assetPath: Assets\Environment\Asset\showroom\medieval_knight_armor_low-poly__rigged\textures\ChainMail.001_normal.png
+  - type: 1
+    originalUri: Assets\Environment\Asset\showroom\medieval_knight_armor_low-poly__rigged\textures\FootLeather_baseColor.png
+    assetPath: Assets\Environment\Asset\showroom\medieval_knight_armor_low-poly__rigged\textures\FootLeather_baseColor.png
+  - type: 1
+    originalUri: Assets\Environment\Asset\showroom\medieval_knight_armor_low-poly__rigged\textures\FootLeather_metallicRoughness.png
+    assetPath: Assets\Environment\Asset\showroom\medieval_knight_armor_low-poly__rigged\textures\FootLeather_metallicRoughness.png
+  - type: 1
+    originalUri: Assets\Environment\Asset\showroom\medieval_knight_armor_low-poly__rigged\textures\FootLeather_normal.png
+    assetPath: Assets\Environment\Asset\showroom\medieval_knight_armor_low-poly__rigged\textures\FootLeather_normal.png
+  - type: 1
+    originalUri: Assets\Environment\Asset\showroom\medieval_knight_armor_low-poly__rigged\textures\GloveLeatherRight_baseColor.png
+    assetPath: Assets\Environment\Asset\showroom\medieval_knight_armor_low-poly__rigged\textures\GloveLeatherRight_baseColor.png
+  - type: 1
+    originalUri: Assets\Environment\Asset\showroom\medieval_knight_armor_low-poly__rigged\textures\GloveLeatherRight_metallicRoughness.png
+    assetPath: Assets\Environment\Asset\showroom\medieval_knight_armor_low-poly__rigged\textures\GloveLeatherRight_metallicRoughness.png
+  - type: 1
+    originalUri: Assets\Environment\Asset\showroom\medieval_knight_armor_low-poly__rigged\textures\GloveLeatherRight_normal.png
+    assetPath: Assets\Environment\Asset\showroom\medieval_knight_armor_low-poly__rigged\textures\GloveLeatherRight_normal.png
+  reportItems:
+  - type: 2
+    code: 20
+    messages:
+    - KHR_materials_specular
