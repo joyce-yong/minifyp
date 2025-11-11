@@ -27,7 +27,8 @@ public class CScenes : MonoBehaviour
 
     [Header("Fade Settings")]
     public Image black;
-    public Animator anim;
+    [Tooltip("Animator state name for appear animation (must match state name in Animator Controller).")]
+    public string appearStateName = "Appear";
 
     private InputDevice rightController;
 
@@ -111,12 +112,7 @@ public class CScenes : MonoBehaviour
             firstStep.SetActive(true);
 
             // Play Step0 animation immediately
-            Animator stepAnim = firstStep.GetComponent<Animator>();
-            if (stepAnim != null)
-            {
-                stepAnim.ResetTrigger("Appear");
-                stepAnim.SetTrigger("Appear");
-            }
+            StartCoroutine(PlayAppearStateNextFrame(firstStep));
 
             // Start countdown on Step0
             StartCoroutine(CountdownAndAutoStep1());
@@ -124,24 +120,6 @@ public class CScenes : MonoBehaviour
         else
         {
             ShowNextStep();
-        }
-    }
-
-    IEnumerator PlayAppearAfterFrame(GameObject step)
-    {
-        yield return null;
-        Animator anim = step.GetComponent<Animator>();
-        if (anim != null)
-        {
-            anim.ResetTrigger("Appear");
-            anim.SetTrigger("Appear");
-        }
-
-        AudioSource stepAudio = step.GetComponent<AudioSource>();
-        if (stepAudio != null)
-        {
-            stepAudio.Stop();
-            stepAudio.Play();
         }
     }
 
@@ -168,25 +146,9 @@ public class CScenes : MonoBehaviour
         {
             GameObject step1 = currentSteps[1];
             step1.SetActive(true);
-            StartCoroutine(PlayAppearAfterFrame(step1));
-
-            Animator stepAnim = step1.GetComponent<Animator>();
-            if (stepAnim != null)
-            {
-                stepAnim.ResetTrigger("Appear");
-                stepAnim.SetTrigger("Appear");
-            }
-
-            AudioSource stepAudio = step1.GetComponent<AudioSource>();
-            if (stepAudio != null)
-            {
-                stepAudio.Stop();
-                stepAudio.Play();
-            }
-
+            StartCoroutine(PlayAppearStateNextFrame(step1));
             currentStepIndex = 2;
         }
-
 
         inputLocked = false;
     }
@@ -204,27 +166,10 @@ public class CScenes : MonoBehaviour
 
             GameObject step = currentSteps[currentStepIndex];
             step.SetActive(true);
-            StartCoroutine(PlayAppearAfterFrame(step));
-
-            Animator anim = step.GetComponent<Animator>();
-            if (anim != null)
-            {
-                anim.ResetTrigger("Appear");
-                anim.SetTrigger("Appear");
-            }
-
-            // Play the step’s own audio if exists
-            AudioSource stepAudio = step.GetComponent<AudioSource>();
-            if (stepAudio != null)
-            {
-                stepAudio.Stop();
-                stepAudio.Play();
-            }
+            StartCoroutine(PlayAppearStateNextFrame(step));
 
             if (clickSound != null)
-            {
                 audioSource.PlayOneShot(clickSound);
-            }
 
             currentStepIndex++;
 
@@ -240,12 +185,82 @@ public class CScenes : MonoBehaviour
 
     void ShowNextPage()
     {
+        // If this is the last page, don't hide it — just fade and change scene
+        if (currentPageIndex >= pages.Count - 1)
+        {
+            StartCoroutine(FadeOutAndChangeScene());
+            return;
+        }
+
+        // Otherwise: hide current page and show next
+        pages[currentPageIndex].SetActive(false);
         ShowPage(currentPageIndex + 1);
     }
 
+
     void EndCutscene()
     {
+        StartCoroutine(FadeOutAndChangeScene());
+    }
+
+    IEnumerator FadeOutAndChangeScene()
+    {
+        inputLocked = true;
+        black.gameObject.SetActive(true);
+
+        // ensure alpha starts at 0
+        Color color = black.color;
+        color.a = 0f;
+        black.color = color;
+
+        float duration = 1.5f; // fade time in seconds
+        float t = 0f;
+
+        // gradually increase alpha
+        while (t < duration)
+        {
+            t += Time.deltaTime;
+            color.a = Mathf.Lerp(0f, 1f, t / duration);
+            black.color = color;
+            yield return null;
+        }
+
+        color.a = 1f;
+        black.color = color;
+
+        // wait a moment before switching scenes
+        yield return new WaitForSeconds(0.3f);
         SceneManager.LoadScene("SampleScene");
     }
 
+
+
+    IEnumerator PlayAppearStateNextFrame(GameObject step)
+    {
+        yield return null; // wait one frame after activation
+
+        Animator stepAnim = step.GetComponent<Animator>();
+        if (stepAnim != null)
+        {
+            stepAnim.enabled = true;
+            stepAnim.Rebind();
+
+            if (!string.IsNullOrEmpty(appearStateName))
+            {
+                stepAnim.Play(appearStateName, 0, 0f);
+            }
+            else
+            {
+                stepAnim.ResetTrigger("Appear");
+                stepAnim.SetTrigger("Appear");
+            }
+        }
+
+        AudioSource stepAudio = step.GetComponent<AudioSource>();
+        if (stepAudio != null)
+        {
+            stepAudio.Stop();
+            stepAudio.Play();
+        }
+    }
 }
