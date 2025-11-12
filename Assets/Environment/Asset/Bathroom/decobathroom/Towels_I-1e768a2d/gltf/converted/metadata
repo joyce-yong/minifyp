@@ -1,0 +1,117 @@
+{
+	"assetNamespace": "fab",
+	"listing":
+	{
+		"averageRating": 5,
+		"createdAt": "",
+		"description": "<ul>\n<li>Towels</li>\n<li>1x8k texture </li>\n</ul>\n<p>3d scan made of 222 photos @ Samsung Galaxy A33 5G</p>",
+		"isAiForbidden": false,
+		"isAiGenerated": false,
+		"lastUpdatedAt": "2025-02-24T12:28:02.324072Z",
+		"listingType": "3d-model",
+		"media": "https://media.fab.com/image_previews/gallery_images/984c64b2-3af1-4841-886a-470842d9e767/2d4f3275-d3f0-484c-bf3b-83081e6578c9.jpeg",
+		"publishedAt": "2024-10-16T07:55:27.332985Z",
+		"reviewCount": 1,
+		"thumbnail": "https://media.fab.com/image_previews/gallery_images/e689a068-c742-4d71-b4e2-801f494c4dcc/5a048868-37b0-43fb-ae83-1eebe09f11b3.jpeg",
+		"title": "Towels I",
+		"uid": "1e768a2d-ff09-4b49-ad9a-3dd2d9f94365",
+		"updatedAt": "",
+		"user":
+		{
+			"coverImageUrl": "",
+			"profileImageUrl": "https://cdn1.epicgames.com/fab/seller/o-nube3rv4t6ybyf8u6729e3spg26h9v/profileImage/blob-500x500-9965bb419c283223060ff26c1a105b7f.jpg",
+			"sellerName": "SKRUNDA",
+			"uid": "73eb8895-5dd6-4b78-8408-84210fd2bf8d"
+		},
+		"tags": [
+			{
+				"name": "Bathroom",
+				"slug": "bathroom",
+				"uid": "082e6c95-30aa-48ab-b7d1-d90a9fb83ba1"
+			},
+			{
+				"name": "Accessory",
+				"slug": "accessory",
+				"uid": "12631684-bf9e-4668-8ef8-dd297614aab4"
+			},
+			{
+				"name": "Towel",
+				"slug": "towel",
+				"uid": "38fc589d-147f-411e-96ae-a9f0848c2af2"
+			},
+			{
+				"name": "Photogrammetry",
+				"slug": "photogrammetry",
+				"uid": "39435048-f16b-4977-b62b-82ff5ca8c38e"
+			},
+			{
+				"name": "Dirty",
+				"slug": "dirty",
+				"uid": "54b617d2-d7e9-439d-9bd8-2787675a47e3"
+			},
+			{
+				"name": "Household",
+				"slug": "household",
+				"uid": "9b3023be-0953-419c-a3a9-743bd3e951ac"
+			},
+			{
+				"name": "Tower",
+				"slug": "tower",
+				"uid": "a30d2522-f0bb-4408-9974-550972fe1d16"
+			}
+		],
+		"category":
+		{
+			"name": "Buildings & Architecture",
+			"path": "buildings-architecture",
+			"slug": "buildings-architecture",
+			"uid": "eec3bdd5-ba7a-45a8-b15d-67462b9630f6"
+		},
+		"assetFormats": [
+			{
+				"assetFormatType":
+				{
+					"name": "FBX",
+					"groupName": "3D Exchange Formats",
+					"code": "fbx",
+					"icon": "cube",
+					"extensions": [
+						"fbx"
+					]
+				}
+			},
+			{
+				"assetFormatType":
+				{
+					"name": "Converted Files",
+					"groupName": "",
+					"code": "converted-files",
+					"icon": "cube",
+					"extensions": [
+						"gltf",
+						"glb",
+						"usdz"
+					]
+				}
+			}
+		],
+		"_PluginMetas":
+		{
+			"apiDataVersion": "0.0.1",
+			"entitlementUid": "7de4f52f-1e3c-441f-90f5-bd704e48f79f",
+			"cacheSize": 0,
+			"downloaded": []
+		}
+	},
+	"target": "",
+	"quality": "",
+	"format": "gltf",
+	"fileId": "7f3849aa-e780-41ec-b41c-0b42bcd8fb66",
+	"platformIncluded": "",
+	"distributionPointBaseUrls": [],
+	"distributionMethod": "",
+	"entitlementUid": "7de4f52f-1e3c-441f-90f5-bd704e48f79f",
+	"invertedNormal": false,
+	"isConverted": true,
+	"isQuixel": false
+}

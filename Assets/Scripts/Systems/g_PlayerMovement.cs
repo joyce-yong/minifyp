@@ -1,73 +1,82 @@
 using UnityEngine;
 
+[RequireComponent(typeof(CharacterController))]
 public class g_PlayerMovement : MonoBehaviour
 {
-    [Header("Player Properties")]
-    [SerializeField] private CharacterController controller;
-    [SerializeField] private float moveSpeed = 5f;
-    [SerializeField] private float sprintMultiplier = 1.5f;
-    [SerializeField] private float jumpHeight = 1.2f;
-    [SerializeField] private float gravity = -9.81f;
-    [SerializeField] private float crouchHeight = 1f;
-    [SerializeField] private float crouchMoveMultiplier = 0.5f;
-    [SerializeField] private float crouchSpeed = 5f;
+    [Header("Movement")]
+    [SerializeField] float moveSpeed = 5f;
+    [SerializeField] float sprintMultiplier = 1.5f;
+    [SerializeField] float crouchMultiplier = 0.5f;
+    [SerializeField] float gravity = -9.81f;
+    [SerializeField] float jumpHeight = 1.2f;
 
-    float yVelocity;
-    Vector2 moveInput;
+    [Header("Crouch")]
+    [SerializeField] float crouchHeight = 1f;
+    [SerializeField] float heightSmooth = 8f;
+
+    CharacterController controller;
+    Vector2 input;
+    Vector3 velocity;
     float originalHeight;
-    float targetHeight;
     bool isCrouching;
     public bool isMoving { get; private set; }
     public bool isSprinting { get; private set; }
 
-    void Start()
+    void Awake()
     {
-        Cursor.lockState = CursorLockMode.Locked;
-        Cursor.visible = false;
+        controller = GetComponent<CharacterController>();
         originalHeight = controller.height;
-        targetHeight = originalHeight;
     }
 
     void Update()
     {
-        HandleMovementInput();
-        HandleJumping();
-        HandleCrouching();
+        HandleInput();
+        HandleMovement();
+        HandleGravity();
+        HandleJump();
+        HandleCrouch();
     }
 
-    void HandleMovementInput()
+    void HandleInput()
     {
-        moveInput.x = Input.GetAxisRaw("Horizontal");
-        moveInput.y = Input.GetAxisRaw("Vertical");
-        isMoving = moveInput.magnitude > 0.1f && controller.isGrounded;
-        isSprinting = Input.GetKey(KeyCode.LeftShift) && !isCrouching && isMoving;
+        input = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
+        isMoving = input.sqrMagnitude > 0.1f;
+        isSprinting = Input.GetKey(KeyCode.LeftShift) && isMoving && !isCrouching;
     }
 
-    void HandleJumping()
+    void HandleMovement()
     {
-        if (controller.isGrounded && yVelocity < 0f) yVelocity = -2f;
-        if (!isCrouching && Input.GetButtonDown("Jump") && controller.isGrounded)
-            yVelocity = Mathf.Sqrt(jumpHeight * -2f * gravity);
-    }
+        Vector3 move = transform.right * input.x + transform.forward * input.y;
+        move.Normalize();
 
-    void HandleCrouching()
-    {
-        isCrouching = Input.GetKey(KeyCode.C);
-        targetHeight = isCrouching ? crouchHeight : originalHeight;
-        controller.height = Mathf.Lerp(controller.height, targetHeight, Time.deltaTime * crouchSpeed);
-    }
-
-    void FixedUpdate()
-    {
-        Vector3 move = (transform.right * moveInput.x + transform.forward * moveInput.y).normalized;
         float speed = moveSpeed;
-
-        if (isCrouching) speed *= crouchMoveMultiplier;
+        if (isCrouching) speed *= crouchMultiplier;
         else if (isSprinting) speed *= sprintMultiplier;
 
-        controller.Move(move * speed * Time.fixedDeltaTime);
+        if (input.sqrMagnitude < 0.01f) move = Vector3.zero;
 
-        yVelocity += gravity * Time.fixedDeltaTime;
-        controller.Move(Vector3.up * yVelocity * Time.fixedDeltaTime);
+        controller.Move(move * speed * Time.deltaTime);
+    }
+
+    void HandleGravity()
+    {
+        if (controller.isGrounded && velocity.y < 0f)
+            velocity.y = -2f;
+
+        velocity.y += gravity * Time.deltaTime;
+        controller.Move(velocity * Time.deltaTime);
+    }
+
+    void HandleJump()
+    {
+        if (Input.GetButtonDown("Jump") && controller.isGrounded && !isCrouching)
+            velocity.y = Mathf.Sqrt(jumpHeight * -2f * gravity);
+    }
+
+    void HandleCrouch()
+    {
+        isCrouching = Input.GetKey(KeyCode.C);
+        float targetHeight = isCrouching ? crouchHeight : originalHeight;
+        controller.height = Mathf.Lerp(controller.height, targetHeight, Time.deltaTime * heightSmooth);
     }
 }

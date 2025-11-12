@@ -1,0 +1,11 @@
+Model Information:
+* title:	Statue of Emperor Trajan (Tower Hill, London)
+* source:	https://sketchfab.com/3d-models/statue-of-emperor-trajan-tower-hill-london-6bb04d9b5a3240d39791b6a3dbcd3d41
+* author:	nate_siddle (https://sketchfab.com/nate_sid)
+
+Model License:
+* license type:	CC-BY-NC-4.0 (http://creativecommons.org/licenses/by-nc/4.0/)
+* requirements:	Author must be credited. No commercial use.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Statue of Emperor Trajan (Tower Hill, London)" (https://sketchfab.com/3d-models/statue-of-emperor-trajan-tower-hill-london-6bb04d9b5a3240d39791b6a3dbcd3d41) by nate_siddle (https://sketchfab.com/nate_sid) licensed under CC-BY-NC-4.0 (http://creativecommons.org/licenses/by-nc/4.0/)
