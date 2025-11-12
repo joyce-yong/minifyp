@@ -16,32 +16,33 @@ public class g_DoorInteractable : MonoBehaviour, IInteractable
        animator = GetComponent<Animator>();
        animator.Play(door_closed_name);
    }
-   
-   public void Interact()
-   {
-       if (isAnimating) return;
-       
-       isAnimating = true;
-       
-       if (isOpen)
-       {
-           animator.Play(door_close_name);
-           isOpen = false;
-       }
-       else
-       {
-           animator.Play(door_open_name);
-           isOpen = true;
-       }
-       
-       Invoke(nameof(ResetAnimation), GetAnimationLength());
-   }
-   
-   private float GetAnimationLength()
-   {
-       AnimatorClipInfo[] clipInfo = animator.GetCurrentAnimatorClipInfo(0);
-       return clipInfo.Length > 0 ? clipInfo[0].clip.length : 1f;
-   }
+
+    public void Interact()
+    {
+        if (isAnimating) return;
+
+        isAnimating = true;
+
+        if (isOpen)
+        {
+            animator.Play(door_close_name);
+            isOpen = false;
+        }
+        else
+        {
+            animator.Play(door_open_name);
+            isOpen = true;
+        }
+
+        Invoke(nameof(ResetAnimation), GetAnimationLength());
+    }
+
+
+    private float GetAnimationLength()
+    {
+        AnimatorClipInfo[] clipInfo = animator.GetCurrentAnimatorClipInfo(0);
+        return clipInfo.Length > 0 ? clipInfo[0].clip.length : 1f;
+    }
    
    private void ResetAnimation()
    {

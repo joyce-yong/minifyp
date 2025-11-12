@@ -1,0 +1,11 @@
+Model Information:
+* title:	Medieval Knight Armor (Low-poly / Rigged)
+* source:	https://sketchfab.com/3d-models/medieval-knight-armor-low-poly-rigged-428913948904425e8daec81eea9aa287
+* author:	INKXO (https://sketchfab.com/Inkxo)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Medieval Knight Armor (Low-poly / Rigged)" (https://sketchfab.com/3d-models/medieval-knight-armor-low-poly-rigged-428913948904425e8daec81eea9aa287) by INKXO (https://sketchfab.com/Inkxo) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

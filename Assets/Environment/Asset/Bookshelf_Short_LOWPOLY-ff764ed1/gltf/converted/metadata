@@ -1,0 +1,112 @@
+{
+	"assetNamespace": "fab",
+	"listing":
+	{
+		"averageRating": 5,
+		"createdAt": "",
+		"description": "<p>Took photos of bookshelves in my basement and recreated them in Blender. IF YOU LIKE PLEASE DOWNLOAD! If you like my work please support me at <a target=\"_blank\" href=\"https://www.buymeacoffee.com/evan4129\" rel=\"noopener noreferrer nofollow\">https://www.buymeacoffee.com/evan4129</a></p>",
+		"isAiForbidden": false,
+		"isAiGenerated": false,
+		"lastUpdatedAt": "2025-02-24T11:48:32.985722Z",
+		"listingType": "3d-model",
+		"media": "https://media.fab.com/image_previews/gallery_images/3171f043-05d5-4684-9ec2-ddd083c30cc5/50ac8c35-6494-48f6-a7f0-97014fcbafe6.jpeg",
+		"publishedAt": "2024-10-05T06:16:25.332117Z",
+		"reviewCount": 3,
+		"thumbnail": "https://media.fab.com/image_previews/gallery_images/cf2d2224-91ca-4194-811a-609e900af3c6/6ec01eec-1e57-4369-879d-1a802d9c6141.jpeg",
+		"title": "Bookshelf Short LOWPOLY",
+		"uid": "ff764ed1-9bba-4f7c-ac83-d3065a67d215",
+		"updatedAt": "",
+		"user":
+		{
+			"coverImageUrl": "https://cdn1.epicgames.com/fab/seller/o-t8q3jvrhpdrepep7nu9gz9dsdzzhqr/backgroundImage/blob-1920x540-3eac7f9ba893f3b38d7f4ca504c18878.jpg",
+			"profileImageUrl": "https://cdn1.epicgames.com/fab/seller/o-t8q3jvrhpdrepep7nu9gz9dsdzzhqr/profileImage/blob-500x500-89b14b3afab425a346d7fd0874752544.jpg",
+			"sellerName": "EFX",
+			"uid": "90b43c35-e4b2-4ee1-b818-2394b312b5bc"
+		},
+		"tags": [
+			{
+				"name": "Book",
+				"slug": "book",
+				"uid": "21844bb3-da74-421f-821b-c1f428090fee"
+			},
+			{
+				"name": "Bookshelf",
+				"slug": "bookshelf",
+				"uid": "623c50a5-30a8-4cab-8b98-d8b8b4c517ed"
+			},
+			{
+				"name": "Photorealistic",
+				"slug": "photorealistic",
+				"uid": "7485c72b-1f18-499f-8c65-0fdf1e2a21d0"
+			},
+			{
+				"name": "Wood",
+				"slug": "wood",
+				"uid": "bcd38165-4b32-484d-bce7-c6cdaf827f77"
+			},
+			{
+				"name": "Photo",
+				"slug": "photo",
+				"uid": "beff727d-e52c-4791-8c57-282062422e01"
+			},
+			{
+				"name": "Shelf",
+				"slug": "shelf",
+				"uid": "f47a2213-07bd-4d71-93fa-b9917f474826"
+			}
+		],
+		"category":
+		{
+			"name": "Buildings & Architecture",
+			"path": "buildings-architecture",
+			"slug": "buildings-architecture",
+			"uid": "eec3bdd5-ba7a-45a8-b15d-67462b9630f6"
+		},
+		"assetFormats": [
+			{
+				"assetFormatType":
+				{
+					"name": "FBX",
+					"groupName": "3D Exchange Formats",
+					"code": "fbx",
+					"icon": "cube",
+					"extensions": [
+						"fbx"
+					]
+				}
+			},
+			{
+				"assetFormatType":
+				{
+					"name": "Converted Files",
+					"groupName": "",
+					"code": "converted-files",
+					"icon": "cube",
+					"extensions": [
+						"gltf",
+						"glb",
+						"usdz"
+					]
+				}
+			}
+		],
+		"_PluginMetas":
+		{
+			"apiDataVersion": "0.0.1",
+			"entitlementUid": "d84815bc-d999-4203-9c2c-8c22ca0b9600",
+			"cacheSize": 0,
+			"downloaded": []
+		}
+	},
+	"target": "",
+	"quality": "",
+	"format": "gltf",
+	"fileId": "c9ededb4-c136-4799-99a5-3d1d064c738a",
+	"platformIncluded": "",
+	"distributionPointBaseUrls": [],
+	"distributionMethod": "",
+	"entitlementUid": "d84815bc-d999-4203-9c2c-8c22ca0b9600",
+	"invertedNormal": false,
+	"isConverted": true,
+	"isQuixel": false
+}

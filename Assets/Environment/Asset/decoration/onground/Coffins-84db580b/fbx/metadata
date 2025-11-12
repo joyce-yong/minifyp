@@ -1,0 +1,97 @@
+{
+	"assetNamespace": "fab",
+	"listing":
+	{
+		"averageRating": 0,
+		"createdAt": "",
+		"description": "<p>graveyard coffins from the game Duellum Medieval Wars</p>",
+		"isAiForbidden": true,
+		"isAiGenerated": false,
+		"lastUpdatedAt": "2025-02-24T11:42:35.960412Z",
+		"listingType": "3d-model",
+		"media": "https://media.fab.com/image_previews/gallery_images/3c30fa63-bb0d-469d-8f80-0865d6533675/ea71541f-1fe3-486d-be09-c17b63316214.jpeg",
+		"publishedAt": "2024-10-26T16:39:05.800375Z",
+		"reviewCount": 0,
+		"thumbnail": "https://media.fab.com/image_previews/gallery_images/593ad8b5-f729-4696-9ebf-54ad01fd7814/1a6f3491-584d-463c-83e2-e1d88dd80c88.jpeg",
+		"title": "Coffins",
+		"uid": "84db580b-128d-4807-8296-4051410d841b",
+		"updatedAt": "",
+		"user":
+		{
+			"coverImageUrl": "",
+			"profileImageUrl": "",
+			"sellerName": "Lucas Leme Presoto",
+			"uid": "b07025eb-cf03-4605-9983-9854cf52ef77"
+		},
+		"tags": [
+			{
+				"name": "Coffin",
+				"slug": "coffin",
+				"uid": "100bb9d5-845e-4120-a1f4-5a42987de895"
+			},
+			{
+				"name": "Blender",
+				"slug": "blender",
+				"uid": "141666cf-0a09-4718-85fa-f0d54884a525"
+			},
+			{
+				"name": "Graveyard",
+				"slug": "graveyard",
+				"uid": "322e758e-a3cc-4b09-bbfa-53849ad736d5"
+			}
+		],
+		"category":
+		{
+			"name": "Buildings & Architecture",
+			"path": "buildings-architecture",
+			"slug": "buildings-architecture",
+			"uid": "eec3bdd5-ba7a-45a8-b15d-67462b9630f6"
+		},
+		"assetFormats": [
+			{
+				"assetFormatType":
+				{
+					"name": "FBX",
+					"groupName": "3D Exchange Formats",
+					"code": "fbx",
+					"icon": "cube",
+					"extensions": [
+						"fbx"
+					]
+				}
+			},
+			{
+				"assetFormatType":
+				{
+					"name": "Converted Files",
+					"groupName": "",
+					"code": "converted-files",
+					"icon": "cube",
+					"extensions": [
+						"gltf",
+						"glb",
+						"usdz"
+					]
+				}
+			}
+		],
+		"_PluginMetas":
+		{
+			"apiDataVersion": "0.0.1",
+			"entitlementUid": "e6c73168-87a3-4248-9033-20671e0e4e1b",
+			"cacheSize": 0,
+			"downloaded": []
+		}
+	},
+	"target": "",
+	"quality": "",
+	"format": "fbx",
+	"fileId": "2f5c6314-dab4-4d30-9f0a-cc4faeca92d5",
+	"platformIncluded": "",
+	"distributionPointBaseUrls": [],
+	"distributionMethod": "",
+	"entitlementUid": "e6c73168-87a3-4248-9033-20671e0e4e1b",
+	"invertedNormal": false,
+	"isConverted": false,
+	"isQuixel": false
+}

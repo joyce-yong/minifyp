@@ -1,0 +1,137 @@
+{
+	"assetNamespace": "fab",
+	"listing":
+	{
+		"averageRating": 5,
+		"createdAt": "",
+		"description": "<p>Low poly</p>",
+		"isAiForbidden": false,
+		"isAiGenerated": false,
+		"lastUpdatedAt": "2025-08-03T03:56:52.281198Z",
+		"listingType": "3d-model",
+		"media": "https://media.fab.com/image_previews/gallery_images/51451e13-032f-4b28-8794-53ca5df1ba0d/3f533a93-fe3d-4b7a-8387-9ffd0eb37b94.jpeg",
+		"publishedAt": "2025-08-03T03:56:47.122804Z",
+		"reviewCount": 1,
+		"thumbnail": "https://media.fab.com/image_previews/gallery_images/858a1b32-2100-44d9-9dd6-a47db864ecfa/97914fe1-e57e-4e54-839c-17893d125afc.jpeg",
+		"title": "Wooden shelf",
+		"uid": "c3cda294-b4c3-432b-9a48-e7ee71134e0f",
+		"updatedAt": "",
+		"user":
+		{
+			"coverImageUrl": "",
+			"profileImageUrl": "https://cdn1.epicgames.com/fab/seller/o-3cedwz7as4sv5tt37pwyk2nyfu6erh/profileImage/blob-500x500-20cd515850d1824acbb5a9c6f9f34a81.jpg",
+			"sellerName": "Vilson Pistori",
+			"uid": "4258a3f1-e031-4324-ab20-20921dd8776a"
+		},
+		"tags": [
+			{
+				"name": "Furniture",
+				"slug": "furniture",
+				"uid": "0f6b3b40-8715-4963-b755-0160e80cf12c"
+			},
+			{
+				"name": "Blender",
+				"slug": "blender",
+				"uid": "141666cf-0a09-4718-85fa-f0d54884a525"
+			},
+			{
+				"name": "Book",
+				"slug": "book",
+				"uid": "21844bb3-da74-421f-821b-c1f428090fee"
+			},
+			{
+				"name": "Lowpoly",
+				"slug": "lowpoly",
+				"uid": "451806dc-649e-43b7-9c2e-a54485de14b6"
+			},
+			{
+				"name": "Bookshelf",
+				"slug": "bookshelf",
+				"uid": "623c50a5-30a8-4cab-8b98-d8b8b4c517ed"
+			},
+			{
+				"name": "Pistol",
+				"slug": "pistol",
+				"uid": "6d1a500a-998a-4b84-ab20-276745dc79f1"
+			},
+			{
+				"name": "Painter",
+				"slug": "painter",
+				"uid": "950b1c12-0668-4779-acad-305c85885d7d"
+			},
+			{
+				"name": "Wooden",
+				"slug": "wooden",
+				"uid": "9f55f27e-d3d7-4892-abbd-0a73b7ff3663"
+			},
+			{
+				"name": "Wood",
+				"slug": "wood",
+				"uid": "bcd38165-4b32-484d-bce7-c6cdaf827f77"
+			},
+			{
+				"name": "Bookcase",
+				"slug": "bookcase",
+				"uid": "de7ab7e3-65e6-4f68-96ea-250e1fc43ceb"
+			},
+			{
+				"name": "Shelf",
+				"slug": "shelf",
+				"uid": "f47a2213-07bd-4d71-93fa-b9917f474826"
+			}
+		],
+		"category":
+		{
+			"name": "Furniture & Fixtures",
+			"path": "furniture-fixtures",
+			"slug": "furniture-fixtures",
+			"uid": "3da1d2bd-49b4-4bc5-90e5-d31dadec3bd0"
+		},
+		"assetFormats": [
+			{
+				"assetFormatType":
+				{
+					"name": "FBX",
+					"groupName": "3D Exchange Formats",
+					"code": "fbx",
+					"icon": "cube",
+					"extensions": [
+						"fbx"
+					]
+				}
+			},
+			{
+				"assetFormatType":
+				{
+					"name": "Converted Files",
+					"groupName": "",
+					"code": "converted-files",
+					"icon": "cube",
+					"extensions": [
+						"gltf",
+						"glb",
+						"usdz"
+					]
+				}
+			}
+		],
+		"_PluginMetas":
+		{
+			"apiDataVersion": "0.0.1",
+			"entitlementUid": "a61c014f-136c-4c05-a3ab-5507cabbf30a",
+			"cacheSize": 0,
+			"downloaded": []
+		}
+	},
+	"target": "",
+	"quality": "",
+	"format": "fbx",
+	"fileId": "e160ec2a-a281-4e0c-ad00-b421aea63e9f",
+	"platformIncluded": "",
+	"distributionPointBaseUrls": [],
+	"distributionMethod": "",
+	"entitlementUid": "a61c014f-136c-4c05-a3ab-5507cabbf30a",
+	"invertedNormal": false,
+	"isConverted": false,
+	"isQuixel": false
+}

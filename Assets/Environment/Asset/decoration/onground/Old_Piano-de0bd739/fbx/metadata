@@ -1,0 +1,118 @@
+{
+	"assetNamespace": "fab",
+	"listing":
+	{
+		"averageRating": 5,
+		"createdAt": "",
+		"description": "<p><span>An old PBR piano with a stool. The model is game ready and with attention to details when it comes to texturing. 4K textures resolution for the piano material and 2k for the stool.</span></p>",
+		"isAiForbidden": false,
+		"isAiGenerated": false,
+		"lastUpdatedAt": "2025-03-28T09:20:59.650681Z",
+		"listingType": "3d-model",
+		"media": "https://media.fab.com/image_previews/gallery_images/0af35c9b-2a59-4d2a-a714-963233ad9ae1/d26113ed-306c-403a-a477-ed306199a480.jpg",
+		"publishedAt": "2024-12-07T09:40:34.792738Z",
+		"reviewCount": 1,
+		"thumbnail": "https://media.fab.com/image_previews/gallery_images/7c47490c-fec0-41fd-ac7d-a65f923dfa6f/564bc08a-ce0d-4134-aee5-18852e38f054.jpg",
+		"title": "Old Piano",
+		"uid": "de0bd739-8fdb-41a6-9352-d4131c42bc63",
+		"updatedAt": "",
+		"user":
+		{
+			"coverImageUrl": "",
+			"profileImageUrl": "https://cdn1.epicgames.com/fab/seller/o-b98yqtxqlt94249js8upktl5cwmkem/profile/d1322a39.jpg",
+			"sellerName": "Studio Nychta",
+			"uid": "ec0802ce-4c53-4b5d-a070-c77d13d57ee7"
+		},
+		"tags": [
+			{
+				"name": "Pbr",
+				"slug": "pbr",
+				"uid": "080edd3b-d10a-4f32-ace2-30f5baa480dc"
+			},
+			{
+				"name": "Keyboard",
+				"slug": "keyboard",
+				"uid": "12fe2c6b-676b-4794-9094-b56842979629"
+			},
+			{
+				"name": "Lowpoly",
+				"slug": "lowpoly",
+				"uid": "451806dc-649e-43b7-9c2e-a54485de14b6"
+			},
+			{
+				"name": "Musical",
+				"slug": "musical",
+				"uid": "46799acd-76ca-4575-a1df-e82cc1bc2ed0"
+			},
+			{
+				"name": "Piano",
+				"slug": "piano",
+				"uid": "4b4b187b-797e-4cd5-b1ea-d25b10ca6ae5"
+			},
+			{
+				"name": "Instrument",
+				"slug": "instrument",
+				"uid": "6616dba7-0a0e-467c-96ae-be74a4573f77"
+			},
+			{
+				"name": "Music",
+				"slug": "music",
+				"uid": "76d3689a-6e84-4d37-9d54-20cc3548b2fd"
+			},
+			{
+				"name": "Old",
+				"slug": "old",
+				"uid": "975b1521-db01-43ed-a939-c2c2da5027b1"
+			},
+			{
+				"name": "Wooden",
+				"slug": "wooden",
+				"uid": "9f55f27e-d3d7-4892-abbd-0a73b7ff3663"
+			},
+			{
+				"name": "Stool",
+				"slug": "stool",
+				"uid": "e423da67-d54f-4d69-9677-17910dfb9b04"
+			}
+		],
+		"category":
+		{
+			"name": "Musical",
+			"path": "objects-decor/musical",
+			"slug": "objects-decor--musical",
+			"uid": "69d32c97-4dd0-4601-92d9-32fbfc935a29"
+		},
+		"assetFormats": [
+			{
+				"assetFormatType":
+				{
+					"name": "FBX",
+					"groupName": "3D Exchange Formats",
+					"code": "fbx",
+					"icon": "cube",
+					"extensions": [
+						"fbx"
+					]
+				}
+			}
+		],
+		"_PluginMetas":
+		{
+			"apiDataVersion": "0.0.1",
+			"entitlementUid": "",
+			"cacheSize": 0,
+			"downloaded": []
+		}
+	},
+	"target": "",
+	"quality": "",
+	"format": "fbx",
+	"fileId": "6f083bce-472e-4580-b778-0413e9ee5986",
+	"platformIncluded": "",
+	"distributionPointBaseUrls": [],
+	"distributionMethod": "",
+	"entitlementUid": "",
+	"invertedNormal": false,
+	"isConverted": false,
+	"isQuixel": false
+}
