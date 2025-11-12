@@ -1,0 +1,127 @@
+{
+	"assetNamespace": "fab",
+	"listing":
+	{
+		"averageRating": 0,
+		"createdAt": "",
+		"description": "<p>A simple worn looking toilet roll. </p>\n<p>PBR textures <a target=\"_blank\" href=\"/2k\" rel=\"noopener noreferrer nofollow\"></a><a href=\"/users/2k\" rel=\"noopener noreferrer nofollow\">@2k</a></p>",
+		"isAiForbidden": true,
+		"isAiGenerated": false,
+		"lastUpdatedAt": "2025-02-24T11:34:38.494361Z",
+		"listingType": "3d-model",
+		"media": "https://media.fab.com/image_previews/gallery_images/d839ab19-34a7-4465-bac9-15a3291b826f/0b6c6980-38f4-4e5b-b4b3-21fba100ca89.jpeg",
+		"publishedAt": "2024-10-02T01:45:02.736708Z",
+		"reviewCount": 0,
+		"thumbnail": "https://media.fab.com/image_previews/gallery_images/32cfc816-dfec-4571-bf37-28cd4158be70/711e5ceb-e29f-47a1-b70a-fdff47b88a0c.jpeg",
+		"title": "Toilet roll",
+		"uid": "6d93cd99-bdca-42a8-9693-43f26dfbe97d",
+		"updatedAt": "",
+		"user":
+		{
+			"coverImageUrl": "https://cdn1.epicgames.com/fab/seller/o-ynhmd9y8ef3wnpurw5n6t58medckvp/cover/15fbb6a0.jpg",
+			"profileImageUrl": "",
+			"sellerName": "Roy Sousa",
+			"uid": "ce6adde9-bde6-4467-bee7-ac3e0ab6d998"
+		},
+		"tags": [
+			{
+				"name": "Pbr",
+				"slug": "pbr",
+				"uid": "080edd3b-d10a-4f32-ace2-30f5baa480dc"
+			},
+			{
+				"name": "Bathroom",
+				"slug": "bathroom",
+				"uid": "082e6c95-30aa-48ab-b7d1-d90a9fb83ba1"
+			},
+			{
+				"name": "Roll",
+				"slug": "roll",
+				"uid": "28d90623-9fb2-45ac-978a-193dc5bf1e7e"
+			},
+			{
+				"name": "Tissue",
+				"slug": "tissue",
+				"uid": "2da4d750-5ba0-42dc-bec8-8ddb23a6e6a5"
+			},
+			{
+				"name": "Paper",
+				"slug": "paper",
+				"uid": "4bd64ed2-6adc-4b0c-9f08-b6bfdc43b924"
+			},
+			{
+				"name": "Toilet",
+				"slug": "toilet",
+				"uid": "91640987-7ef6-4f32-836d-37cd63e4b996"
+			},
+			{
+				"name": "Bog",
+				"slug": "bog",
+				"uid": "b3c9f2b8-3f45-4ba6-84f1-34b04744db6f"
+			},
+			{
+				"name": "Shower",
+				"slug": "shower",
+				"uid": "d14ba289-123c-480e-9985-3b90705f1cd6"
+			},
+			{
+				"name": "Apocalyptic",
+				"slug": "apocalyptic",
+				"uid": "ee1e4f09-0748-43f3-adc4-c62096f580a1"
+			}
+		],
+		"category":
+		{
+			"name": "Buildings & Architecture",
+			"path": "buildings-architecture",
+			"slug": "buildings-architecture",
+			"uid": "eec3bdd5-ba7a-45a8-b15d-67462b9630f6"
+		},
+		"assetFormats": [
+			{
+				"assetFormatType":
+				{
+					"name": "FBX",
+					"groupName": "3D Exchange Formats",
+					"code": "fbx",
+					"icon": "cube",
+					"extensions": [
+						"fbx"
+					]
+				}
+			},
+			{
+				"assetFormatType":
+				{
+					"name": "Converted Files",
+					"groupName": "",
+					"code": "converted-files",
+					"icon": "cube",
+					"extensions": [
+						"gltf",
+						"glb",
+						"usdz"
+					]
+				}
+			}
+		],
+		"_PluginMetas":
+		{
+			"apiDataVersion": "0.0.1",
+			"entitlementUid": "e4a88f1b-1bdd-4bce-b6a5-d55642cc79d4",
+			"cacheSize": 0,
+			"downloaded": []
+		}
+	},
+	"target": "",
+	"quality": "",
+	"format": "gltf",
+	"fileId": "126b2ffd-308f-4a3e-b065-4233810d403d",
+	"platformIncluded": "",
+	"distributionPointBaseUrls": [],
+	"distributionMethod": "",
+	"entitlementUid": "e4a88f1b-1bdd-4bce-b6a5-d55642cc79d4",
+	"invertedNormal": false,
+	"isConverted": true,
+	"isQuixel": false
+}

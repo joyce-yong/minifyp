@@ -17,6 +17,9 @@ public class g_interaction_system : MonoBehaviour
     private IInteractable currentInteractable;
     private RaycastHit hit;
     
+    public float InteractionRange => interactionRange;
+    public LayerMask InteractionLayers => interactionLayers;
+    
     void Update()
     {
         CheckForInteractable();
@@ -53,8 +56,21 @@ public class g_interaction_system : MonoBehaviour
     {
         if (Input.GetKeyDown(interactionKey) && currentInteractable != null)
         {
+            g_ProximityInteractionManager proximityManager = FindObjectOfType<g_ProximityInteractionManager>();
+            if (proximityManager != null)
+            {
+                proximityManager.OnObjectInteracted(currentInteractable);
+            }
+            
             currentInteractable.Interact();
+            
+            Invoke(nameof(ClearCurrentInteractable), 0.1f);
         }
+    }
+    
+    void ClearCurrentInteractable()
+    {
+        currentInteractable = null;
     }
     
     void OnDrawGizmosSelected()
