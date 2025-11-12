@@ -198,8 +198,11 @@ public class ChatManager : MonoBehaviour
         emojiCategories = new Dictionary<string, string[]>();
 
         EmojiCategory data = JsonUtility.FromJson<EmojiCategory>(emojiJson.text);
-        emojiCategories["excited"] = data.excited;
-        emojiCategories["scared"] = data.scared;
+        emojiCategories["happy"] = data.happy;
+        emojiCategories["fear"] = data.fear;
+        emojiCategories["disgust"] = data.disgust;
+        emojiCategories["amaze"] = data.amaze;
+        emojiCategories["anger"] = data.anger;
     }
 
     private string GetRandomEmoji(string emotion)
@@ -231,7 +234,10 @@ public class ChatManager : MonoBehaviour
     [System.Serializable]
     private class EmojiCategory
     {
-        public string[] excited;
-        public string[] scared;
+        public string[] happy;
+        public string[] fear;
+        public string[] disgust;
+        public string[] amaze;
+        public string[] anger;
     }
 }
