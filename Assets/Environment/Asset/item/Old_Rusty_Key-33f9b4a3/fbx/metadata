@@ -1,0 +1,112 @@
+{
+	"assetNamespace": "fab",
+	"listing":
+	{
+		"averageRating": 1,
+		"createdAt": "",
+		"description": "<p>Optimized game-ready low-poly asset of old key.\n\nthis file contains one mesh and three 2k textures.\n\nFree to use</p>",
+		"isAiForbidden": false,
+		"isAiGenerated": false,
+		"lastUpdatedAt": "2025-02-24T11:52:30.879342Z",
+		"listingType": "3d-model",
+		"media": "https://media.fab.com/image_previews/gallery_images/65d7a3e8-e794-4fe9-8727-f58b91622c46/46cc0dc6-73b5-49c8-bc74-6052a66c0618.jpeg",
+		"publishedAt": "2024-11-01T10:03:53.873672Z",
+		"reviewCount": 1,
+		"thumbnail": "https://media.fab.com/image_previews/gallery_images/734ccaf4-b4e5-446f-a480-b34015682d1f/deb43064-d323-47c9-b917-30bdf93029b9.jpeg",
+		"title": "Old Rusty Key",
+		"uid": "33f9b4a3-a495-4db7-aeb0-69d9f93fa907",
+		"updatedAt": "",
+		"user":
+		{
+			"coverImageUrl": "",
+			"profileImageUrl": "https://cdn1.epicgames.com/fab/seller/o-mpq4j3fqk9549gcjlcy3qvs55juzl6/profileImage/blob-500x500-93d237d62027083a1723f802f76311b5.jpg",
+			"sellerName": "Alex Krush",
+			"uid": "c75a543f-1732-455c-9f0b-0a3e83e93bf1"
+		},
+		"tags": [
+			{
+				"name": "Open",
+				"slug": "open",
+				"uid": "0740c72a-d06e-4720-a58d-df3f7a202f50"
+			},
+			{
+				"name": "Lowpoly",
+				"slug": "lowpoly",
+				"uid": "451806dc-649e-43b7-9c2e-a54485de14b6"
+			},
+			{
+				"name": "Quest",
+				"slug": "quest",
+				"uid": "456ba038-c17c-4e29-832c-34e88e7a7705"
+			},
+			{
+				"name": "Key",
+				"slug": "key",
+				"uid": "487789c1-616e-413e-99e6-16646896e0a9"
+			},
+			{
+				"name": "Old",
+				"slug": "old",
+				"uid": "975b1521-db01-43ed-a939-c2c2da5027b1"
+			},
+			{
+				"name": "Door",
+				"slug": "door",
+				"uid": "9e43d940-9f18-4db0-aa17-f7ffec109645"
+			}
+		],
+		"category":
+		{
+			"name": "Tools, Objects & Decor",
+			"path": "objects-decor",
+			"slug": "objects-decor",
+			"uid": "d22d8b61-3aa8-4558-a6d1-c2a18543e0fd"
+		},
+		"assetFormats": [
+			{
+				"assetFormatType":
+				{
+					"name": "FBX",
+					"groupName": "3D Exchange Formats",
+					"code": "fbx",
+					"icon": "cube",
+					"extensions": [
+						"fbx"
+					]
+				}
+			},
+			{
+				"assetFormatType":
+				{
+					"name": "Converted Files",
+					"groupName": "",
+					"code": "converted-files",
+					"icon": "cube",
+					"extensions": [
+						"gltf",
+						"glb",
+						"usdz"
+					]
+				}
+			}
+		],
+		"_PluginMetas":
+		{
+			"apiDataVersion": "0.0.1",
+			"entitlementUid": "fee306bd-5155-475f-adab-e40915d42cb9",
+			"cacheSize": 0,
+			"downloaded": []
+		}
+	},
+	"target": "",
+	"quality": "",
+	"format": "fbx",
+	"fileId": "bc26ce69-ae24-4aec-8baf-06b98cde1759",
+	"platformIncluded": "",
+	"distributionPointBaseUrls": [],
+	"distributionMethod": "",
+	"entitlementUid": "fee306bd-5155-475f-adab-e40915d42cb9",
+	"invertedNormal": false,
+	"isConverted": false,
+	"isQuixel": false
+}

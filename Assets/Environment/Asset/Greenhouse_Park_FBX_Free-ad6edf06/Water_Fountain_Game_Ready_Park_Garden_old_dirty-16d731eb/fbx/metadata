@@ -1,0 +1,167 @@
+{
+	"assetNamespace": "fab",
+	"listing":
+	{
+		"averageRating": 0,
+		"createdAt": "",
+		"description": "<p>3D game ready model of ancient concrete and marble stone garden building - waterless, dried up fountains. You can fill the fountain with water.</p><p>You can use it in realistic AAA games and videos, and in stylized ones.</p><p></p><p><strong>2 TEXTURE SETS (PBR 4K 4096) :</strong></p><ul><li><p>LIGHT;</p></li><li><p>DARK DIRTY.</p></li></ul><p></p><p>Tris count: 3374.</p><p></p><p>Texture Resolution: 4096x4096.</p>",
+		"isAiForbidden": true,
+		"isAiGenerated": false,
+		"lastUpdatedAt": "2025-02-24T11:30:18.241512Z",
+		"listingType": "3d-model",
+		"media": "https://media.fab.com/image_previews/gallery_images/4845c99e-4fd1-42c3-8dfe-fe7d02cc1181/2ff207b8-9431-4463-bcd7-f2a1cf13cc84.png",
+		"publishedAt": "2024-09-22T15:34:15.288248Z",
+		"reviewCount": 0,
+		"thumbnail": "https://media.fab.com/image_previews/gallery_images/60d64dde-165b-47bc-8847-79b727c317ca/56ccfa98-584a-491a-bb65-71d6174e3807.png",
+		"title": "Water Fountain Game Ready Park Garden old dirty",
+		"uid": "16d731eb-6b42-4315-ad8a-a97def363444",
+		"updatedAt": "",
+		"user":
+		{
+			"coverImageUrl": "https://cdn1.epicgames.com/fab/seller/o-xzjp287ety9rmxdhjhphd96nudkls9/cover/3d-model-fab-buy-download-gvozdy-game-ready-low-poly-realistic-1920x540-0cad8390bd0b37d99eb2f9d81023b459.png",
+			"profileImageUrl": "https://cdn1.epicgames.com/fab/seller/o-xzjp287ety9rmxdhjhphd96nudkls9/profile/gvozdy-3d-model-buy-download-game-ready-low-poly-500x500-03faf886588b484177383aaf2539ddea.png",
+			"sellerName": "Gvozdy",
+			"uid": "7c6cb067-7f01-4d06-a78f-192428b6ad5e"
+		},
+		"tags": [
+			{
+				"name": "Garden",
+				"slug": "garden",
+				"uid": "1f405a73-7135-4e7d-a7b2-61e5c33faebf"
+			},
+			{
+				"name": "Dusty",
+				"slug": "dusty",
+				"uid": "388f0e97-4571-44c2-bad6-59f46cde5a9d"
+			},
+			{
+				"name": "Stone",
+				"slug": "stone",
+				"uid": "3b7b9846-a26c-48e0-99e0-866350f162aa"
+			},
+			{
+				"name": "Dirty",
+				"slug": "dirty",
+				"uid": "54b617d2-d7e9-439d-9bd8-2787675a47e3"
+			},
+			{
+				"name": "Dry",
+				"slug": "dry",
+				"uid": "57bdc10e-4b1d-405c-95ac-9acaf22d3618"
+			},
+			{
+				"name": "Waterfall",
+				"slug": "waterfall",
+				"uid": "5f546a3b-856b-49b5-9f37-9e5b98d029a3"
+			},
+			{
+				"name": "Fountain",
+				"slug": "fountain",
+				"uid": "759588b4-7244-450d-be1f-6544d6e47381"
+			},
+			{
+				"name": "Water",
+				"slug": "water",
+				"uid": "89ccf800-af4e-4fcd-9c52-6dc8e22729d0"
+			},
+			{
+				"name": "Concrete",
+				"slug": "concrete",
+				"uid": "9626f858-b7f1-4677-bd48-369c43eebbd1"
+			},
+			{
+				"name": "Old",
+				"slug": "old",
+				"uid": "975b1521-db01-43ed-a939-c2c2da5027b1"
+			},
+			{
+				"name": "Dried",
+				"slug": "dried",
+				"uid": "9c41b377-e369-48b8-8db1-1b6a845f7d7e"
+			},
+			{
+				"name": "Tier",
+				"slug": "tier",
+				"uid": "c7867112-a8fb-48df-8392-33b0c44aa0e7"
+			},
+			{
+				"name": "Park",
+				"slug": "park",
+				"uid": "e9f75692-7a17-4cc9-a59b-712f2e1b38a9"
+			},
+			{
+				"name": "Ancient",
+				"slug": "ancient",
+				"uid": "f0419e2c-b888-4e2d-8713-61c203152231"
+			},
+			{
+				"name": "City",
+				"slug": "city",
+				"uid": "f57a177e-d2a9-4a6c-96e2-818ae6681e77"
+			}
+		],
+		"category":
+		{
+			"name": "Historical / Points of Interest",
+			"path": "buildings-architecture/historical-points-of-interest",
+			"slug": "buildings-architecture--historical-points-of-interest",
+			"uid": "b2733cee-98ad-485b-875d-c9239f8de4e9"
+		},
+		"assetFormats": [
+			{
+				"assetFormatType":
+				{
+					"name": "FBX",
+					"groupName": "3D Exchange Formats",
+					"code": "fbx",
+					"icon": "cube",
+					"extensions": [
+						"fbx"
+					]
+				}
+			},
+			{
+				"assetFormatType":
+				{
+					"name": "OBJ",
+					"groupName": "3D Exchange Formats",
+					"code": "obj",
+					"icon": "cube",
+					"extensions": [
+						"obj"
+					]
+				}
+			},
+			{
+				"assetFormatType":
+				{
+					"name": "Additional files",
+					"groupName": "Other Formats",
+					"code": "additional-files",
+					"icon": "file",
+					"extensions": [
+						"zip"
+					]
+				}
+			}
+		],
+		"_PluginMetas":
+		{
+			"apiDataVersion": "0.0.1",
+			"entitlementUid": "c0239d4b-45eb-446b-9fd8-b3d04b14b183",
+			"cacheSize": 0,
+			"downloaded": []
+		}
+	},
+	"target": "",
+	"quality": "",
+	"format": "fbx",
+	"fileId": "105c0f12-76a1-481b-ad57-449ad020ff8e",
+	"platformIncluded": "",
+	"distributionPointBaseUrls": [],
+	"distributionMethod": "",
+	"entitlementUid": "c0239d4b-45eb-446b-9fd8-b3d04b14b183",
+	"invertedNormal": false,
+	"isConverted": false,
+	"isQuixel": false
+}
