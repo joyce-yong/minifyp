@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
+using System.Collections;
 
 public class g_InventoryManager : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
 {
@@ -10,6 +11,10 @@ public class g_InventoryManager : MonoBehaviour, IPointerDownHandler, IPointerUp
     [SerializeField] Transform handParent;
     [SerializeField] GameObject itemPrefab;
     [SerializeField] Camera cam;
+
+    [Header("UI")]
+    [SerializeField] GameObject inventoryFullPanel;
+    [SerializeField] float messageDisplayDuration = 3f;
 
     GameObject draggedObject;
     GameObject lastItemSlot;
@@ -22,6 +27,9 @@ public class g_InventoryManager : MonoBehaviour, IPointerDownHandler, IPointerUp
     {
         HotbarItemChanged();
         Cursor.lockState = CursorLockMode.Locked;
+
+        if (inventoryFullPanel != null)
+            inventoryFullPanel.SetActive(false);
     }
 
     void Update()
@@ -275,6 +283,23 @@ public class g_InventoryManager : MonoBehaviour, IPointerDownHandler, IPointerUp
         }
 
         Debug.Log("Inventory Full");
+        ShowInventoryFullMessage();
+    }
+
+    private void ShowInventoryFullMessage()
+    {
+        if (inventoryFullPanel != null)
+        {
+            StopAllCoroutines();
+            StartCoroutine(DisplayInventoryFullMessage());
+        }
+    }
+
+    private IEnumerator DisplayInventoryFullMessage()
+    {
+        inventoryFullPanel.SetActive(true);
+        yield return new WaitForSeconds(messageDisplayDuration);
+        inventoryFullPanel.SetActive(false);
     }
 }
  
