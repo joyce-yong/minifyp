@@ -298,6 +298,7 @@ GameObject:
   - component: {fileID: 161639638}
   - component: {fileID: 161639637}
   - component: {fileID: 161639636}
+  - component: {fileID: 161639639}
   m_Layer: 5
   m_Name: Next
   m_TagString: Untagged
@@ -407,6 +408,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 161639634}
   m_CullTransparentMesh: 1
+--- !u!114 &161639639
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 161639634}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 528a98d5cf7d6b24ca549c11e686a082, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hoverCursor: {fileID: 2800000, guid: 9f16ad8ae51fb2f4997ae5546f739915, type: 3}
 --- !u!1 &358444863
 GameObject:
   m_ObjectHideFlags: 0
@@ -620,8 +634,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Next
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 47bf41e20c062ba4eba64f08fc2046ae, type: 2}
+  m_sharedMaterial: {fileID: -8293700592672929165, guid: 47bf41e20c062ba4eba64f08fc2046ae, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -645,8 +659,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 70
-  m_fontSizeBase: 70
+  m_fontSize: 100
+  m_fontSizeBase: 100
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -655,7 +669,7 @@ MonoBehaviour:
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
-  m_characterSpacing: 0
+  m_characterSpacing: 15
   m_wordSpacing: 0
   m_lineSpacing: 0
   m_lineSpacingMax: 0
@@ -708,6 +722,7 @@ GameObject:
   - component: {fileID: 547447394}
   - component: {fileID: 547447393}
   - component: {fileID: 547447395}
+  - component: {fileID: 547447396}
   m_Layer: 0
   m_Name: CScene
   m_TagString: Untagged
@@ -846,6 +861,20 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &547447396
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 547447392}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c5516cbbba32034694bcc33c51b95d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cursor: {fileID: 2800000, guid: a6bb9c2a820cc57438c9c15d39a376e5, type: 3}
+  cursorClicked: {fileID: 2800000, guid: 9f16ad8ae51fb2f4997ae5546f739915, type: 3}
 --- !u!1 &576275959
 GameObject:
   m_ObjectHideFlags: 0
