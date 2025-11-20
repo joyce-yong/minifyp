@@ -23,10 +23,13 @@ public class g_InventoryManager : MonoBehaviour, IPointerDownHandler, IPointerUp
 
     int? selectedHotbarSlot = null;
 
+    g_AudioManager manager;
+
     void Start()
     {
         HotbarItemChanged();
         Cursor.lockState = CursorLockMode.Locked;
+        manager = FindAnyObjectByType<g_AudioManager>();
 
         if (inventoryFullPanel != null)
             inventoryFullPanel.SetActive(false);
@@ -154,22 +157,21 @@ public class g_InventoryManager : MonoBehaviour, IPointerDownHandler, IPointerUp
             GameObject clickedObject = eventData.pointerCurrentRaycast.gameObject;
             g_InventorySlot slot = clickedObject.GetComponent<g_InventorySlot>();
 
-            // There isnt item in the slot - place item
+            // not item in the slot - place item
             if (slot != null && slot.heldItem == null)
             {
                 slot.SetHeldItem(draggedObject);
                 draggedObject.transform.SetParent(slot.transform.parent.parent.GetChild(2));
             }
-            // There is item in the slot - switch items
+            // item in the slot - switch items
             else if (slot != null && slot.heldItem != null && slot.heldItem.GetComponent<g_InventoryItem>().stackCurrent == slot.heldItem.GetComponent<g_InventoryItem>().stackMax
                 || slot != null && slot.heldItem != null && slot.heldItem.GetComponent<g_InventoryItem>().itemScriptableObject != draggedObject.GetComponent<g_InventoryItem>().itemScriptableObject)
             {
-                // store the item from the target slot before overwriting it
                 GameObject itemToSwitchBack = slot.heldItem;
 
                 // place the target slot's item (itemToSwitchBack) back into the last slot
                 lastItemSlot.GetComponent<g_InventorySlot>().SetHeldItem(itemToSwitchBack);
-                // parent the returned item to the lastItemSlot's item container (Hotbar/Items or Inventory/Items)
+                // parent the returned item to the lastItemSlot's item container
                 itemToSwitchBack.transform.SetParent(lastItemSlot.transform.parent.parent.GetChild(2));
 
                 // place the dragged item into the target slot
@@ -242,7 +244,6 @@ public class g_InventoryManager : MonoBehaviour, IPointerDownHandler, IPointerUp
     {
         g_ItemSO pickedSO = pickedItem.GetComponent<g_ItemPickable>().itemScriptableObject;
 
-        // Try to find an existing stackable item of the same type
         foreach (GameObject slotObj in slots)
         {
             g_InventorySlot slot = slotObj.GetComponent<g_InventorySlot>();
@@ -256,6 +257,9 @@ public class g_InventoryManager : MonoBehaviour, IPointerDownHandler, IPointerUp
                 {
                     heldItem.AddToStack(1);
                     Destroy(pickedItem);
+
+                    manager.playSound("pickup");
+
                     return;
                 }
             }
@@ -278,6 +282,9 @@ public class g_InventoryManager : MonoBehaviour, IPointerDownHandler, IPointerUp
                 slot.SetHeldItem(newItem);
 
                 Destroy(pickedItem);
+
+                manager.playSound("pickup");
+
                 return;
             }
         }
