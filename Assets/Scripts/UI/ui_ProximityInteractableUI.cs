@@ -181,20 +181,25 @@ public class ProximityInteractableUI : MonoBehaviour
     {
         if (isInteractState == shouldShowInteract) return;
         isInteractState = shouldShowInteract;
-        
+
         if (interactIcon != null)
         {
             if (shouldShowInteract)
             {
+                interactIcon.DOKill();
+                interactIcon.transform.DOKill();
                 interactIcon.gameObject.SetActive(true);
                 interactIcon.transform.localScale = Vector3.zero;
                 interactIcon.transform.DOScale(Vector3.one * interactMaxScale, 0.2f).SetEase(Ease.OutBack);
             }
             else
             {
+                interactIcon.DOKill();
+                interactIcon.transform.DOKill();
+                RawImage icon = interactIcon;
                 interactIcon.transform.DOScale(Vector3.zero, 0.15f).OnComplete(() => {
-                    if (interactIcon != null)
-                        interactIcon.gameObject.SetActive(false);
+                    if (icon != null)
+                        icon.gameObject.SetActive(false);
                 });
             }
         }
@@ -204,6 +209,7 @@ public class ProximityInteractableUI : MonoBehaviour
     {
         if (interactIcon != null && interactIcon.gameObject.activeInHierarchy)
         {
+            interactIcon.DOKill();
             Color targetColor = isLookingAt ? lookingAtColor : normalInteractColor;
             interactIcon.DOColor(targetColor, 0.2f);
         }
@@ -244,5 +250,19 @@ public class ProximityInteractableUI : MonoBehaviour
     void OnDestroy()
     {
         StopAllAnimations();
+        if (indicatorIcon != null)
+        {
+            indicatorIcon.DOKill();
+            indicatorIcon.transform.DOKill();
+        }
+        if (interactIcon != null)
+        {
+            interactIcon.DOKill();
+            interactIcon.transform.DOKill();
+        }
+        if (canvasGroup != null)
+        {
+            canvasGroup.DOKill();
+        }
     }
 }

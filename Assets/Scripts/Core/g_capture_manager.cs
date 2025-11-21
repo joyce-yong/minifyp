@@ -15,6 +15,12 @@ public class CaptureManager : MonoBehaviour
     [Header("Capture Effects")]
     public CaptureFrameEffects captureEffects;
 
+    [Header("Film System")]
+    public g_FilmCounter filmCounter;
+
+    [Header("UI To Hide")]
+    public Canvas[] canvasesToHide;
+
     GhostLockOn currentTarget;
     bool captureMode;
     Color originalReticleColor;
@@ -34,6 +40,16 @@ public class CaptureManager : MonoBehaviour
         {
             captureMode = !captureMode;
             captureOverlay.enabled = captureMode;
+
+            if (canvasesToHide != null)
+            {
+                foreach (Canvas c in canvasesToHide)
+                {
+                    if (c != null)
+                        c.enabled = !captureMode;
+                }
+            }
+
             if (!captureMode && currentTarget)
             {
                 currentTarget.HideUI();
@@ -52,8 +68,17 @@ public class CaptureManager : MonoBehaviour
             return;
         }
 
+        if (Input.GetMouseButtonDown(0))
+        {
+            if (filmCounter == null || filmCounter.HasFilm())
+            {
+                StartCapture();
+                return;
+            }
+        }
+
         GhostLockOn newTarget = FindClosestGhost();
-        
+
         if (newTarget != currentTarget)
         {
             if (currentTarget) currentTarget.HideUI();
@@ -66,19 +91,23 @@ public class CaptureManager : MonoBehaviour
             Vector3 targetWorldPos = currentTarget.GetTargetPosition();
             Vector3 screenPos = playerCamera.WorldToScreenPoint(targetWorldPos);
             float distance = Vector2.Distance(screenPos, playerReticle.position);
-            
+
             if (distance < alignThreshold)
             {
                 currentTarget.Progress += Time.deltaTime;
-                
+
                 if (currentTarget.Progress >= currentTarget.LockOnTime)
                 {
                     currentTarget.ReadyToCapture = true;
-                    playerReticleImage.color = Color.red;
-                    
-                    if (Input.GetMouseButtonDown(0))
+                    if (cameraView != null) cameraView.SetLockOnZoom(true);
+
+                    if (filmCounter != null && filmCounter.HasFilm())
                     {
-                        StartCapture();
+                        playerReticleImage.color = Color.red;
+                    }
+                    else
+                    {
+                        playerReticleImage.color = Color.gray;
                     }
                 }
             }
@@ -89,6 +118,7 @@ public class CaptureManager : MonoBehaviour
                     currentTarget.Progress = Mathf.Max(0f, currentTarget.Progress - Time.deltaTime * 2f);
                     currentTarget.ReadyToCapture = false;
                     playerReticleImage.color = originalReticleColor;
+                    if (cameraView != null) cameraView.SetLockOnZoom(false);
                 }
             }
         }
@@ -97,26 +127,36 @@ public class CaptureManager : MonoBehaviour
             currentTarget.HideUI();
             currentTarget = null;
             playerReticleImage.color = originalReticleColor;
+            if (cameraView != null) cameraView.SetLockOnZoom(false);
         }
     }
 
     void StartCapture()
     {
         isCapturing = true;
-        
-        if (cameraView != null) cameraView.TriggerShake();
-        
+
+        if (filmCounter != null)
+        {
+            filmCounter.UseFilm();
+        }
+
+        if (cameraView != null)
+        {
+            cameraView.TriggerShake();
+            cameraView.SetLockOnZoom(false);
+        }
+
         if (captureEffects != null)
         {
             captureEffects.PlayCaptureSequence(currentTarget);
         }
-        else
+        else if (currentTarget != null)
         {
             currentTarget.Capture();
         }
-        
+
         playerReticleImage.color = originalReticleColor;
-        
+
         StartCoroutine(ResetCaptureState());
     }
 

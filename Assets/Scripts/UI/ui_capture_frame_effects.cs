@@ -107,33 +107,40 @@ public class CaptureFrameEffects : MonoBehaviour
     System.Collections.IEnumerator BackgroundFlashSequence()
     {
         backgroundFlash.gameObject.SetActive(true);
-        
+
         for (int i = 0; i < flashCount; i++)
         {
+            if (backgroundFlash == null) yield break;
+            backgroundFlash.DOKill();
             backgroundFlash.DOFade(0.8f, flashInterval * 0.3f);
             yield return new WaitForSeconds(flashInterval * 0.3f);
-            
+
+            if (backgroundFlash == null) yield break;
+            backgroundFlash.DOKill();
             backgroundFlash.DOFade(0f, flashInterval * 0.7f);
             yield return new WaitForSeconds(flashInterval * 0.7f);
         }
-        
-        backgroundFlash.gameObject.SetActive(false);
+
+        if (backgroundFlash != null)
+            backgroundFlash.gameObject.SetActive(false);
     }
 
     System.Collections.IEnumerator ShowFrame()
     {
         if (captureFrameVisible)
         {
+            captureFrameVisible.DOKill();
             captureFrameVisible.gameObject.SetActive(true);
             captureFrameVisible.color = Color.white;
         }
-        
+
         if (captureMask)
         {
+            captureMask.DOKill();
             captureMask.gameObject.SetActive(true);
             captureMask.DOColor(maskColor, 0.3f);
         }
-        
+
         yield return new WaitForSeconds(frameDuration);
     }
 
@@ -141,17 +148,23 @@ public class CaptureFrameEffects : MonoBehaviour
     {
         if (captureFrameVisible)
         {
+            captureFrameVisible.DOKill();
+            RawImage frame = captureFrameVisible;
             captureFrameVisible.DOFade(0f, 0.3f).OnComplete(() =>
             {
-                captureFrameVisible.gameObject.SetActive(false);
+                if (frame != null)
+                    frame.gameObject.SetActive(false);
             });
         }
-        
+
         if (captureMask)
         {
+            captureMask.DOKill();
+            Image mask = captureMask;
             captureMask.DOFade(0f, 0.3f).OnComplete(() =>
             {
-                captureMask.gameObject.SetActive(false);
+                if (mask != null)
+                    mask.gameObject.SetActive(false);
             });
         }
     }
@@ -163,13 +176,13 @@ public class CaptureFrameEffects : MonoBehaviour
         {
             animator.enabled = false;
         }
-        
+
         Rigidbody rb = ghost.GetComponent<Rigidbody>();
         if (rb)
         {
             rb.isKinematic = true;
         }
-        
+
         MonoBehaviour[] scripts = ghost.GetComponents<MonoBehaviour>();
         foreach (MonoBehaviour script in scripts)
         {
@@ -179,4 +192,12 @@ public class CaptureFrameEffects : MonoBehaviour
             }
         }
     }
-}   
+
+    void OnDestroy()
+    {
+        if (captureFrameFlash != null) captureFrameFlash.DOKill();
+        if (captureFrameVisible != null) captureFrameVisible.DOKill();
+        if (captureMask != null) captureMask.DOKill();
+        if (backgroundFlash != null) backgroundFlash.DOKill();
+    }
+}

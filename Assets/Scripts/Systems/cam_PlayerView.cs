@@ -17,10 +17,13 @@ public class cam_PlayerView : MonoBehaviour
     [Header("Zoom Settings")]
     [SerializeField] Camera playerCamera;
     [SerializeField] float defaultFOV = 60f;
-    [SerializeField] float minZoomFOV = 15f;
-    [SerializeField] float maxZoomFOV = 60f;
-    [SerializeField] float zoomSpeed = 25f;
-    [SerializeField] float zoomSmoothness = 8f;
+    [SerializeField] float zoomedFOV = 20f;
+    [SerializeField] float zoomSmoothness = 10f;
+    [SerializeField] float scrollCooldownTime = 0.2f;
+
+    [Header("Lock-On Zoom")]
+    [SerializeField] float lockOnZoomFOV = 55f;
+    [SerializeField] float lockOnZoomSpeed = 5f;
 
     [Header("Camera Shake")]
     [SerializeField] float shakeIntensity = 0.15f;
@@ -41,6 +44,11 @@ public class cam_PlayerView : MonoBehaviour
 
     float targetFOV;
     float currentFOV;
+    bool isZooming;
+    float scrollCooldown;
+    float lastScrollTime;
+    bool isLockedOn;
+    float lockOnFOVTarget;
 
     bool isShaking;
     float shakeTimer;
@@ -117,13 +125,24 @@ public class cam_PlayerView : MonoBehaviour
         if (playerCamera == null) return;
 
         float scrollInput = Input.GetAxis("Mouse ScrollWheel");
-        if (scrollInput != 0f)
+
+        if (Mathf.Abs(scrollInput) > 0.01f && Time.time - lastScrollTime > scrollCooldownTime)
         {
-            targetFOV -= scrollInput * zoomSpeed * Time.deltaTime * 60f;
-            targetFOV = Mathf.Clamp(targetFOV, minZoomFOV, maxZoomFOV);
+            isZooming = !isZooming;
+            targetFOV = isZooming ? zoomedFOV : defaultFOV;
+            lastScrollTime = Time.time;
         }
 
-        currentFOV = Mathf.Lerp(currentFOV, targetFOV, Time.deltaTime * zoomSmoothness);
+        float finalTargetFOV = targetFOV;
+        float zoomSpeed = zoomSmoothness;
+
+        if (isLockedOn)
+        {
+            finalTargetFOV = lockOnFOVTarget;
+            zoomSpeed = lockOnZoomSpeed;
+        }
+
+        currentFOV = Mathf.Lerp(currentFOV, finalTargetFOV, Time.deltaTime * zoomSpeed);
         playerCamera.fieldOfView = currentFOV;
     }
 
@@ -159,11 +178,17 @@ public class cam_PlayerView : MonoBehaviour
 
     public void SetZoom(float zoomFOV)
     {
-        targetFOV = Mathf.Clamp(zoomFOV, minZoomFOV, maxZoomFOV);
+        targetFOV = zoomFOV;
     }
 
     public void ResetZoom()
     {
         targetFOV = defaultFOV;
+    }
+
+    public void SetLockOnZoom(bool locked)
+    {
+        isLockedOn = locked;
+        lockOnFOVTarget = locked ? lockOnZoomFOV : (isZooming ? zoomedFOV : defaultFOV);
     }
 }
