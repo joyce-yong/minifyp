@@ -3628,7 +3628,7 @@ GameObject:
   - component: {fileID: 1811720756}
   - component: {fileID: 1811720755}
   m_Layer: 0
-  m_Name: disgust
+  m_Name: sarcastic
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3661,7 +3661,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a681e41014d42ba438c8982c226baa6a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  emotion: disgust
+  emotion: sarcastic
 --- !u!65 &1811720756
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3760,7 +3760,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1877411101}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9a275a8b95782d241ab9298d162d347d, type: 3}
   m_Name: 
@@ -4336,8 +4336,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: c52e9c6724e409648b16e5d1e6812a27, type: 2}
+  m_sharedMaterial: {fileID: 2171154784364093406, guid: c52e9c6724e409648b16e5d1e6812a27, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []

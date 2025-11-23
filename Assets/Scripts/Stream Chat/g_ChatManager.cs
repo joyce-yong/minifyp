@@ -200,7 +200,7 @@ public class ChatManager : MonoBehaviour
         EmojiCategory data = JsonUtility.FromJson<EmojiCategory>(emojiJson.text);
         emojiCategories["happy"] = data.happy;
         emojiCategories["fear"] = data.fear;
-        emojiCategories["disgust"] = data.disgust;
+        emojiCategories["sarcastic"] = data.sarcastic;
         emojiCategories["amaze"] = data.amaze;
         emojiCategories["anger"] = data.anger;
     }
@@ -236,7 +236,7 @@ public class ChatManager : MonoBehaviour
     {
         public string[] happy;
         public string[] fear;
-        public string[] disgust;
+        public string[] sarcastic;
         public string[] amaze;
         public string[] anger;
     }
