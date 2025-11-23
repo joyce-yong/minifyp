@@ -1,9 +1,9 @@
 {
-  "happy": ["<sprite name = 2>", "<sprite name = 3>", "<sprite name = 6>", "<sprite name = 7>", "<sprite name = 12>", 
+  "happy": ["<sprite name = jerry>", "<sprite name = 3>", "<sprite name = 6>", "<sprite name = 7>", "<sprite name = 12>", 
   "<sprite name = 13>", "<sprite name = 17>", "<sprite name = 23>", "<sprite name = 25>", "<sprite name = 27>", "<sprite name = 30>", 
   "<sprite name = 33>", "<sprite name = 39>", "<sprite name = 42>"],
 
-  "fear": ["<sprite name = 1>", "<sprite name = 5>", "<sprite name = 9>", "<sprite name = 10>", "<sprite name = 11>", 
+  "fear": ["<sprite name = eyes>", "<sprite name = 5>", "<sprite name = 9>", "<sprite name = 10>", "<sprite name = 11>", 
   "<sprite name = 14>", "<sprite name = 15>", "<sprite name = 18>", "<sprite name = 19>", "<sprite name = 24>", "<sprite name = 29>", 
   "<sprite name = 32>", "<sprite name = 36>", "<sprite name = 37>", "<sprite name = 40>", "<sprite name = 41>"],
 
