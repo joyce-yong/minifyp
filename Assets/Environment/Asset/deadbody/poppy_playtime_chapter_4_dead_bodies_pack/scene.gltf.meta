@@ -1,0 +1,85 @@
+fileFormatVersion: 2
+guid: af231d32cd61ff84285479ae6beaabfe
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 715df9372183c47e389bb6e19fbc3b52, type: 3}
+  editorImportSettings:
+    generateSecondaryUVSet: 0
+  importSettings:
+    nodeNameMethod: 1
+    animationMethod: 2
+    generateMipMaps: 1
+    texturesReadable: 0
+    defaultMinFilterMode: 9729
+    defaultMagFilterMode: 9729
+    anisotropicFilterLevel: 1
+  instantiationSettings:
+    mask: -1
+    layer: 0
+    skinUpdateWhenOffscreen: 1
+    lightIntensityFactor: 1
+    sceneObjectCreation: 2
+  assetDependencies:
+  - type: 0
+    originalUri: Assets\Environment\Asset\deadbody\poppy_playtime_chapter_4_dead_bodies_pack\scene.bin
+    assetPath: Assets\Environment\Asset\deadbody\poppy_playtime_chapter_4_dead_bodies_pack\scene.bin
+  - type: 1
+    originalUri: Assets\Environment\Asset\deadbody\poppy_playtime_chapter_4_dead_bodies_pack\textures\DeadGuardMat_baseColor.png
+    assetPath: Assets\Environment\Asset\deadbody\poppy_playtime_chapter_4_dead_bodies_pack\textures\DeadGuardMat_baseColor.png
+  - type: 1
+    originalUri: Assets\Environment\Asset\deadbody\poppy_playtime_chapter_4_dead_bodies_pack\textures\DeadGuardMat_metallicRoughness.png
+    assetPath: Assets\Environment\Asset\deadbody\poppy_playtime_chapter_4_dead_bodies_pack\textures\DeadGuardMat_metallicRoughness.png
+  - type: 1
+    originalUri: Assets\Environment\Asset\deadbody\poppy_playtime_chapter_4_dead_bodies_pack\textures\DeadGuardMat_normal.png
+    assetPath: Assets\Environment\Asset\deadbody\poppy_playtime_chapter_4_dead_bodies_pack\textures\DeadGuardMat_normal.png
+  - type: 1
+    originalUri: Assets\Environment\Asset\deadbody\poppy_playtime_chapter_4_dead_bodies_pack\textures\NameTagMat_baseColor.png
+    assetPath: Assets\Environment\Asset\deadbody\poppy_playtime_chapter_4_dead_bodies_pack\textures\NameTagMat_baseColor.png
+  - type: 1
+    originalUri: Assets\Environment\Asset\deadbody\poppy_playtime_chapter_4_dead_bodies_pack\textures\NameTagMat_metallicRoughness.png
+    assetPath: Assets\Environment\Asset\deadbody\poppy_playtime_chapter_4_dead_bodies_pack\textures\NameTagMat_metallicRoughness.png
+  - type: 1
+    originalUri: Assets\Environment\Asset\deadbody\poppy_playtime_chapter_4_dead_bodies_pack\textures\NameTagMat_normal.png
+    assetPath: Assets\Environment\Asset\deadbody\poppy_playtime_chapter_4_dead_bodies_pack\textures\NameTagMat_normal.png
+  - type: 1
+    originalUri: Assets\Environment\Asset\deadbody\poppy_playtime_chapter_4_dead_bodies_pack\textures\DeadConductorMat_baseColor.png
+    assetPath: Assets\Environment\Asset\deadbody\poppy_playtime_chapter_4_dead_bodies_pack\textures\DeadConductorMat_baseColor.png
+  - type: 1
+    originalUri: Assets\Environment\Asset\deadbody\poppy_playtime_chapter_4_dead_bodies_pack\textures\DeadConductorMat_metallicRoughness.png
+    assetPath: Assets\Environment\Asset\deadbody\poppy_playtime_chapter_4_dead_bodies_pack\textures\DeadConductorMat_metallicRoughness.png
+  - type: 1
+    originalUri: Assets\Environment\Asset\deadbody\poppy_playtime_chapter_4_dead_bodies_pack\textures\DeadConductorMat_normal.png
+    assetPath: Assets\Environment\Asset\deadbody\poppy_playtime_chapter_4_dead_bodies_pack\textures\DeadConductorMat_normal.png
+  - type: 1
+    originalUri: Assets\Environment\Asset\deadbody\poppy_playtime_chapter_4_dead_bodies_pack\textures\BodyBagMat_baseColor.png
+    assetPath: Assets\Environment\Asset\deadbody\poppy_playtime_chapter_4_dead_bodies_pack\textures\BodyBagMat_baseColor.png
+  - type: 1
+    originalUri: Assets\Environment\Asset\deadbody\poppy_playtime_chapter_4_dead_bodies_pack\textures\BodyBagMat_metallicRoughness.png
+    assetPath: Assets\Environment\Asset\deadbody\poppy_playtime_chapter_4_dead_bodies_pack\textures\BodyBagMat_metallicRoughness.png
+  - type: 1
+    originalUri: Assets\Environment\Asset\deadbody\poppy_playtime_chapter_4_dead_bodies_pack\textures\BodyBagMat_normal.png
+    assetPath: Assets\Environment\Asset\deadbody\poppy_playtime_chapter_4_dead_bodies_pack\textures\BodyBagMat_normal.png
+  - type: 1
+    originalUri: Assets\Environment\Asset\deadbody\poppy_playtime_chapter_4_dead_bodies_pack\textures\HangingBodyBagMat_baseColor.png
+    assetPath: Assets\Environment\Asset\deadbody\poppy_playtime_chapter_4_dead_bodies_pack\textures\HangingBodyBagMat_baseColor.png
+  - type: 1
+    originalUri: Assets\Environment\Asset\deadbody\poppy_playtime_chapter_4_dead_bodies_pack\textures\HangingBodyBagMat_metallicRoughness.png
+    assetPath: Assets\Environment\Asset\deadbody\poppy_playtime_chapter_4_dead_bodies_pack\textures\HangingBodyBagMat_metallicRoughness.png
+  - type: 1
+    originalUri: Assets\Environment\Asset\deadbody\poppy_playtime_chapter_4_dead_bodies_pack\textures\HangingBodyBagMat_normal.png
+    assetPath: Assets\Environment\Asset\deadbody\poppy_playtime_chapter_4_dead_bodies_pack\textures\HangingBodyBagMat_normal.png
+  - type: 1
+    originalUri: Assets\Environment\Asset\deadbody\poppy_playtime_chapter_4_dead_bodies_pack\textures\GrabpackMat_baseColor.png
+    assetPath: Assets\Environment\Asset\deadbody\poppy_playtime_chapter_4_dead_bodies_pack\textures\GrabpackMat_baseColor.png
+  - type: 1
+    originalUri: Assets\Environment\Asset\deadbody\poppy_playtime_chapter_4_dead_bodies_pack\textures\GrabpackMat_metallicRoughness.png
+    assetPath: Assets\Environment\Asset\deadbody\poppy_playtime_chapter_4_dead_bodies_pack\textures\GrabpackMat_metallicRoughness.png
+  - type: 1
+    originalUri: Assets\Environment\Asset\deadbody\poppy_playtime_chapter_4_dead_bodies_pack\textures\GrabpackMat_normal.png
+    assetPath: Assets\Environment\Asset\deadbody\poppy_playtime_chapter_4_dead_bodies_pack\textures\GrabpackMat_normal.png
+  reportItems: []

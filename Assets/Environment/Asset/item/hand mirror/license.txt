@@ -1,0 +1,11 @@
+Model Information:
+* title:	mirror
+* source:	https://sketchfab.com/3d-models/mirror-3efcb2a41d7a43c3ad0388292bb7e409
+* author:	hynuysuu (https://sketchfab.com/hynuysuu)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "mirror" (https://sketchfab.com/3d-models/mirror-3efcb2a41d7a43c3ad0388292bb7e409) by hynuysuu (https://sketchfab.com/hynuysuu) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

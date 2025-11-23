@@ -1,0 +1,16 @@
+id,dialogue,trigger
+1,Welcome to the mansion...,start
+1,Something doesn't feel right here.,entry
+1,I should explore carefully.,end
+2,What was that sound?,start
+2,It came from upstairs.,entry
+2,Maybe I shouldn't go there...,entry
+2,But I have to find out what's happening.,end
+3,The door is locked.,start
+3,I need to find a key.,end
+4,I found something!,start
+4,This looks important.,entry
+4,I should keep this with me.,end
+5,The ghost is getting closer...,start
+5,I need to hide!,entry
+5,Quick find somewhere safe!,end
