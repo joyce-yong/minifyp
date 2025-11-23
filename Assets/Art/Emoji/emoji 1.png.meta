@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: c9c325db1e6a1cc49936a75fb898ca4e
+guid: a157c6d16f2fad246b2ac8c24821caf1
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -110,7 +110,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: fear_eyes
+      name: 1
       rect:
         serializedVersion: 2
         x: 1
@@ -132,7 +132,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: happy_laugh
+      name: 7
       rect:
         serializedVersion: 2
         x: 0
@@ -154,7 +154,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: happy_doglaugh
+      name: 33
       rect:
         serializedVersion: 2
         x: 200
@@ -176,7 +176,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fear_pepecross
+      name: 11
       rect:
         serializedVersion: 2
         x: 266
@@ -198,7 +198,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fear_shockpepe
+      name: 14
       rect:
         serializedVersion: 2
         x: 68
@@ -220,7 +220,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fear_crycat
+      name: 19
       rect:
         serializedVersion: 2
         x: 2
@@ -242,11 +242,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sarc_jerry
+      name: 2
       rect:
         serializedVersion: 2
         x: 67
-        y: 568
+        y: 569
         width: 63
         height: 63
       alignment: 0
@@ -264,7 +264,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sarc_emote
+      name: 3
       rect:
         serializedVersion: 2
         x: 133
@@ -286,7 +286,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sarc_face
+      name: 4
       rect:
         serializedVersion: 2
         x: 195
@@ -308,7 +308,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: anger_face
+      name: 5
       rect:
         serializedVersion: 2
         x: 263
@@ -330,7 +330,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sarc_smile
+      name: 6
       rect:
         serializedVersion: 2
         x: 327
@@ -352,7 +352,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: happy_smile
+      name: 8
       rect:
         serializedVersion: 2
         x: 66
@@ -374,7 +374,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sarc_shrek
+      name: 9
       rect:
         serializedVersion: 2
         x: 134
@@ -396,7 +396,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fear_face
+      name: 10
       rect:
         serializedVersion: 2
         x: 199
@@ -418,7 +418,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: happy_pepe
+      name: 12
       rect:
         serializedVersion: 2
         x: 330
@@ -440,7 +440,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: happy_pepelaugh
+      name: 13
       rect:
         serializedVersion: 2
         x: 1
@@ -462,7 +462,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fear_opman
+      name: 15
       rect:
         serializedVersion: 2
         x: 134
@@ -506,7 +506,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sarc_laugh
+      name: 17
       rect:
         serializedVersion: 2
         x: 267
@@ -528,7 +528,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: happy_ques
+      name: 18
       rect:
         serializedVersion: 2
         x: 329
@@ -550,7 +550,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: angry_cat
+      name: 20
       rect:
         serializedVersion: 2
         x: 68
@@ -572,7 +572,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: amaze_pikachu
+      name: 21
       rect:
         serializedVersion: 2
         x: 134
@@ -594,7 +594,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: amaze_dog
+      name: 22
       rect:
         serializedVersion: 2
         x: 197
@@ -616,7 +616,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: happy_pop
+      name: 23
       rect:
         serializedVersion: 2
         x: 260
@@ -638,7 +638,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: happy_pepesleep
+      name: 24
       rect:
         serializedVersion: 2
         x: 332
@@ -660,7 +660,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: happy_glass
+      name: 25
       rect:
         serializedVersion: 2
         x: 1
@@ -682,7 +682,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: angry_catawk
+      name: 26
       rect:
         serializedVersion: 2
         x: 68
@@ -704,7 +704,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: amaze_beigecat
+      name: 27
       rect:
         serializedVersion: 2
         x: 134
@@ -726,7 +726,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: anger_catsideeye
+      name: 28
       rect:
         serializedVersion: 2
         x: 197
@@ -748,7 +748,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fear_darkcat
+      name: 29
       rect:
         serializedVersion: 2
         x: 264
@@ -770,7 +770,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: happy_dogsmile
+      name: 30
       rect:
         serializedVersion: 2
         x: 332
@@ -792,7 +792,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sarc_pepecoffee
+      name: 31
       rect:
         serializedVersion: 2
         x: 4
@@ -814,7 +814,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fear_catshock
+      name: 32
       rect:
         serializedVersion: 2
         x: 67
@@ -836,7 +836,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: anger_dogannoy
+      name: 34
       rect:
         serializedVersion: 2
         x: 263
@@ -880,7 +880,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: anger_whitecat
+      name: 36
       rect:
         serializedVersion: 2
         x: 1
@@ -902,7 +902,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fear_catthumbs
+      name: 37
       rect:
         serializedVersion: 2
         x: 334
@@ -924,7 +924,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: anger_duckknife
+      name: 38
       rect:
         serializedVersion: 2
         x: 2
@@ -946,7 +946,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: happy_popcatopen
+      name: 39
       rect:
         serializedVersion: 2
         x: 136
@@ -968,7 +968,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fear_pepecry
+      name: 40
       rect:
         serializedVersion: 2
         x: 200
@@ -990,7 +990,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: anger_cathuh
+      name: 41
       rect:
         serializedVersion: 2
         x: 198
@@ -1012,7 +1012,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: happy_cathappysmile
+      name: 42
       rect:
         serializedVersion: 2
         x: 264
@@ -1034,7 +1034,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: anger_dogangry
+      name: 43
       rect:
         serializedVersion: 2
         x: 328
@@ -1069,49 +1069,49 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
+      1: -2079245629
+      10: 706776318
+      11: -1095191944
+      12: 1880571843
+      13: -12123192
+      14: -761775803
+      15: -330308315
       16: -481282493
+      17: 873477545
+      18: -940986159
+      19: -1182403648
+      2: -746195467
+      20: -1738024514
+      21: 123432333
+      22: -1968067617
+      23: -342177775
+      24: 2033308731
+      25: 1765378975
+      26: -1805200548
+      27: -1327512461
+      28: 1632125420
+      29: -499585594
+      3: 2009662475
+      30: 476679988
+      31: -520864249
+      32: -589217477
+      33: -2053202873
+      34: 1578684959
       35: -637269439
-      amaze_beigecat: -1327512461
-      amaze_dog: -1968067617
-      amaze_pikachu: 123432333
-      anger_cathuh: 1233019941
-      anger_catsideeye: 1632125420
-      anger_dogangry: 2071717121
-      anger_dogannoy: 1578684959
-      anger_duckknife: -266884311
-      anger_face: 1134544998
-      anger_whitecat: 1460581328
-      angry_cat: -1738024514
-      angry_catawk: -1805200548
-      fear_catshock: -589217477
-      fear_catthumbs: 242778652
-      fear_crycat: -1182403648
-      fear_darkcat: -499585594
-      fear_eyes: -2079245629
-      fear_face: 706776318
-      fear_opman: -330308315
-      fear_pepecross: -1095191944
-      fear_pepecry: -308174154
-      fear_shockpepe: -761775803
-      happy_cathappysmile: 802040579
-      happy_doglaugh: -2053202873
-      happy_dogsmile: 476679988
-      happy_glass: 1765378975
-      happy_laugh: 1134764336
-      happy_pepe: 1880571843
-      happy_pepelaugh: -12123192
-      happy_pepesleep: 2033308731
-      happy_pop: -342177775
-      happy_popcatopen: 1128556286
-      happy_ques: -940986159
-      happy_smile: 1509162116
-      sarc_emote: 2009662475
-      sarc_face: 1314287170
-      sarc_jerry: -746195467
-      sarc_laugh: 873477545
-      sarc_pepecoffee: -520864249
-      sarc_shrek: 1756184054
-      sarc_smile: -1439599943
+      36: 1460581328
+      37: 242778652
+      38: -266884311
+      39: 1128556286
+      4: 1314287170
+      40: -308174154
+      41: 1233019941
+      42: 802040579
+      43: 2071717121
+      5: 1134544998
+      6: -1439599943
+      7: 1134764336
+      8: 1509162116
+      9: 1756184054
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

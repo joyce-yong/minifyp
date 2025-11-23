@@ -1,20 +1,58 @@
 {
-  "happy": ["<sprite name = jerry>", "<sprite name = 3>", "<sprite name = 6>", "<sprite name = 7>", "<sprite name = 12>", 
-  "<sprite name = 13>", "<sprite name = 17>", "<sprite name = 23>", "<sprite name = 25>", "<sprite name = 27>", "<sprite name = 30>", 
-  "<sprite name = 33>", "<sprite name = 39>", "<sprite name = 42>"],
+  "sarcastic": [
+    "<sprite name=sarc_jerry>",
+    "<sprite name=sarc_emote>",
+    "<sprite name=sarc_face>",
+    "<sprite name=sarc_smile>",
+    "<sprite name=sarc_shrek>",
+    "<sprite name=sarc_smile>",
+    "<sprite name=sarc_laugh>",
+    "<sprite name=sarc_pepecoffee>"
+  ],
 
-  "fear": ["<sprite name = eyes>", "<sprite name = 5>", "<sprite name = 9>", "<sprite name = 10>", "<sprite name = 11>", 
-  "<sprite name = 14>", "<sprite name = 15>", "<sprite name = 18>", "<sprite name = 19>", "<sprite name = 24>", "<sprite name = 29>", 
-  "<sprite name = 32>", "<sprite name = 36>", "<sprite name = 37>", "<sprite name = 40>", "<sprite name = 41>"],
+  "happy": [
+    "<sprite name=happy_laugh>",
+    "<sprite name=happy_smile>",
+    "<sprite name=happy_pepe>",
+    "<sprite name=happy_pepelaugh>",
+    "<sprite name=happy_ques>",
+    "<sprite name=happy_pop>",
+    "<sprite name=happy_pepesleep>",
+    "<sprite name=happy_glass>",
+    "<sprite name=happy_dogsmile>",
+    "<sprite name=happy_doglaugh>",
+    "<sprite name=happy_popcatopen>",
+    "<sprite name=happy_cathappysmile>"
+  ],
 
-  "sarcastic": ["<sprite name = 2>", "<sprite name = 3>", "<sprite name = 4>", "<sprite name = 6>", "<sprite name = 7>", 
-  "<sprite name = 8>", "<sprite name = 13>", "<sprite name = 16>", "<sprite name = 17>", "<sprite name = 22>", "<sprite name = 24>", 
-  "<sprite name = 26>", "<sprite name = 30>",  "<sprite name = 31>", "<sprite name = 34>"],
+  "amaze": [
+    "<sprite name=amaze_pikachu>",
+    "<sprite name=amaze_dog>",
+    "<sprite name=amaze_beigecat>"
+  ],
 
-  "amaze": ["<sprite name = 1>", "<sprite name = 9>", "<sprite name = 12>", "<sprite name = 18>", "<sprite name = 20>", 
-  "<sprite name = 21>", "<sprite name = 32>", "<sprite name = 39>"],
+  "fear": [
+    "<sprite name=fear_eyes>",
+    "<sprite name=fear_face>",
+    "<sprite name=fear_pepecross>",
+    "<sprite name=fear_shockpepe>",
+    "<sprite name=fear_opman>",
+    "<sprite name=fear_crycat>",
+    "<sprite name=fear_darkcat>",
+    "<sprite name=fear_catshock>",
+    "<sprite name=fear_catthumbs>",
+    "<sprite name=fear_pepecry>"
+  ],
 
-  "anger": ["<sprite name = 1>", "<sprite name = 5>", "<sprite name = 10>", "<sprite name = 15>", "<sprite name = 19>", 
-  "<sprite name = 20>", "<sprite name = 22>", "<sprite name = 28>", "<sprite name = 32>", "<sprite name = 36>", "<sprite name = 38>", "<sprite name = 43>"]
-
+  "anger": [
+    "<sprite name=anger_face>",
+    "<sprite name=angry_cat>",
+    "<sprite name=angry_catawk>",
+    "<sprite name=anger_catsideeye>",
+    "<sprite name=anger_dogannoy>",
+    "<sprite name=anger_whitecat>",
+    "<sprite name=anger_duckknife>",
+    "<sprite name=anger_cathuh>",
+    "<sprite name=anger_dogangry>"
+  ]
 }
