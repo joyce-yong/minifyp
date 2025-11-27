@@ -1,0 +1,34 @@
+newmtl models_vehicles_bobbycar_bobbycar_inside
+illium 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Ks 0.50 0.50 0.50
+map_Kd _images\bobbycar_inside_vmtr_c.dds
+map_Ks _images\bobbycar_inside_vmtr_s.dds
+norm _images\bobbycar_inside_vmtr_n.dds
+map_Pr _images\bobbycar_inside_vmtr_r.dds
+newmtl models_vehicles_bobbycar_bobbycar_dials
+illium 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Ks 0.50 0.50 0.50
+map_Kd _images\bobbycar_dials_vmtr_c.dds
+map_Ks _images\bobbycar_dials_vmtr_s.dds
+norm _images\bobbycar_dials_vmtr_n.dds
+map_Pr _images\bobbycar_dials_vmtr_r.dds
+map_Unk _images\bobbycar_dials_add.dds
+newmtl models_vehicles_escapecar_escapecar_blue
+illium 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Ks 0.50 0.50 0.50
+map_Kd _images\escapecar_blue_vmtr_c.dds
+map_Ks _images\escapecar_blue_vmtr_s.dds
+norm _images\escapecar_blue_vmtr_n.dds
+map_Pr _images\escapecar_blue_vmtr_r.dds
+newmtl models_vehicles_escapecar_escapecar_windows
+illium 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Ks 0.50 0.50 0.50
+map_Unk _images\escapecar_windows.dds
