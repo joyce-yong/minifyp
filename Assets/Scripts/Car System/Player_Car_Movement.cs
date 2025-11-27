@@ -9,8 +9,8 @@ public class Player_Car_Movement : MonoBehaviour
     public float maxHorizontalLook = 45f;
     public float maxUpLook = 30f;
     public float maxDownLook = 0f;
-    public float cameraShakeIntensity = 0.00005f;
-    public float cameraShakeSpeed = 15f;
+    public float cameraBobIntensity = 0.5f;
+    public float cameraBobSpeed = 8f;
 
     [Header("Steering Settings")]
     public Transform steeringWheel;
@@ -20,9 +20,9 @@ public class Player_Car_Movement : MonoBehaviour
 
     [Header("Car Movement")]
     public Transform carBase;
-    public float moveSpeed = 10f;
-    public float reverseSpeed = 5f;
-    public float turnSpeed = 50f;
+    public float moveSpeed = 6f;
+    public float reverseSpeed = 3f;
+    public float turnSpeed = 5f;
     public float acceleration = 2f;
     public float deceleration = 3f;
 
@@ -38,8 +38,7 @@ public class Player_Car_Movement : MonoBehaviour
     private float currentSteeringAngle = 0f;
     private float targetSteeringAngle = 0f;
     private float currentSpeed = 0f;
-    private Vector3 originalCameraPos;
-    private float shakeTimer = 0f;
+    private float bobTimer = 0f;
     private bool isMoving = false;
     private bool isHeadlightOn = false;
     private float originalHeadlightIntensity = 0f;
@@ -51,11 +50,6 @@ public class Player_Car_Movement : MonoBehaviour
 
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
-
-        if (playerCamera != null)
-        {
-            originalCameraPos = playerCamera.localPosition;
-        }
 
         if (headlight != null)
         {
@@ -80,7 +74,7 @@ public class Player_Car_Movement : MonoBehaviour
         HandleCarMovement();
         HandleCameraLook();
         HandleSteering();
-        HandleCameraShake();
+        HandleCameraBob();
         HandleHeadlightToggle();
     }
 
@@ -97,7 +91,13 @@ public class Player_Car_Movement : MonoBehaviour
         cameraRotationY = Mathf.Clamp(cameraRotationY, -maxHorizontalLook, maxHorizontalLook);
         cameraRotationX = Mathf.Clamp(cameraRotationX, -maxDownLook, maxUpLook);
 
-        playerCamera.localRotation = Quaternion.Euler(cameraRotationX, cameraRotationY, 0f);
+        float bobOffset = 0f;
+        if (isMoving)
+        {
+            bobOffset = Mathf.Sin(bobTimer) * cameraBobIntensity;
+        }
+
+        playerCamera.localRotation = Quaternion.Euler(cameraRotationX + bobOffset, cameraRotationY, 0f);
     }
 
     void HandleSteering()
@@ -172,22 +172,17 @@ public class Player_Car_Movement : MonoBehaviour
         }
     }
 
-    void HandleCameraShake()
+    void HandleCameraBob()
     {
         if (playerCamera == null) return;
 
         if (isMoving)
         {
-            shakeTimer += Time.deltaTime * cameraShakeSpeed;
-            float shakeX = Mathf.Sin(shakeTimer) * cameraShakeIntensity;
-            float shakeY = Mathf.Cos(shakeTimer * 1.3f) * cameraShakeIntensity;
-
-            playerCamera.localPosition = originalCameraPos + new Vector3(shakeX, shakeY, 0f);
+            bobTimer += Time.deltaTime * cameraBobSpeed;
         }
         else
         {
-            playerCamera.localPosition = Vector3.Lerp(playerCamera.localPosition, originalCameraPos, Time.deltaTime * 5f);
-            shakeTimer = 0f;
+            bobTimer = Mathf.Lerp(bobTimer, 0f, Time.deltaTime * 5f);
         }
     }
 
