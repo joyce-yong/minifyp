@@ -18,7 +18,7 @@ public class PivotPoint : MonoBehaviour
    {
        return customPivot;
    }
-   
+
    public void SetPivotLocalPosition(Vector3 position)
    {
        customPivot = position;
@@ -35,6 +35,7 @@ public class PivotPoint : MonoBehaviour
        Vector3 direction = transform.position - pivotWorld;
        transform.position = pivotWorld + Vector3.Scale(direction, scale);
        transform.localScale = Vector3.Scale(transform.localScale, scale);
+
    }
    
    void OnDrawGizmos()
