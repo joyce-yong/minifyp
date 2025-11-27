@@ -24,6 +24,9 @@ public class g_PlayerMovement : MonoBehaviour
 
     bool isSafe = false;
     public bool IsSafe => isSafe;
+
+    private Vector3 checkpointPosition;
+
     void Awake()
     {
         controller = GetComponent<CharacterController>();
@@ -82,6 +85,7 @@ public class g_PlayerMovement : MonoBehaviour
         controller.height = Mathf.Lerp(controller.height, targetHeight, Time.deltaTime * heightSmooth);
     }
 
+    // Red Light Green Light RedLine Point
     void OnTriggerEnter(Collider collider)
     {
         if (collider.tag == "RedLine")
@@ -91,6 +95,14 @@ public class g_PlayerMovement : MonoBehaviour
         }
     }
 
-
+    // Player die
+    public void KillPlayer()
+    {
+        if (PlayerIsDead()) return;
+    }
+    public bool PlayerIsDead()
+    {
+        return false;// return to checkpoint
+    }
 
 }

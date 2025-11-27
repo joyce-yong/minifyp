@@ -71,8 +71,13 @@ public class g_Girl : MonoBehaviour
 
         if (elapsedTime >= totalTime)
         {
-            //shotAudioSource.Play(); //die sound
-            Debug.LogError("Time Over. Player is killed!");
+            shotAudioSource.Play();
+            Debug.Log("Time Over. Player is killed!");
+            if (!player.PlayerIsDead())
+            {
+                player.KillPlayer();
+            }
+            return;
             
         }
 
@@ -80,8 +85,9 @@ public class g_Girl : MonoBehaviour
         {
             if (player.isMoving)
             {
-                //shotAudioSource.Play(); 
-                Debug.LogError("Player moved. Player is killed!");
+                Debug.Log("Player moved. Player is killed!");
+                shotAudioSource.Play();
+                player.KillPlayer();
             }
         }
     }
