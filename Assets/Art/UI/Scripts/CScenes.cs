@@ -42,6 +42,8 @@ public class CScenes : MonoBehaviour
         ShowPage(0);
     }
 
+
+
     void InitializeControllers()
     {
         var rightHandedControllers = new List<InputDevice>();

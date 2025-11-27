@@ -52,17 +52,22 @@ public class g_WeepingAngel : MonoBehaviour
 
         if (!playerLookingAtAngel)
         {
-            Vector3 dirToPlayer = (player.position - angelMesh.position).normalized;
+            Vector3 dirToPlayer = player.position - angelMesh.position;
             dirToPlayer.y = 0f;
-            dirToPlayer.Normalize();
 
-            if (dirToPlayer != Vector3.zero)
+            if (dirToPlayer.sqrMagnitude > 0.001f)
             {
-                float targetYRotation = Mathf.Atan2(dirToPlayer.x, dirToPlayer.z) * Mathf.Rad2Deg;
-                float currentYRotation = angelMesh.eulerAngles.y;
-                float newYRotation = Mathf.LerpAngle(currentYRotation, targetYRotation, rotationSpeed * Time.deltaTime);
+                Quaternion targetRotation = Quaternion.LookRotation(dirToPlayer, Vector3.up);
 
-                angelMesh.rotation = Quaternion.Euler(angelMesh.eulerAngles.x, newYRotation, angelMesh.eulerAngles.z);
+                float currentX = angelMesh.eulerAngles.x;
+                float currentZ = angelMesh.eulerAngles.z;
+
+                angelMesh.rotation = Quaternion.Slerp(angelMesh.rotation, targetRotation, rotationSpeed * Time.deltaTime);
+
+                Vector3 euler = angelMesh.eulerAngles;
+                euler.x = currentX;
+                euler.z = currentZ;
+                angelMesh.eulerAngles = euler;
             }
         }
     }
