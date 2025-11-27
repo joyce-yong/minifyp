@@ -34,10 +34,16 @@ public class ChatManager : MonoBehaviour
     public float boostIncreaseRate = 5f;
     public float boostDuration = 3f;
 
+    [Header("Intro Sequence")]
+    public bool enableIntroSequence = false;
+    public float introMessageInterval = 1.5f;
+    public int introViewerIncrement = 5;
+
     private int currentViewers;
     private float viewerTimer = 0f;
     private bool isBoosting = false;
     private float boostTimer = 0f;
+    private bool isIntroActive = false;
 
     void Start()
     {
@@ -71,10 +77,32 @@ public class ChatManager : MonoBehaviour
 
         currentViewers = startingViewers;
         UpdateViewerUI();
+
+        if (enableIntroSequence)
+        {
+            StartIntroSequence();
+        }
     }
 
     void Update()
     {
+        if (isIntroActive)
+        {
+            timer -= Time.deltaTime;
+            if (timer <= 0f)
+            {
+                ShowNextMessage("intro");
+                timer = introMessageInterval;
+
+                if (Random.value > 0.7f)
+                {
+                    currentViewers += introViewerIncrement;
+                    UpdateViewerUI();
+                }
+            }
+            return;
+        }
+
         if (currentEmotion != null)
         {
             if (stopTimer > 0f)
@@ -143,6 +171,17 @@ public class ChatManager : MonoBehaviour
     public void StopChat()
     {
         stopTimer = stopDelay;
+    }
+
+    public void StartIntroSequence()
+    {
+        isIntroActive = true;
+        timer = 0f;
+    }
+
+    public void StopIntroSequence()
+    {
+        isIntroActive = false;
     }
 
     private void ShowNextMessage(string emotion)

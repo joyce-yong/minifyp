@@ -15,42 +15,32 @@ public class g_FilmPickable : MonoBehaviour, IInteractable
 
     public void Interact()
     {
-        Debug.Log("Film Pickable Interact() called!");
-
         GameObject player = GameObject.FindGameObjectWithTag("Player");
-        if (player == null)
+        if (player != null)
         {
-            Debug.LogError("Player not found! Make sure player has 'Player' tag.");
-            return;
+            g_FilmCounter filmCounter = player.GetComponentInChildren<g_FilmCounter>();
+            if (filmCounter == null)
+            {
+                filmCounter = player.GetComponent<g_FilmCounter>();
+            }
+
+            if (filmCounter != null)
+            {
+                filmCounter.AddFilm(filmAmount);
+
+                if (pickupSound != null && audioSource != null)
+                {
+                    audioSource.PlayOneShot(pickupSound);
+                }
+
+                if (pickupEffect != null)
+                {
+                    Instantiate(pickupEffect, transform.position, Quaternion.identity);
+                }
+
+                Destroy(gameObject);
+            }
         }
-
-        g_FilmCounter filmCounter = player.GetComponentInChildren<g_FilmCounter>();
-        if (filmCounter == null)
-        {
-            filmCounter = player.GetComponent<g_FilmCounter>();
-        }
-
-        if (filmCounter == null)
-        {
-            Debug.LogError("g_FilmCounter not found on player or children! Add it to player.");
-            return;
-        }
-
-        Debug.Log("Adding " + filmAmount + " films to counter");
-        filmCounter.AddFilm(filmAmount);
-
-        if (pickupSound != null && audioSource != null)
-        {
-            audioSource.PlayOneShot(pickupSound);
-        }
-
-        if (pickupEffect != null)
-        {
-            Instantiate(pickupEffect, transform.position, Quaternion.identity);
-        }
-
-        Debug.Log("Destroying film pickable");
-        Destroy(gameObject);
     }
 
     public string GetInteractionText()

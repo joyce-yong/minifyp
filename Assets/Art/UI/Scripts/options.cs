@@ -28,6 +28,7 @@ public class options : MonoBehaviour
             {
                 currentResoIndex = i;
             }
+    
                 
         }
 
