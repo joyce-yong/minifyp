@@ -22,10 +22,6 @@ public class g_PlayerMovement : MonoBehaviour
     public bool isMoving { get; private set; }
     public bool isSprinting { get; private set; }
 
-    bool isSafe = false;
-    public bool IsSafe => isSafe;
-    private bool isDead = false;
-
     void Awake()
     {
         controller = GetComponent<CharacterController>();
@@ -83,68 +79,4 @@ public class g_PlayerMovement : MonoBehaviour
         float targetHeight = isCrouching ? crouchHeight : originalHeight;
         controller.height = Mathf.Lerp(controller.height, targetHeight, Time.deltaTime * heightSmooth);
     }
-
-    // Red Light Green Light RedLine Point
-    void OnTriggerEnter(Collider collider)
-    {
-        if (collider.tag == "RedLine")
-        {
-            if (!isSafe) 
-            {
-                isSafe = true;
-                Debug.Log("Player passed!");
-
-                if (FindAnyObjectByType<g_Girl>() is g_Girl gameManager)
-                {
-                    gameManager.PlayerWon();
-                }
-            }
-        }
-    }
-
-    // Player die
-    public void KillPlayer()
-    {
-        if (isDead || isSafe) return;
-        SetDeadState(true);
-        if (g_ScreenFader.Instance != null)
-        {
-            StartCoroutine(g_ScreenFader.Instance.FadeOutIn(RespawnPlayer));
-        }
-        else
-        {
-            RespawnPlayer();
-        }
-    }
-    public bool PlayerIsDead()
-    {
-        return isDead;
-    }
-    public void SetDeadState(bool state)
-    {
-        isDead = state;
-    }
-
-    public void RespawnPlayer()
-    {
-        isDead = true; 
-        Debug.Log("Player Killed. Respawning...");
-
-        controller.enabled = false;
-        velocity = Vector3.zero;
-
-        Vector3 spawnPoint = g_RespawnCheckpoint.GetRespawnPoint();
-        transform.position = spawnPoint + Vector3.up * 0.5f;
-
-        velocity = Vector3.zero;
-
-        controller.enabled = true;
-        isDead = false; 
-
-        if (FindAnyObjectByType<g_Girl>() is g_Girl gameManager)
-        {
-            gameManager.StopGame(); 
-        }
-    }
-
 }
