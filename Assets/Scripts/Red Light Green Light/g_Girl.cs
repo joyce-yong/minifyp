@@ -3,6 +3,14 @@ using UnityEngine;
 
 public class g_Girl : MonoBehaviour
 {
+    [Header("Game State")]
+    [SerializeField] bool isGameStarted = false;
+    [SerializeField] float preDeathDelay = 1.5f;
+    [SerializeField] float musicFadeDuration = 1.0f;
+
+    public bool IsGameStarted => isGameStarted;
+
+    [Header("Doll Setting")]
     [SerializeField] AudioSource girlSingingAudioSource;
     [SerializeField] AudioSource rotationAudioSource;
     [SerializeField] AudioSource shotAudioSource;
@@ -28,6 +36,7 @@ public class g_Girl : MonoBehaviour
     Coroutine rotationCoroutine = null;
     bool scanning = false;
 
+    private g_GameStartTrigger startTrigger;
     g_PlayerMovement player;
 
     void Awake()
@@ -50,10 +59,19 @@ public class g_Girl : MonoBehaviour
         shotAudioSource.loop = false;
 
         player = GameObject.FindWithTag("Player").GetComponent<g_PlayerMovement>();
+
+        startTrigger = FindAnyObjectByType<g_GameStartTrigger>();
+        if (startTrigger == null)
+        {
+            Debug.LogError("g_GameStartTrigger not found in the scene! Cannot reset game properly.");
+        }
+
+        this.enabled = false;
     }
 
     void Update()
     {
+        if (!isGameStarted) return;
         if (elapsedTime < totalTime)
         {
         elapsedTime += Time.deltaTime;
@@ -71,11 +89,10 @@ public class g_Girl : MonoBehaviour
 
         if (elapsedTime >= totalTime)
         {
-            shotAudioSource.Play();
             Debug.Log("Time Over. Player is killed!");
             if (!player.PlayerIsDead())
             {
-                player.KillPlayer();
+                StartCoroutine(PreDeathSequence());
             }
             return;
             
@@ -86,12 +103,17 @@ public class g_Girl : MonoBehaviour
             if (player.isMoving)
             {
                 Debug.Log("Player moved. Player is killed!");
-                shotAudioSource.Play();
-                player.KillPlayer();
+                StartCoroutine(PreDeathSequence());
             }
         }
     }
+    public void StartGame()
+    {
+        if (isGameStarted) return; 
 
+        isGameStarted = true;
+        this.enabled = true;
+    }
     void StopSound()
     {
         girlSingingAudioSource.Stop();
@@ -131,5 +153,86 @@ public class g_Girl : MonoBehaviour
             yield return null;
         }
         scanning = !rotateBack;
+    }
+
+    IEnumerator PreDeathSequence()
+    {
+        shotAudioSource.Play(); 
+        yield return new WaitForSeconds(preDeathDelay);
+        player.KillPlayer();
+
+    }
+
+    public void PlayerWon()
+    {
+        if (!isGameStarted) return; 
+        StopGameRound();
+
+        StartCoroutine(FadeOutMusicAndStopGame());
+
+        isGameStarted = false;
+        this.enabled = false;
+
+        Debug.Log("Player Won!");
+    }
+
+    IEnumerator FadeOutMusicAndStopGame()
+    {
+        float startVolume = girlSingingAudioSource.volume;
+        float timer = 0f;
+
+        while (timer < musicFadeDuration)
+        {
+            timer += Time.deltaTime;
+            float newVolume = Mathf.Lerp(startVolume, 0f, timer / musicFadeDuration);
+            girlSingingAudioSource.volume = newVolume;
+            yield return null;
+        }
+
+        girlSingingAudioSource.Stop();
+        girlSingingAudioSource.volume = startVolume; 
+
+        
+    }
+    void StopGameRound()
+    {
+        if (rotationCoroutine != null)
+        {
+            StopCoroutine(rotationCoroutine);
+        }
+        CancelInvoke(); 
+
+        if (girlSingingAudioSource.isPlaying)
+        {
+            
+        }
+
+        doll.rotation = Quaternion.Euler(0, initialRotationY, 0);
+        isPlaying = false;
+        scanning = false;
+    }
+
+    public void StopGame()
+    {
+        StopGameRound(); 
+
+        isGameStarted = false;
+        this.enabled = false;
+        elapsedTime = 0f;
+
+        girlSingingAudioSource.Stop();
+        girlSingingAudioSource.volume = 1f; 
+
+        if (startTrigger != null)
+        {
+            startTrigger.EnableTrigger();
+        }
+
+        Debug.Log("Game Stopped, awaiting player re-entry into start trigger.");
+    }
+
+    public void ResetGameRound()
+    {
+        StopGameRound(); 
     }
 }

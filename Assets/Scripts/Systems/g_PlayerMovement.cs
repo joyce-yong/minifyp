@@ -24,8 +24,7 @@ public class g_PlayerMovement : MonoBehaviour
 
     bool isSafe = false;
     public bool IsSafe => isSafe;
-
-    private Vector3 checkpointPosition;
+    private bool isDead = false;
 
     void Awake()
     {
@@ -90,19 +89,62 @@ public class g_PlayerMovement : MonoBehaviour
     {
         if (collider.tag == "RedLine")
         {
-            isSafe = true;
-            Debug.Log("Player passed!");
+            if (!isSafe) 
+            {
+                isSafe = true;
+                Debug.Log("Player passed!");
+
+                if (FindAnyObjectByType<g_Girl>() is g_Girl gameManager)
+                {
+                    gameManager.PlayerWon();
+                }
+            }
         }
     }
 
     // Player die
     public void KillPlayer()
     {
-        if (PlayerIsDead()) return;
+        if (isDead || isSafe) return;
+        SetDeadState(true);
+        if (g_ScreenFader.Instance != null)
+        {
+            StartCoroutine(g_ScreenFader.Instance.FadeOutIn(RespawnPlayer));
+        }
+        else
+        {
+            RespawnPlayer();
+        }
     }
     public bool PlayerIsDead()
     {
-        return false;// return to checkpoint
+        return isDead;
+    }
+    public void SetDeadState(bool state)
+    {
+        isDead = state;
+    }
+
+    public void RespawnPlayer()
+    {
+        isDead = true; 
+        Debug.Log("Player Killed. Respawning...");
+
+        controller.enabled = false;
+        velocity = Vector3.zero;
+
+        Vector3 spawnPoint = g_RespawnCheckpoint.GetRespawnPoint();
+        transform.position = spawnPoint + Vector3.up * 0.5f;
+
+        velocity = Vector3.zero;
+
+        controller.enabled = true;
+        isDead = false; 
+
+        if (FindAnyObjectByType<g_Girl>() is g_Girl gameManager)
+        {
+            gameManager.StopGame(); 
+        }
     }
 
 }
