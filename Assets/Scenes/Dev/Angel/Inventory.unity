@@ -4184,12 +4184,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sounds:
   - name: theme
-    clip: {fileID: 8300000, guid: 66e28b49a0c74ff4ca04699f3a0f27a7, type: 3}
+    clip: {fileID: 8300000, guid: a1c735839837c8e4c9a5cb72799b1387, type: 3}
     volume: 1
     loop: 1
     source: {fileID: 0}
   - name: pickup
-    clip: {fileID: 8300000, guid: c8beb2003addaff44adae7df383c2304, type: 3}
+    clip: {fileID: 8300000, guid: 6cbca339959292444b8bf64f1a789258, type: 3}
     volume: 0.82
     loop: 0
     source: {fileID: 0}
@@ -7527,10 +7527,11 @@ MonoBehaviour:
   idleBobAmount: 0.01
   playerCamera: {fileID: 1606572434672058917}
   defaultFOV: 60
-  minZoomFOV: 15
-  maxZoomFOV: 60
-  zoomSpeed: 25
+  zoomedFOV: 20
   zoomSmoothness: 8
+  scrollCooldownTime: 0.2
+  lockOnZoomFOV: 55
+  lockOnZoomSpeed: 5
   shakeIntensity: 0.15
   shakeDuration: 0.3
   shakeDecay:
