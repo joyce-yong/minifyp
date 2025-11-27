@@ -35,19 +35,20 @@ public class GhostLockOn : MonoBehaviour
         }
     }
 
-    void Update()
+    void LateUpdate()
     {
-        if (isVisible)
+        if (isVisible && Camera.main != null)
         {
-            Vector3 directionToCamera = Camera.main.transform.position - worldCanvas.transform.position;
-            worldCanvas.transform.rotation = Quaternion.LookRotation(directionToCamera);
-            
+            worldCanvas.transform.position = GetTargetPosition();
+            worldCanvas.transform.LookAt(Camera.main.transform);
+            worldCanvas.transform.Rotate(0, 180, 0);
+
             if (!ReadyToCapture && Progress > 0f)
             {
                 float t = Progress / LockOnTime;
                 reticleImage.transform.localScale = Vector3.Lerp(initialScale, initialScale * 0.3f, t);
                 reticleImage.color = Color.Lerp(Color.white, Color.red, t);
-                
+
                 rotationSpeed = Mathf.Lerp(0f, 360f, t);
                 reticleImage.transform.Rotate(0f, 0f, rotationSpeed * Time.deltaTime);
             }
