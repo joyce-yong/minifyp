@@ -22,6 +22,8 @@ public class g_PlayerMovement : MonoBehaviour
     public bool isMoving { get; private set; }
     public bool isSprinting { get; private set; }
 
+    bool isSafe = false;
+    public bool IsSafe => isSafe;
     void Awake()
     {
         controller = GetComponent<CharacterController>();
@@ -79,4 +81,16 @@ public class g_PlayerMovement : MonoBehaviour
         float targetHeight = isCrouching ? crouchHeight : originalHeight;
         controller.height = Mathf.Lerp(controller.height, targetHeight, Time.deltaTime * heightSmooth);
     }
+
+    void OnTriggerEnter(Collider collider)
+    {
+        if (collider.tag == "RedLine")
+        {
+            isSafe = true;
+            Debug.Log("Player passed!");
+        }
+    }
+
+
+
 }
