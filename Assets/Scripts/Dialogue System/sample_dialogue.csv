@@ -12,9 +12,5 @@ id,dialogue,trigger
 4,This looks important.,entry
 4,I should keep this with me.,end
 5,The ghost is getting closer...,start
-5,I need to hide!,entryt
+5,I need to hide!,entry
 5,Quick find somewhere safe!,end
-6,look at these statues chat.,start
-6,creepy shit man..., end
-
-
