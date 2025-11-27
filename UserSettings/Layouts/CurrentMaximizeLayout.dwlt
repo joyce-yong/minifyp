@@ -1255,18 +1255,18 @@ MonoBehaviour:
     m_ExpandedInstanceIDs: aeb100001e14feff
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: Red Light Green Light
-      m_OriginalName: Red Light Green Light
+      m_Name: 
+      m_OriginalName: 
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 163160
+      m_UserData: 0
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 0
+      m_OriginalEventType: 11
       m_IsRenamingFilename: 1
       m_TrimLeadingAndTrailingWhitespace: 0
       m_ClientGUIView: {fileID: 10}
