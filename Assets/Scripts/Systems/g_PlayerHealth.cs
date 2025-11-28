@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 using DG.Tweening;
 
 public class g_PlayerHealth : MonoBehaviour
@@ -94,6 +95,7 @@ public class g_PlayerHealth : MonoBehaviour
     void Die()
     {
         Debug.Log("Player Died");
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
     void OnDestroy()
