@@ -60735,7 +60735,7 @@ MonoBehaviour:
   fadeCanvas: {fileID: 966309928}
   canvasFadeDelay: 1
   canvasFadeDuration: 2
-  nextSceneName: Intro_Map
+  nextSceneName: demo
   sceneChangeDelay: 1
 --- !u!1 &1735604598
 GameObject:
