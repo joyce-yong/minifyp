@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class FlashlightController_Dev : MonoBehaviour
+public class FlashlightController : MonoBehaviour
 {
     [SerializeField] AudioClip _onSFX;
     [SerializeField] AudioClip _offSFX;

@@ -242,6 +242,8 @@ public class ChatManager : MonoBehaviour
         emojiCategories["sarcastic"] = data.sarcastic;
         emojiCategories["amaze"] = data.amaze;
         emojiCategories["anger"] = data.anger;
+        emojiCategories["highway"] = data.highway;
+        emojiCategories["parking"] = data.parking;
     }
 
     private string GetRandomEmoji(string emotion)
@@ -278,5 +280,7 @@ public class ChatManager : MonoBehaviour
         public string[] sarcastic;
         public string[] amaze;
         public string[] anger;
+        public string[] highway;
+        public string[] parking;
     }
 }

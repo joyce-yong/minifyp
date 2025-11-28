@@ -54,5 +54,24 @@
     "<sprite name=anger_duckknife>",
     "<sprite name=anger_cathuh>",
     "<sprite name=anger_dogangry>"
+  ],
+
+  "highway": [
+    "<sprite name=fear_eyes>",
+    "<sprite name=fear_face>",
+    "<sprite name=amaze_pikachu>",
+    "<sprite name=happy_ques>",
+    "<sprite name=fear_catshock>",
+    "<sprite name=anger_catsideeye>"
+  ],
+
+  "parking": [
+    "<sprite name=fear_eyes>",
+    "<sprite name=fear_pepecross>",
+    "<sprite name=fear_shockpepe>",
+    "<sprite name=fear_crycat>",
+    "<sprite name=fear_catshock>",
+    "<sprite name=anger_catsideeye>",
+    "<sprite name=fear_opman>"
   ]
 }

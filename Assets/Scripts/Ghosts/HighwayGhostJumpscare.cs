@@ -39,7 +39,7 @@ public class HighwayGhostJumpscare : MonoBehaviour
     {
         if (ghostMesh == null) return;
 
-        Vector3 targetPosition = startPosition + new Vector3(0f, 0f, moveDistance);
+        Vector3 targetPosition = startPosition + new Vector3(-moveDistance, 0f, 0f);
         ghostMesh.DOMove(targetPosition, moveDuration).SetEase(moveEase);
     }
 

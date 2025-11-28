@@ -69,6 +69,16 @@ public class Player_Car_Movement : MonoBehaviour
         isControlsLocked = true;
     }
 
+    public void SetSpeed(float speed)
+    {
+        currentSpeed = speed;
+    }
+
+    public float GetCurrentSpeed()
+    {
+        return currentSpeed;
+    }
+
     void Update()
     {
         HandleCarMovement();
