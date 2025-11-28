@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 using TMPro;
 
 public class CaptureManager : MonoBehaviour
@@ -24,6 +25,12 @@ public class CaptureManager : MonoBehaviour
     public int maxCaptures = 20;
     public TextMeshProUGUI captureCountText;
 
+    [Header("Scene Transition")]
+    public CanvasGroup fadeCanvasGroup;
+    public string nextSceneName;
+    public float fadeDuration = 2f;
+    public float delayBeforeFade = 1f;
+
     [Header("UI To Hide")]
     public Canvas[] canvasesToHide;
 
@@ -37,6 +44,11 @@ public class CaptureManager : MonoBehaviour
         originalReticleColor = playerReticleImage.color;
         captureOverlay.enabled = false;
         UpdateCaptureCountUI();
+
+        if (fadeCanvasGroup != null)
+        {
+            fadeCanvasGroup.alpha = 0f;
+        }
     }
 
     void UpdateCaptureCountUI()
@@ -179,6 +191,11 @@ public class CaptureManager : MonoBehaviour
         {
             currentCaptures++;
             UpdateCaptureCountUI();
+
+            if (currentCaptures >= maxCaptures)
+            {
+                StartCoroutine(TransitionToNextScene());
+            }
         }
 
         playerReticleImage.color = originalReticleColor;
@@ -226,5 +243,31 @@ public class CaptureManager : MonoBehaviour
         if (!g || !g.gameObject.activeInHierarchy) return false;
         float d = Vector3.Distance(transform.position, g.transform.position);
         return d <= captureRange;
+    }
+
+    System.Collections.IEnumerator TransitionToNextScene()
+    {
+        yield return new WaitForSeconds(delayBeforeFade);
+
+        if (fadeCanvasGroup != null)
+        {
+            float elapsed = 0f;
+            while (elapsed < fadeDuration)
+            {
+                elapsed += Time.deltaTime;
+                fadeCanvasGroup.alpha = Mathf.Lerp(0f, 1f, elapsed / fadeDuration);
+                yield return null;
+            }
+            fadeCanvasGroup.alpha = 1f;
+        }
+
+        if (!string.IsNullOrEmpty(nextSceneName))
+        {
+            SceneManager.LoadScene(nextSceneName);
+        }
+        else
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        }
     }
 }
