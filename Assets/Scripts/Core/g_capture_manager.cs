@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class CaptureManager : MonoBehaviour
 {
@@ -11,12 +12,17 @@ public class CaptureManager : MonoBehaviour
     public RawImage playerReticleImage;
     public Canvas captureOverlay;
     public cam_PlayerView cameraView;
-    
+
     [Header("Capture Effects")]
     public CaptureFrameEffects captureEffects;
 
     [Header("Film System")]
     public g_FilmCounter filmCounter;
+
+    [Header("Capture Counter")]
+    public int currentCaptures = 0;
+    public int maxCaptures = 20;
+    public TextMeshProUGUI captureCountText;
 
     [Header("UI To Hide")]
     public Canvas[] canvasesToHide;
@@ -30,6 +36,20 @@ public class CaptureManager : MonoBehaviour
     {
         originalReticleColor = playerReticleImage.color;
         captureOverlay.enabled = false;
+        UpdateCaptureCountUI();
+    }
+
+    void UpdateCaptureCountUI()
+    {
+        if (captureCountText != null)
+        {
+            captureCountText.text = currentCaptures + "/" + maxCaptures;
+        }
+    }
+
+    public bool HasCompletedAllCaptures()
+    {
+        return currentCaptures >= maxCaptures;
     }
 
     void Update()
@@ -153,6 +173,12 @@ public class CaptureManager : MonoBehaviour
         else if (currentTarget != null)
         {
             currentTarget.Capture();
+        }
+
+        if (currentTarget != null && currentCaptures < maxCaptures)
+        {
+            currentCaptures++;
+            UpdateCaptureCountUI();
         }
 
         playerReticleImage.color = originalReticleColor;
