@@ -30,6 +30,11 @@ public class Player_Car_Movement : MonoBehaviour
     public Light headlight;
     public float flickerDuration = 0.15f;
 
+    [Header("Audio Settings")]
+    public string engineMoveSound = "car_engine";
+    public string headlightSound = "flashlight";
+    public float stopThreshold = 0.5f;
+
     [Header("Control Lock")]
     public bool startLocked = true;
 
@@ -40,13 +45,18 @@ public class Player_Car_Movement : MonoBehaviour
     private float currentSpeed = 0f;
     private float bobTimer = 0f;
     private bool isMoving = false;
+    private bool wasMoving = false;
     private bool isHeadlightOn = false;
     private float originalHeadlightIntensity = 0f;
     private bool isControlsLocked = false;
 
+    private g_AudioManager audioManager;
+
     void Start()
     {
         isControlsLocked = startLocked;
+
+        audioManager = FindAnyObjectByType<g_AudioManager>();
 
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
@@ -86,6 +96,7 @@ public class Player_Car_Movement : MonoBehaviour
         HandleSteering();
         HandleCameraBob();
         HandleHeadlightToggle();
+        HandleCarAudio();
     }
 
     void HandleCameraLook()
@@ -171,7 +182,8 @@ public class Player_Car_Movement : MonoBehaviour
         float accelRate = (targetSpeed != 0f) ? acceleration : deceleration;
         currentSpeed = Mathf.Lerp(currentSpeed, targetSpeed, Time.deltaTime * accelRate);
 
-        isMoving = Mathf.Abs(currentSpeed) > 0.1f;
+        //isMoving = Mathf.Abs(currentSpeed) > 0.1f;
+        isMoving = Mathf.Abs(currentSpeed) > stopThreshold;
 
         carBase.Translate(new Vector3(currentSpeed * Time.deltaTime, 0f, 0f));
 
@@ -180,6 +192,22 @@ public class Player_Car_Movement : MonoBehaviour
             float turnAmount = horizontalInput * turnSpeed * Time.deltaTime * (currentSpeed / moveSpeed);
             carBase.Rotate(Vector3.up, turnAmount);
         }
+    }
+
+    void HandleCarAudio()
+    {
+        if (audioManager == null) return;
+
+        if (isMoving && !wasMoving)
+        {
+            audioManager.playSound(engineMoveSound);
+        }
+        else if (!isMoving && wasMoving)
+        {
+            audioManager.stopSound(engineMoveSound);
+        }
+
+        wasMoving = isMoving;
     }
 
     void HandleCameraBob()
@@ -203,6 +231,8 @@ public class Player_Car_Movement : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.F))
         {
             isHeadlightOn = !isHeadlightOn;
+
+            if (audioManager != null) audioManager.playSound(headlightSound);
 
             if (isHeadlightOn)
             {
