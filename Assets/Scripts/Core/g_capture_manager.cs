@@ -56,6 +56,8 @@ public class CaptureManager : MonoBehaviour
         if (captureCountText != null)
         {
             captureCountText.text = currentCaptures + "/" + maxCaptures;
+
+            Debug.Log("Capture Count Canvas enabled: " + captureCountText.canvas.enabled);
         }
     }
 
